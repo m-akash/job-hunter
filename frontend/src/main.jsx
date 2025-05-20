@@ -6,6 +6,7 @@ import Root from "./layouts/Root";
 import Home from "./pages/Home/Home";
 import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
+import PostJob from "./pages/PostJob/PostJob";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>,
+      },
+      {
+        path: "/postjob",
+        element: <PostJob></PostJob>,
       },
     ],
   },
