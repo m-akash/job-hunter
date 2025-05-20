@@ -56,6 +56,13 @@ const Banner = () => {
             </Link>
           </p>
         </div>
+        <div>
+          <Link to="/jobs">
+            <button className="btn btn-primary hover:bg-blue-900">
+              Explore Job
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

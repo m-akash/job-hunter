@@ -15,7 +15,7 @@ const FeatureJobs = () => {
         <div className="flex gap-4 sm:gap-6 bg-cyan-400 text-black py-4 sm:py-5 px-4 sm:px-6 lg:px-10 border rounded-md">
           <div className="flex flex-col gap-3 sm:gap-4 justify-between items-start w-full">
             <div className="flex flex-row justify-between items-start w-full">
-              <Link className="hover:text-white hover:text-xl">
+              <Link to="/jobs" className="hover:text-white hover:text-xl">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">
                   Software Engineer(Backend)
                 </h2>

@@ -5,10 +5,10 @@ import { TbLogin2 } from "react-icons/tb";
 const Navbar = () => {
   const links = (
     <>
-      <NavLink>
+      <NavLink to="/">
         <button className="link link-hover px-5">Home</button>
       </NavLink>
-      <NavLink>
+      <NavLink to="/jobs">
         <button className="link link-hover px-5">Jobs</button>
       </NavLink>
       <NavLink>
