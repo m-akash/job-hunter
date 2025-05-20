@@ -12,111 +12,175 @@ import projectManImg from "../../assets/icons/project-management.png";
 
 const Categories = () => {
   return (
-    <div className="my-10">
+    <div className="my-5 md:my-10 px-4 md:px-6">
       <div>
-        <h1 className="text-center text-2xl mb-2">Popular Job Categories</h1>
-        <p className="text-center text-xs">2020 jobs live, 170 added today.</p>
+        <h1 className="text-center text-xl md:text-2xl mb-2">
+          Popular Job Categories
+        </h1>
+        <p className="text-center text-xs md:text-sm">
+          2020 jobs live, 170 added today.
+        </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 my-10 mx-5">
-        <div className="flex gap-6 bg-cyan-400 text-black p-5 border rounded-md">
-          <figure className="h-auto w-15 items-center hover:bg-white rounded-md">
-            <img src={accountingImg} alt="" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 my-6 md:my-10">
+        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+          <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
+            <img
+              src={accountingImg}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="hover:text-white hover:text-xl">
+            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
               Account / Finance
             </Link>
-            <p>(2 open positions)</p>
+            <span className="text-sm md:text-[15px] font-thin">
+              (2 open positions)
+            </span>
           </div>
         </div>
 
-        <div className="flex gap-6 bg-cyan-400 text-black p-5 border rounded-md ">
-          <figure className="h-auto w-15 items-center hover:bg-white rounded-md">
-            <img src={marketingImg} alt="" />
+        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+          <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
+            <img
+              src={marketingImg}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="hover:text-white hover:text-xl">Marketing</Link>
-            <p>(2 open positions)</p>
+            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+              Marketing
+            </Link>
+            <span className="text-sm md:text-[15px] font-thin">
+              (2 open positions)
+            </span>
           </div>
         </div>
 
-        <div className="flex gap-6 bg-cyan-400 text-black p-5 border rounded-md">
-          <figure className="h-auto w-15 items-center hover:bg-white rounded-md">
-            <img src={designImg} alt="" />
+        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+          <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
+            <img
+              src={designImg}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="hover:text-white hover:text-xl">Art / Design</Link>
-            <p>(2 open positions)</p>
+            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+              Art / Design
+            </Link>
+            <span className="text-sm md:text-[15px] font-thin">
+              (2 open positions)
+            </span>
           </div>
         </div>
 
-        <div className="flex gap-6 bg-cyan-400 text-black p-5 border rounded-md">
-          <figure className="h-auto w-15 items-center hover:bg-white rounded-md">
-            <img src={developemntImg} alt="" />
+        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+          <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
+            <img
+              src={developemntImg}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="hover:text-white hover:text-xl">Development</Link>
-            <p>(2 open positions)</p>
+            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+              Development
+            </Link>
+            <span className="text-sm md:text-[15px] font-thin">
+              (2 open positions)
+            </span>
           </div>
         </div>
 
-        <div className="flex gap-6 bg-cyan-400 text-black p-5 border rounded-md">
-          <figure className="h-auto w-15 items-center hover:bg-white rounded-md">
-            <img src={humanImg} alt="" />
+        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+          <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
+            <img
+              src={humanImg}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="hover:text-white hover:text-xl">
+            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
               Human Resource
             </Link>
-            <p>(2 open positions)</p>
+            <span className="text-sm md:text-[15px] font-thin">
+              (2 open positions)
+            </span>
           </div>
         </div>
 
-        <div className="flex gap-6 bg-cyan-400 text-black p-5 border rounded-md">
-          <figure className="h-auto w-15 items-center hover:bg-white rounded-md">
-            <img src={automativeImg} alt="" />
+        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+          <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
+            <img
+              src={automativeImg}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="hover:text-white hover:text-xl">
+            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
               Automotive Job
             </Link>
-            <p>(2 open positions)</p>
+            <span className="text-sm md:text-[15px] font-thin">
+              (2 open positions)
+            </span>
           </div>
         </div>
 
-        <div className="flex gap-6 bg-cyan-400 text-black p-5 border rounded-md">
-          <figure className="h-auto w-15 items-center hover:bg-white rounded-md">
-            <img src={customerServiceImg} alt="" />
+        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+          <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
+            <img
+              src={customerServiceImg}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="hover:text-white hover:text-xl">
+            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
               Customer Service
             </Link>
-            <p>(2 open positions)</p>
+            <span className="text-sm md:text-[15px] font-thin">
+              (2 open positions)
+            </span>
           </div>
         </div>
 
-        <div className="flex gap-6 bg-cyan-400 text-black p-5 border rounded-md">
-          <figure className="h-auto w-15 items-center hover:bg-white rounded-md">
-            <img src={healthCareImg} alt="" />
+        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+          <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
+            <img
+              src={healthCareImg}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="hover:text-white hover:text-xl">
+            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
               Health & Care
             </Link>
-            <p>(2 open positions)</p>
+            <span className="text-sm md:text-[15px] font-thin">
+              (2 open positions)
+            </span>
           </div>
         </div>
 
-        <div className="flex gap-6 bg-cyan-400 text-black p-5 border rounded-md">
-          <figure className="h-auto w-15 items-center hover:bg-white rounded-md">
-            <img src={projectManImg} alt="" />
+        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+          <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
+            <img
+              src={projectManImg}
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="hover:text-white hover:text-xl">
+            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
               Project Management
             </Link>
-            <p>(2 open positions)</p>
+            <span className="text-sm md:text-[15px] font-thin">
+              (2 open positions)
+            </span>
           </div>
         </div>
       </div>
