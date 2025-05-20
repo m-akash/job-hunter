@@ -49,7 +49,7 @@ const FindJobs = () => {
                 Urgent
               </span>
             </div>
-            <Link>
+            <Link to="/jobDetails">
               <button className="btn btn-soft">See Details</button>
             </Link>
           </div>
