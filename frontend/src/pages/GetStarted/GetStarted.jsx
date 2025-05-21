@@ -3,10 +3,19 @@ import { IoCheckmarkOutline } from "react-icons/io5";
 
 import jobSeekerImg from "../../assets/images/job-seeker.jpg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const GetStarted = () => {
   return (
-    <div className="hero  bg-transparent h-150 my-10">
+    <motion.div
+      initial={{ opacity: 1, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.1,
+      }}
+      className="hero  bg-transparent h-150 my-10"
+    >
       <div className="hero-content flex-col gap-15 lg:flex-row">
         <img src={jobSeekerImg} className="w-2xl  rounded-lg shadow-2xl" />
         <div>
@@ -43,7 +52,7 @@ const GetStarted = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

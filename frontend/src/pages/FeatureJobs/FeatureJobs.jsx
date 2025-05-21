@@ -1,10 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CiBookmark } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 const FeatureJobs = () => {
   return (
-    <div className="my-10 px-4 sm:px-6 lg:px-8">
+    <motion.div
+      initial={{ opacity: 1, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.1,
+      }}
+      className="my-10 px-4 sm:px-6 lg:px-8"
+    >
       <div>
         <h1 className="text-center text-xl sm:text-2xl mb-2">Featured Jobs</h1>
         <p className="text-center text-xs sm:text-sm">
@@ -207,7 +216,7 @@ const FeatureJobs = () => {
       <div className="flex justify-center items-center">
         <button className="btn btn-primary">Load More Listing</button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

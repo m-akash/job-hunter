@@ -9,10 +9,19 @@ import humanImg from "../../assets/icons/profesions-and-jobs.png";
 import automativeImg from "../../assets/icons/teamwork.png";
 import customerServiceImg from "../../assets/icons/customer-service.png";
 import projectManImg from "../../assets/icons/project-management.png";
+import { motion } from "framer-motion";
 
 const Categories = () => {
   return (
-    <div className="my-5 md:my-10 px-4 md:px-6">
+    <motion.div
+      initial={{ opacity: 1, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.1,
+      }}
+      className="my-5 md:my-10 px-4 md:px-6"
+    >
       <div>
         <h1 className="text-center text-xl md:text-2xl mb-2">
           Popular Job Categories
@@ -184,7 +193,7 @@ const Categories = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

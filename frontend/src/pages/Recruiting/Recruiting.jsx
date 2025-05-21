@@ -1,16 +1,25 @@
 import React from "react";
 import Lottie from "lottie-react";
-import lottieData from "../../assets/lottie/Animation - 1747730781744.json";
+import recruitingImg from "../../assets/icons/recruitment.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Recruiting = () => {
   return (
-    <div className="hero bg-transparent min-h-[70vh] py-10 px-4 sm:px-6 lg:px-8">
+    <motion.div
+      initial={{ opacity: 1, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.1,
+      }}
+      className="hero bg-transparent min-h-[70vh] py-10 px-4 sm:px-6 lg:px-8"
+    >
       <div className="hero-content flex-col gap-8 lg:gap-15 lg:flex-row-reverse max-w-7xl mx-auto">
         <div className="w-full lg:w-1/2">
-          <Lottie
-            className="w-full h-[300px] sm:h-[400px] lg:h-[500px]"
-            animationData={lottieData}
+          <img
+            className="w-full h-[200px] sm:h-[400px] lg:h-[300px]"
+            src={recruitingImg}
           />
         </div>
         <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -29,7 +38,7 @@ const Recruiting = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

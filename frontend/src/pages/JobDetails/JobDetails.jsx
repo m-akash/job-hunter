@@ -2,10 +2,19 @@ import { Link } from "react-router-dom";
 import { CiBookmark } from "react-icons/ci";
 import { CiCalendarDate } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 const JobDetails = () => {
   return (
-    <div className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <motion.div
+      initial={{ opacity: 1, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.1,
+      }}
+      className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+    >
       <div className="flex gap-4 sm:gap-6 bg-gray-400 text-black my-5 py-4 sm:py-5 px-4 sm:px-6 lg:px-10 border rounded-md">
         <div className="flex flex-col gap-3 md:px-15 sm:gap-4 justify-between items-start w-full">
           <div className="flex flex-row justify-between items-start w-full">
@@ -210,7 +219,7 @@ const JobDetails = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

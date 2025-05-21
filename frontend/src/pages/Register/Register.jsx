@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext/AuthContext";
+import { motion } from "framer-motion";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
@@ -31,7 +32,16 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <motion.div
+      initial={{ opacity: 1, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.1,
+        // ease: [0, 0.71, 0.2, 1.01],
+      }}
+      className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+    >
       <div className="bg-gradient-to-r from-purple-600 to-violet-600 py-8 md:py-5 h-30">
         <div className="container mx-auto px-4 md:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
@@ -157,7 +167,7 @@ const Register = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

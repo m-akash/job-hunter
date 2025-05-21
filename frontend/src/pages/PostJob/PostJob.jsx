@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const PostJob = () => {
   return (
     <div className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      {/* Header Section */}
       <div className="bg-gradient-to-r from-purple-600 to-violet-600 py-8 md:py-5 h-30">
         <div className="container mx-auto px-4 md:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
@@ -14,10 +14,16 @@ const PostJob = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="container mx-auto px-4 md:px-8 py-8 md:py-12">
-        {/* Registration Form */}
-        <div className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-gray-700">
+        <motion.div
+          initial={{ opacity: 1, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.1,
+          }}
+          className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-gray-700"
+        >
           <form className="space-y-6">
             <h1 className="text-xl  font-bold text-white mb-8">Post Job</h1>
 
@@ -252,7 +258,7 @@ const PostJob = () => {
               Submit
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

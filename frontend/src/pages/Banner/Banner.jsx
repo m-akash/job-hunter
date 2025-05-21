@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
@@ -11,7 +11,15 @@ const Banner = () => {
       }}
     >
       <div className="hero-overlay"></div>
-      <div className="flex flex-col hero-content text-neutral-content text-center p-4 md:p-8">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.1,
+        }}
+        className="flex flex-col hero-content text-neutral-content text-center p-4 md:p-8"
+      >
         <div className="max-w-md">
           <h1 className="mb-3 md:mb-5 text-3xl md:text-4xl lg:text-5xl font-bold">
             There Are 5000 Job Postings Here For you!
@@ -63,7 +71,7 @@ const Banner = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CiBookmark } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 const FindJobs = () => {
   return (
@@ -19,7 +20,15 @@ const FindJobs = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-4 sm:gap-6 bg-gray-400 text-black my-5 py-4 sm:py-5 px-4 sm:px-6 lg:px-10 border rounded-md">
+      <motion.div
+        initial={{ opacity: 1, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.1,
+        }}
+        className="flex gap-4 sm:gap-6 bg-gray-400 text-black my-5 py-4 sm:py-5 px-4 sm:px-6 lg:px-10 border rounded-md"
+      >
         <div className="flex flex-col gap-3 md:px-15 sm:gap-4 justify-between items-start w-full">
           <div className="flex flex-row justify-between items-start w-full">
             <Link className="hover:text-white hover:text-xl">
@@ -54,7 +63,7 @@ const FindJobs = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

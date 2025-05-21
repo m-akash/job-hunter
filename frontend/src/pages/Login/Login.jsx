@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext/AuthContext";
+import { motion } from "framer-motion"; 
 
 const Login = () => {
   const { SignInUser } = useContext(AuthContext);
@@ -18,7 +19,7 @@ const Login = () => {
     SignInUser(email, password)
       .then((result) => {
         console.log(result.user);
-        navigator("/")
+        navigator("/");
       })
       .catch((errror) => {
         console.log("ERROR", errror);
@@ -47,7 +48,16 @@ const Login = () => {
           Sign In
         </h1>
 
-        <div className="max-w-md mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-4 md:p-6 border border-gray-700">
+        <motion.div
+          initial={{ opacity: 1, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.1,
+            // ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="max-w-md mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-4 md:p-6 border border-gray-700"
+        >
           <form onSubmit={handleSignIn} className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-200 mb-2">
@@ -101,7 +111,7 @@ const Login = () => {
               </Link>
             </p>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
