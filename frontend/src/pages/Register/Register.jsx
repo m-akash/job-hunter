@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext/AuthContext";
 import { motion } from "framer-motion";
+import SocialLogin from "../shared/SocialLogin";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
@@ -154,6 +155,9 @@ const Register = () => {
             >
               Create Account
             </button>
+            
+            <div className="divider">OR</div>
+            <SocialLogin></SocialLogin>
 
             <p className="text-center text-gray-400">
               Already have an account?{" "}

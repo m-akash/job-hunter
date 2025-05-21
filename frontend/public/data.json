@@ -1,0 +1,262 @@
+[
+    {
+        "title": "Software Engineer",
+        "location": "Halishohor, Chittagong",
+        "jobType": "Hybrid",
+        "category": "Engineering",
+        "applicationDeadline": "2024-12-31",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "We are seeking a skilled Software Engineer to join our dynamic team. The candidate will work on diverse projects and contribute to innovative solutions.",
+        "company": "Favorite IT",
+        "requirements": [
+            "JavaScript",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ],
+        "responsibilities": [
+            "Develop and maintain software",
+            "Collaborate with the team",
+            "Participate in code reviews"
+        ],
+        "status": "active"
+    },
+    {
+        "title": "Marketing Specialist",
+        "location": "Banani, Dhaka",
+        "jobType": "Remote",
+        "category": "Marketing",
+        "applicationDeadline": "2024-12-15",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "Join our marketing team to strategize and implement innovative campaigns for our products and services.",
+        "company": "GoatMark Inc",
+        "requirements": [
+            "Google Analytics",
+            "SEO",
+            "Content Management Systems",
+            "Excel"
+        ],
+        "responsibilities": [
+            "Develop marketing strategies",
+            "Manage ad campaigns",
+            "Analyze campaign performance"
+        ],
+        "status": "active"
+    },
+    {
+        "title": "Finance Manager",
+        "location": "Gulshan, Dhaka",
+        "jobType": "Part-Time",
+        "category": "Finance",
+        "applicationDeadline": "2024-12-20",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "We are hiring a Finance Manager to oversee financial operations, budgeting, and reporting.",
+        "company": "Local Inch Ltd",
+        "requirements": [
+            "QuickBooks",
+            "SAP",
+            "Excel",
+            "SQL"
+        ],
+        "responsibilities": [
+            "Manage budgets",
+            "Prepare financial reports",
+            "Ensure regulatory compliance"
+        ],
+        "status": "active"
+    },
+    {
+        "title": "Content Writer",
+        "location": "Uttara, Dhaka",
+        "jobType": "Contractual",
+        "category": "Marketing",
+        "applicationDeadline": "2024-12-25",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "We are looking for a talented Content Writer to create compelling content for our digital platforms.",
+        "company": "Munir soft.",
+        "requirements": [
+            "WordPress",
+            "SEO",
+            "Google Docs",
+            "Grammarly"
+        ],
+        "responsibilities": [
+            "Write blog posts",
+            "Create social media content",
+            "Develop email campaigns"
+        ],
+        "status": "active"
+    },
+    {
+        "title": "Teaching Assistant",
+        "location": "Chawkbazar, Chittagong",
+        "jobType": "Intern",
+        "category": "Teaching",
+        "applicationDeadline": "2024-12-22",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "Assist in preparing course materials and support teachers in classroom activities.",
+        "company": "Never Flixed.",
+        "requirements": [
+            "Google Slides",
+            "Zoom",
+            "MS Office",
+            "Google Docs"
+        ],
+        "responsibilities": [
+            "Assist in lesson planning",
+            "Support classroom management",
+            "Conduct tutoring sessions"
+        ],
+        "status": "active"
+    },
+    {
+        "title": "Project Manager",
+        "location": "Mirpur, Dhaka",
+        "jobType": "Hybrid",
+        "category": "Management",
+        "applicationDeadline": "2024-12-30",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "We are seeking a dynamic Project Manager to lead our development team and ensure successful project delivery.",
+        "company": "Nicola Tesla.",
+        "requirements": [
+            "JIRA",
+            "Trello",
+            "Slack",
+            "Agile Methodologies"
+        ],
+        "responsibilities": [
+            "Oversee project execution",
+            "Manage team workflows",
+            "Ensure timely project delivery"
+        ],
+        "status": "active"
+    },
+    {
+        "title": "Data Scientist",
+        "location": "Mohakhali, Dhaka",
+        "jobType": "Full-Time",
+        "category": "Data Science",
+        "applicationDeadline": "2024-12-28",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "Analyze large datasets to extract meaningful insights and develop predictive models.",
+        "company": "DataWorx Ltd",
+        "requirements": [
+            "Python",
+            "TensorFlow",
+            "SQL",
+            "Tableau"
+        ],
+        "responsibilities": [
+            "Develop predictive models",
+            "Clean and analyze data",
+            "Present data-driven insights"
+        ],
+        "status": "active"
+    },
+    {
+        "title": "UI/UX Designer",
+        "location": "Dhanmondi, Dhaka",
+        "jobType": "Remote",
+        "category": "Design",
+        "applicationDeadline": "2024-12-18",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "Create engaging user interfaces and improve user experience for our applications.",
+        "company": "Designify",
+        "requirements": [
+            "Figma",
+            "Adobe XD",
+            "HTML",
+            "CSS"
+        ],
+        "responsibilities": [
+            "Design prototypes",
+            "Conduct user research",
+            "Collaborate with developers"
+        ],
+        "status": "active"
+    },
+    {
+        "title": "DevOps Engineer",
+        "location": "Baridhara, Dhaka",
+        "jobType": "Full-Time",
+        "category": "Engineering",
+        "applicationDeadline": "2024-12-22",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "Build and maintain CI/CD pipelines and ensure reliable infrastructure.",
+        "company": "InfraOps",
+        "requirements": [
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "Terraform"
+        ],
+        "responsibilities": [
+            "Implement CI/CD",
+            "Monitor infrastructure",
+            "Automate deployment processes"
+        ],
+        "status": "active"
+    },
+    {
+        "title": "Mobile App Developer",
+        "location": "Bashundhara, Dhaka",
+        "jobType": "Hybrid",
+        "category": "Development",
+        "applicationDeadline": "2024-12-25",
+        "salaryRange": {
+            "min": "30k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "Develop and maintain mobile applications for Android and iOS platforms.",
+        "company": "AppCrafter",
+        "requirements": [
+            "Flutter",
+            "Kotlin",
+            "Swift",
+            "Firebase"
+        ],
+        "responsibilities": [
+            "Develop mobile apps",
+            "Ensure app performance",
+            "Collaborate with backend teams"
+        ],
+        "status": "active"
+    }
+]

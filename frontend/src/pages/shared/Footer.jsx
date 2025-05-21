@@ -5,11 +5,8 @@ const Footer = () => {
     <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
       <aside>
         <img src={logo} alt="logo" />
-        <h2 className="text-xl">
-          Call Us
-          <br />
-          <h3 className="text-xl text-blue-400">0123456789</h3>
-        </h2>
+        <h2 className="text-xl">Call Us</h2>
+        <h3 className="text-xl text-blue-400">0123456789</h3>
       </aside>
 
       <nav>
