@@ -9,6 +9,7 @@ import Login from "./pages/Login/Login";
 import PostJob from "./pages/PostJob/PostJob";
 import FindJobs from "./pages/FindJobs/FindJobs";
 import JobDetails from "./pages/JobDetails/JobDetails";
+import AuthProvider from "./context/AuthContext/AuthProvider";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 );

@@ -1,10 +1,32 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import AuthContext from "../../context/AuthContext/AuthContext";
 
 const Login = () => {
+  const { SignInUser } = useContext(AuthContext);
+  const navigator = useNavigate();
+  const handleSignIn = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    const user = { email, password };
+
+    console.log(user);
+
+    SignInUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        navigator("/")
+      })
+      .catch((errror) => {
+        console.log("ERROR", errror);
+      });
+  };
+
   return (
     <div className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      {/* Header Section */}
       <div className="bg-gradient-to-r from-purple-600 to-violet-600 py-8 md:py-5 h-30">
         <div className="container mx-auto px-4 md:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
@@ -20,15 +42,13 @@ const Login = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="container mx-auto px-4 md:px-8 py-4 md:pt-40">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
           Sign In
         </h1>
 
-        {/* Login Form */}
         <div className="max-w-md mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-4 md:p-6 border border-gray-700">
-          <form className="space-y-4">
+          <form onSubmit={handleSignIn} className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-200 mb-2">
                 Email

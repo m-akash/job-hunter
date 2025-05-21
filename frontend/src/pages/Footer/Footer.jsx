@@ -1,8 +1,17 @@
 import React from "react";
-
+import logo from "../../assets/logo/logo.png";
 const Footer = () => {
   return (
     <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+      <aside>
+        <img src={logo} alt="logo" />
+        <h2 className="text-xl">
+          Call Us
+          <br />
+          <h3 className="text-xl text-blue-400">0123456789</h3>
+        </h2>
+      </aside>
+
       <nav>
         <h6 className="footer-title">Services</h6>
         <a className="link link-hover">Branding</a>

@@ -1,10 +1,37 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import AuthContext from "../../context/AuthContext/AuthContext";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
+  const navigator = useNavigate();
+  const handleRegister = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const fName = form.firstName.value;
+    const lName = form.lastName.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    const regAs = form.registerAs.value;
+
+    const userAuth = { email, password };
+    const userData = { fName, lName, email, regAs };
+
+    console.log(userAuth);
+    console.log(userData);
+
+    createUser(email, password)
+      .then((res) => {
+        console.log(res.user);
+        navigator("/login");
+      })
+      .catch((error) => {
+        console.log("ERROR", error);
+      });
+  };
+
   return (
     <div className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      {/* Header Section */}
       <div className="bg-gradient-to-r from-purple-600 to-violet-600 py-8 md:py-5 h-30">
         <div className="container mx-auto px-4 md:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
@@ -20,15 +47,13 @@ const Register = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="container mx-auto px-4 md:px-8 py-8 md:py-12">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
           Create Your Account
         </h1>
 
-        {/* Registration Form */}
         <div className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-gray-700">
-          <form className="space-y-6">
+          <form onSubmit={handleRegister} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-200 mb-2">
@@ -86,7 +111,7 @@ const Register = () => {
                 title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
                 required
               />
-              <p className="validator-hint hidden text-sm text-gray-400 mt-2">
+              <span className="validator-hint hidden text-sm text-gray-400 mt-2">
                 Password must contain:
                 <ul className="list-disc list-inside mt-1">
                   <li>At least 8 characters</li>
@@ -94,7 +119,7 @@ const Register = () => {
                   <li>At least one lowercase letter</li>
                   <li>At least one uppercase letter</li>
                 </ul>
-              </p>
+              </span>
             </div>
 
             <div>
