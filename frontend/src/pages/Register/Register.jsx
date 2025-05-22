@@ -16,7 +16,7 @@ const Register = () => {
     const password = form.password.value;
     const regAs = form.registerAs.value;
 
-    const userAuth = { email, password };
+    const userAuth = { email };
     const userData = { fName, lName, email, regAs };
 
     console.log(userAuth);
@@ -25,6 +25,21 @@ const Register = () => {
     createUser(email, password)
       .then((res) => {
         console.log(res.user);
+        const newUser = { fName, lName, email, regAs };
+        fetch("http://localhost:3000/user", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(newUser),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            if (data.insertedId) {
+              alert("User created successfully");
+            }
+          });
         navigator("/login");
       })
       .catch((error) => {
@@ -39,7 +54,6 @@ const Register = () => {
       transition={{
         duration: 0.5,
         delay: 0.1,
-        // ease: [0, 0.71, 0.2, 1.01],
       }}
       className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
     >
@@ -155,7 +169,7 @@ const Register = () => {
             >
               Create Account
             </button>
-            
+
             <div className="divider">OR</div>
             <SocialLogin></SocialLogin>
 

@@ -7,7 +7,7 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
-const { MongoClient, ServerApiVersion } = require("mongodb");
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@testmongodb.urxadh3.mongodb.net/?retryWrites=true&w=majority&appName=TestMongoDB`;
 
 const client = new MongoClient(uri, {
@@ -31,6 +31,34 @@ async function run() {
     app.get("/jobs", async (req, res) => {
       const query = jobsData.find();
       const result = await query.toArray();
+      res.send(result);
+    });
+
+    app.get("/jobs/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const result = await jobsData.findOne(query);
+      res.send(result);
+    });
+
+    const userData = client.db("HireHubDB").collection("userInfo");
+
+    app.get("/user/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const result = await userData.findOne(query);
+      res.send(result);
+    });
+
+    app.post("/user", async (req, res) => {
+      const newUser = req.body;
+      const info = {
+        fName: newUser.fName,
+        lName: newUser.lName,
+        email: newUser.email,
+        regAs: newUser.regAs,
+      };
+      const result = userData.insertOne(info);
       res.send(result);
     });
   } finally {

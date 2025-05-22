@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { CiBookmark } from "react-icons/ci";
 import { CiCalendarDate } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { motion } from "framer-motion";
-
+import companyIcon from "../../assets/icons/office-building.png";
+import locationIcon from "../../assets/icons/location.png";
+import timeIcon from "../../assets/icons/clock.png";
+import moneyIcon from "../../assets/icons/save-money.png";
 const JobDetails = () => {
+  const job = useLoaderData();
+
   return (
     <motion.div
       initial={{ opacity: 1, scale: 0.5 }}
@@ -15,102 +20,110 @@ const JobDetails = () => {
       }}
       className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
     >
-      <div className="flex gap-4 sm:gap-6 bg-gray-400 text-black my-5 py-4 sm:py-5 px-4 sm:px-6 lg:px-10 border rounded-md">
-        <div className="flex flex-col gap-3 md:px-15 sm:gap-4 justify-between items-start w-full">
+      <div className="flex flex-col sm:flex-row gap-3 my-5 sm:gap-4 md:gap-6 bg-cyan-400 text-black py-3 sm:py-4 md:py-5 lg:py-6 px-3 sm:px-4 md:px-6 lg:px-8 border rounded-lg hover:shadow-lg transition-shadow duration-300">
+        <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 justify-between items-start w-full">
           <div className="flex flex-row justify-between items-start w-full">
-            <Link className="hover:text-white hover:text-xl">
-              <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">
-                Software Engineer(Backend)
+            <Link
+              to="/jobs"
+              className="hover:text-white transition-colors duration-300 max-w-[80%] sm:max-w-[90%]"
+            >
+              <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold truncate">
+                {job.title}
               </h2>
+            </Link>
+            <Link className="hover:bg-white/20 rounded-full p-1 sm:p-1.5 transition-colors duration-300 flex-shrink-0">
+              <CiBookmark className="text-lg sm:text-xl md:text-2xl" />
             </Link>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-between items-start w-full gap-3 sm:gap-0">
-            <div className="flex flex-wrap gap-2 sm:gap-4 items-start text-sm">
-              <span className="whitespace-nowrap">Uber</span>
-              <span className="whitespace-nowrap">London, UK</span>
-              <span className="whitespace-nowrap">10 hours ago</span>
-              <span className="whitespace-nowrap">$30-$45k</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 w-full">
+            <div className="flex items-center space-x-2 text-xs sm:text-sm md:text-base">
+              <img
+                src={companyIcon}
+                alt="Company"
+                className="w-4 h-4 sm:w-5 sm:h-5"
+              />
+              <span className="truncate">{job.company}</span>
             </div>
-            <div className="flex items-center gap-3 w-full sm:w-auto">
-              <Link className="w-full sm:w-auto">
-                <button className="btn btn-soft w-full sm:w-auto">
-                  Apply For Job
-                </button>
-              </Link>
-              <Link className="hover:border rounded-full p-1">
-                <CiBookmark className="text-xl sm:text-2xl" />
-              </Link>
+
+            <div className="flex items-center space-x-2 text-xs sm:text-sm md:text-base">
+              <img
+                src={locationIcon}
+                alt="Location"
+                className="w-4 h-4 sm:w-5 sm:h-5"
+              />
+              <span className="truncate">{job.location}</span>
+            </div>
+
+            <div className="flex items-center space-x-2 text-xs sm:text-sm md:text-base">
+              <img
+                src={timeIcon}
+                alt="Deadline"
+                className="w-4 h-4 sm:w-5 sm:h-5"
+              />
+              <span className="truncate">{job.applicationDeadline}</span>
+            </div>
+
+            <div className="flex items-center space-x-2 text-xs sm:text-sm md:text-base">
+              <img
+                src={moneyIcon}
+                alt="Salary"
+                className="w-4 h-4 sm:w-5 sm:h-5"
+              />
+              <span className="truncate">
+                {job.salaryRange.min} - {job.salaryRange.max}{" "}
+                {job.salaryRange.currency}
+              </span>
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-2 sm:gap-4 items-start mt-2">
-            <span className="text-xs sm:text-sm bg-blue-200 opacity-150 text-blue-800 rounded-xl py-1 sm:py-2 px-3 sm:px-6 whitespace-nowrap">
-              Full-Time
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-3 items-start w-full">
+            {job.requirements.map((req, index) => (
+              <span
+                key={index}
+                className="text-xs sm:text-sm bg-cyan-600 opacity-150 text-gray-100 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4 truncate"
+              >
+                {req}
+              </span>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-3 items-center w-full">
+            <span className="text-xs sm:text-sm bg-blue-200 opacity-150 text-blue-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
+              {job.jobType}
             </span>
-            <span className="text-xs sm:text-sm bg-green-200 opacity-150 text-green-800 rounded-xl py-1 sm:py-2 px-3 sm:px-6 whitespace-nowrap">
-              Private
+            <span className="text-xs sm:text-sm bg-green-200 opacity-150 text-green-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
+              {job.status}
             </span>
-            <span className="text-xs sm:text-sm bg-yellow-200 opacity-150 text-blue-800 rounded-xl py-1 sm:py-2 px-3 sm:px-6 whitespace-nowrap">
-              Urgent
+            <span className="text-xs sm:text-sm bg-yellow-200 opacity-150 text-blue-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
+              {job.category}
             </span>
+            <Link
+              to={`/jobs/${job._id}`}
+              className="btn btn-soft btn-success rounded-lg sm:rounded-xl px-3 sm:px-4 md:px-6 lg:px-8 ml-auto mt-2 sm:mt-0"
+            >
+              <button className="text-xs sm:text-sm md:text-base whitespace-nowrap">
+                Apply For Job
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-5 p-4 sm:p-6 lg:p-10">
         <div className="bg-blue-50 p-6 rounded-md shadow-md">
           <h2 className="text-xl sm:text-2xl font-bold my-5 text-black">
             Job Description
           </h2>
-          <p className="text-gray-700 font-thin mb-6">
-            As a Product Designer, you will work within a Product Delivery Team
-            fused with UX, engineering, product and data talent. You will help
-            the team design beautiful interfaces that solve business challenges
-            for our clients. We work with a number of Tier 1 banks on building
-            web-based applications for AML, KYC and Sanctions List management
-            workflows. This role is ideal if you are looking to segue your
-            career into the FinTech or Big Data arenas.
-          </p>
+          <p className="text-gray-700 font-thin mb-6">{job.description}</p>
           <h2 className="text-xl sm:text-2xl font-bold my-4 text-black">
             Key Responsibilities
           </h2>
 
           <ul className="md:text-xs list-disc space-y-5 font-thin list-inside text-gray-700">
-            <li>
-              Be involved in every step of the product design cycle from
-              discovery to developer handoff and user acceptance testing.
-            </li>
-            <li>
-              Work with BAs, product managers and tech teams to lead the Product
-              Design
-            </li>
-            <li>
-              Maintain quality of the design process and ensure that when
-              designs are translated into code they accurately reflect the
-              design specifications.
-            </li>
-            <li>
-              Accurately estimate design tickets during planning sessions.
-            </li>
-            <li>
-              Contribute to sketching sessions involving non-designersCreate,
-              iterate and maintain UI deliverables including sketch files, style
-              guides, high fidelity prototypes, micro interaction specifications
-              and pattern libraries.
-            </li>
-            <li>
-              Ensure design choices are data led by identifying assumptions to
-              test each sprint, and work with the analysts in your team to plan
-              moderated usability test sessions.
-            </li>
-            <li>
-              Design pixel perfect responsive UI's and understand that adopting
-              common interface patterns is better for UX than reinventing the
-              wheel
-            </li>
-            <li>
-              Present your work to the wider business at Show & Tell sessions.
-            </li>
+            {job.responsibilities.map((res) => (
+              <li>{res};</li>
+            ))}
           </ul>
 
           <h2 className="text-xl sm:text-2xl font-bold my-5 text-black">
@@ -173,7 +186,7 @@ const JobDetails = () => {
               <CiCalendarDate className="text-2xl" />
               <div>
                 <strong>Expiration date:</strong>
-                <p>April 06, 2021</p>
+                <p>{job.applicationDeadline}</p>
               </div>
             </div>
 
@@ -181,7 +194,7 @@ const JobDetails = () => {
               <CiLocationOn className="text-2xl" />
               <div>
                 <strong>Location:</strong>
-                <p>London, UK</p>
+                <p>{job.location}</p>
               </div>
             </div>
 
@@ -189,7 +202,7 @@ const JobDetails = () => {
               <CiCalendarDate className="text-2xl" />
               <div>
                 <strong>Job Title:</strong>
-                <p>Developer</p>
+                <p>{job.title}</p>
               </div>
             </div>
 
@@ -204,16 +217,12 @@ const JobDetails = () => {
             <div className="flex gap-5 justify-start items-start">
               <CiCalendarDate className="text-2xl" />
               <div>
-                <strong>Rate:</strong>
-                <p>$15 - $25 / hour</p>
-              </div>
-            </div>
-
-            <div className="flex gap-5 justify-start items-start">
-              <CiCalendarDate className="text-2xl" />
-              <div>
-                <strong>Salary:</strong>
-                <p>$35k - $45k</p>
+                <strong>Monthly:</strong>
+                <p>
+                  {" "}
+                  {job.salaryRange.min} - {job.salaryRange.max}{" "}
+                  {job.salaryRange.currency}
+                </p>
               </div>
             </div>
           </div>

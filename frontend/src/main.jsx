@@ -9,6 +9,12 @@ import Login from "./pages/Login/Login";
 import PostJob from "./pages/PostJob/PostJob";
 import JobDetails from "./pages/JobDetails/JobDetails";
 import AuthProvider from "./context/AuthContext/AuthProvider";
+import Jobs from "./pages/Jobs/Jobs";
+import PrivateRouter from "./routes/PrivateRouter";
+import Candidates from "./pages/Candidates/Candidates";
+import Employers from "./pages/Employers/Employers";
+import Blog from "./pages/Blog/Blog";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -21,20 +27,47 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
+        path: "/candidates",
+        element: <Candidates></Candidates>,
+      },
+      {
+        path: "/employers",
+        element: <Employers></Employers>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs></ContactUs>,
+      },
+      {
         path: "/register",
         element: <Register></Register>,
       },
       {
         path: "/login",
-        element: <Login></Login>,
+        element:  <Login></Login>,
+      },
+      {
+        path: "/jobs",
+        element: <Jobs></Jobs>,
       },
       {
         path: "/postjob",
         element: <PostJob></PostJob>,
       },
       {
-        path: "/jobDetails",
-        element: <JobDetails></JobDetails>,
+        path: "/jobs/:id",
+        element: (
+          <PrivateRouter>
+            {" "}
+            <JobDetails></JobDetails>{" "}
+          </PrivateRouter>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/jobs/${params.id}`),
       },
     ],
   },

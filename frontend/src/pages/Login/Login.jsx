@@ -1,12 +1,16 @@
 import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext/AuthContext";
 import { motion } from "framer-motion";
 import SocialLogin from "../shared/SocialLogin";
 
 const Login = () => {
   const { SignInUser } = useContext(AuthContext);
-  const navigator = useNavigate();
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state || "/";
+
   const handleSignIn = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -20,7 +24,7 @@ const Login = () => {
     SignInUser(email, password)
       .then((result) => {
         console.log(result.user);
-        navigator("/");
+        navigate(from);
       })
       .catch((errror) => {
         console.log("ERROR", errror);
