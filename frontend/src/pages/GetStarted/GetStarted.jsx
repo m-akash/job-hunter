@@ -47,7 +47,7 @@ const GetStarted = () => {
               <br />
             </div>
           </div>
-          <Link to="/login">
+          <Link to="/jobs">
             <button className="btn btn-primary">Get Started</button>
           </Link>
         </div>

@@ -8,7 +8,21 @@ import locationIcon from "../../assets/icons/location.png";
 import timeIcon from "../../assets/icons/clock.png";
 import moneyIcon from "../../assets/icons/save-money.png";
 const JobDetails = () => {
-  const job = useLoaderData();
+  const {
+    _id,
+    title,
+    company,
+    location,
+    jobType,
+    jobPosition,
+    category,
+    applicationDeadline,
+    salaryRange,
+    description,
+    requirements,
+    responsibilities,
+    status,
+  } = useLoaderData();
 
   return (
     <motion.div
@@ -28,7 +42,7 @@ const JobDetails = () => {
               className="hover:text-white transition-colors duration-300 max-w-[80%] sm:max-w-[90%]"
             >
               <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold truncate">
-                {job.title}
+                {title}
               </h2>
             </Link>
             <Link className="hover:bg-white/20 rounded-full p-1 sm:p-1.5 transition-colors duration-300 flex-shrink-0">
@@ -43,7 +57,7 @@ const JobDetails = () => {
                 alt="Company"
                 className="w-4 h-4 sm:w-5 sm:h-5"
               />
-              <span className="truncate">{job.company}</span>
+              <span className="truncate">{company}</span>
             </div>
 
             <div className="flex items-center space-x-2 text-xs sm:text-sm md:text-base">
@@ -52,7 +66,7 @@ const JobDetails = () => {
                 alt="Location"
                 className="w-4 h-4 sm:w-5 sm:h-5"
               />
-              <span className="truncate">{job.location}</span>
+              <span className="truncate">{location}</span>
             </div>
 
             <div className="flex items-center space-x-2 text-xs sm:text-sm md:text-base">
@@ -61,7 +75,7 @@ const JobDetails = () => {
                 alt="Deadline"
                 className="w-4 h-4 sm:w-5 sm:h-5"
               />
-              <span className="truncate">{job.applicationDeadline}</span>
+              <span className="truncate">{applicationDeadline}</span>
             </div>
 
             <div className="flex items-center space-x-2 text-xs sm:text-sm md:text-base">
@@ -71,14 +85,13 @@ const JobDetails = () => {
                 className="w-4 h-4 sm:w-5 sm:h-5"
               />
               <span className="truncate">
-                {job.salaryRange.min} - {job.salaryRange.max}{" "}
-                {job.salaryRange.currency}
+                {salaryRange.min} - {salaryRange.max} {salaryRange.currency}
               </span>
             </div>
           </div>
 
           <div className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-3 items-start w-full">
-            {job.requirements.map((req, index) => (
+            {requirements.map((req, index) => (
               <span
                 key={index}
                 className="text-xs sm:text-sm bg-cyan-600 opacity-150 text-gray-100 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4 truncate"
@@ -90,16 +103,16 @@ const JobDetails = () => {
 
           <div className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-3 items-center w-full">
             <span className="text-xs sm:text-sm bg-blue-200 opacity-150 text-blue-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
-              {job.jobType}
+              {jobType}
             </span>
             <span className="text-xs sm:text-sm bg-green-200 opacity-150 text-green-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
-              {job.status}
+              {status}
             </span>
             <span className="text-xs sm:text-sm bg-yellow-200 opacity-150 text-blue-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
-              {job.category}
+              {category}
             </span>
             <Link
-              to={`/jobs/${job._id}`}
+              to={`/applyjob/${_id}`}
               className="btn btn-soft btn-success rounded-lg sm:rounded-xl px-3 sm:px-4 md:px-6 lg:px-8 ml-auto mt-2 sm:mt-0"
             >
               <button className="text-xs sm:text-sm md:text-base whitespace-nowrap">
@@ -115,13 +128,13 @@ const JobDetails = () => {
           <h2 className="text-xl sm:text-2xl font-bold my-5 text-black">
             Job Description
           </h2>
-          <p className="text-gray-700 font-thin mb-6">{job.description}</p>
+          <p className="text-gray-700 font-thin mb-6">{description}</p>
           <h2 className="text-xl sm:text-2xl font-bold my-4 text-black">
             Key Responsibilities
           </h2>
 
           <ul className="md:text-xs list-disc space-y-5 font-thin list-inside text-gray-700">
-            {job.responsibilities.map((res) => (
+            {responsibilities.map((res) => (
               <li>{res};</li>
             ))}
           </ul>
@@ -186,7 +199,7 @@ const JobDetails = () => {
               <CiCalendarDate className="text-2xl" />
               <div>
                 <strong>Expiration date:</strong>
-                <p>{job.applicationDeadline}</p>
+                <p>{applicationDeadline}</p>
               </div>
             </div>
 
@@ -194,7 +207,7 @@ const JobDetails = () => {
               <CiLocationOn className="text-2xl" />
               <div>
                 <strong>Location:</strong>
-                <p>{job.location}</p>
+                <p>{location}</p>
               </div>
             </div>
 
@@ -202,7 +215,23 @@ const JobDetails = () => {
               <CiCalendarDate className="text-2xl" />
               <div>
                 <strong>Job Title:</strong>
-                <p>{job.title}</p>
+                <p>{title}</p>
+              </div>
+            </div>
+
+            <div className="flex gap-5 justify-start items-start">
+              <CiCalendarDate className="text-2xl" />
+              <div>
+                <strong>Job Type:</strong>
+                <p>{jobType}</p>
+              </div>
+            </div>
+
+            <div className="flex gap-5 justify-start items-start">
+              <CiCalendarDate className="text-2xl" />
+              <div>
+                <strong>Job Position:</strong>
+                <p>{jobPosition}</p>
               </div>
             </div>
 
@@ -220,8 +249,7 @@ const JobDetails = () => {
                 <strong>Monthly:</strong>
                 <p>
                   {" "}
-                  {job.salaryRange.min} - {job.salaryRange.max}{" "}
-                  {job.salaryRange.currency}
+                  {salaryRange.min} - {salaryRange.max} {salaryRange.currency}
                 </p>
               </div>
             </div>

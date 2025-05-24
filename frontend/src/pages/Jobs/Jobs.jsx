@@ -11,6 +11,7 @@ const Jobs = () => {
         setJobs(data);
       });
   }, []);
+  
   return (
     <div>
       {jobs.map((job) => (

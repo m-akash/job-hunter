@@ -12,6 +12,7 @@ const JobsCard = ({ job }) => {
     company,
     location,
     jobType,
+    jobPosition,
     category,
     applicationDeadline,
     salaryRange,
@@ -93,6 +94,9 @@ const JobsCard = ({ job }) => {
             <span className="text-xs sm:text-sm bg-blue-200 opacity-150 text-blue-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
               {jobType}
             </span>
+            <span className="text-xs sm:text-sm bg-blue-200 opacity-150 text-blue-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
+              {jobPosition}
+            </span>
             <span className="text-xs sm:text-sm bg-green-200 opacity-150 text-green-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
               {status}
             </span>
@@ -104,7 +108,7 @@ const JobsCard = ({ job }) => {
               className="btn btn-soft btn-success rounded-lg sm:rounded-xl px-3 sm:px-4 md:px-6 lg:px-8 ml-auto mt-2 sm:mt-0"
             >
               <button className="text-xs sm:text-sm md:text-base whitespace-nowrap">
-                Apply
+                See Details
               </button>
             </Link>
           </div>

@@ -186,6 +186,24 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link
+                      to="/myApplications"
+                      className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300"
+                    >
+                      <CgProfile className="h-5 w-5" />
+                      Applied Jobs List
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/myPostedJobs"
+                      className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300"
+                    >
+                      <CgProfile className="h-5 w-5" />
+                      My Posted Jobs
+                    </Link>
+                  </li>
+                  <li>
                     <button
                       onClick={handleSignOut}
                       className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300 text-red-500"

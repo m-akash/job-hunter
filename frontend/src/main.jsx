@@ -15,6 +15,8 @@ import Candidates from "./pages/Candidates/Candidates";
 import Employers from "./pages/Employers/Employers";
 import Blog from "./pages/Blog/Blog";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import JobApply from "./pages/JobApply/JobApply";
+import AppliedJobs from "./pages/AppliedJobs/AppliedJobs";
 
 const router = createBrowserRouter([
   {
@@ -48,15 +50,20 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element:  <Login></Login>,
+        element: <Login></Login>,
       },
       {
         path: "/jobs",
         element: <Jobs></Jobs>,
       },
-      {
+      { 
         path: "/postjob",
-        element: <PostJob></PostJob>,
+        element: (
+          <PrivateRouter>
+            {" "}
+            <PostJob></PostJob>
+          </PrivateRouter>
+        ),
       },
       {
         path: "/jobs/:id",
@@ -68,6 +75,22 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(`http://localhost:3000/jobs/${params.id}`),
+      },
+      {
+        path: "/applyjob/:id",
+        element: (
+          <PrivateRouter>
+            <JobApply></JobApply>
+          </PrivateRouter>
+        ),
+      },
+      {
+        path: "/myApplications",
+        element: (
+          <PrivateRouter>
+            <AppliedJobs></AppliedJobs>
+          </PrivateRouter>
+        ),
       },
     ],
   },

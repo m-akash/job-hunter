@@ -27,10 +27,19 @@ async function run() {
     );
 
     const jobsData = client.db("HireHubDB").collection("jobs");
+    const jobApplicationData = client
+      .db("HireHubDB")
+      .collection("jobApplication");
 
     app.get("/jobs", async (req, res) => {
       const query = jobsData.find();
       const result = await query.toArray();
+      res.send(result);
+    });
+
+    app.post("/jobs", async (req, res) => {
+      const job = req.body;
+      const result = await jobsData.insertOne(job);
       res.send(result);
     });
 
@@ -58,7 +67,33 @@ async function run() {
         email: newUser.email,
         regAs: newUser.regAs,
       };
-      const result = userData.insertOne(info);
+      const result = await userData.insertOne(info);
+      res.send(result);
+    });
+
+    app.get("/job-applications", async (req, res) => {
+      const email = req.query.email;
+      const query = {
+        applicant_email: email,
+      };
+      const result = await jobApplicationData.find(query).toArray();
+      for (const application of result) {
+        console.log(application.job_id);
+
+        const query1 = { _id: new ObjectId(application.job_id) };
+        const job = await jobsData.findOne(query1);
+        if (job) {
+          application.title = job.title;
+          application.company = job.company;
+          application.location = job.location;
+        }
+      }
+      res.send(result);
+    });
+
+    app.post("/job-application", async (req, res) => {
+      const applicationData = req.body;
+      const result = await jobApplicationData.insertOne(applicationData);
       res.send(result);
     });
   } finally {
