@@ -1,5 +1,6 @@
 [
     {
+        "hr_mail": "hr1@gmail.com",
         "title": "Software Engineer",
         "location": "Halishohor, Chittagong",
         "jobType": "Onsite",
@@ -27,6 +28,7 @@
         "status": "active"
     },
     {
+        "hr_mail": "hr1@gmail.com",
         "title": "Marketing Specialist",
         "location": "Banani, Dhaka",
         "jobType": "Onsite",
@@ -54,6 +56,7 @@
         "status": "active"
     },
     {
+        "hr_mail": "hr1@gmail.com",
         "title": "Finance Manager",
         "location": "Gulshan, Dhaka",
         "jobType": "Onsite",
@@ -81,6 +84,7 @@
         "status": "active"
     },
     {
+        "hr_mail": "hr2@gmail.com",
         "title": "Content Writer",
         "location": "Uttara, Dhaka",
         "jobType": "Onsite",
@@ -108,6 +112,7 @@
         "status": "active"
     },
     {
+        "hr_mail": "hr2@gmail.com",
         "title": "Teaching Assistant",
         "location": "Chawkbazar, Chittagong",
         "jobType": "Onsite",
@@ -135,6 +140,7 @@
         "status": "active"
     },
     {
+        "hr_mail": "hr2@gmail.com",
         "title": "Project Manager",
         "location": "Mirpur, Dhaka",
         "jobType": "Onsite",
@@ -162,6 +168,7 @@
         "status": "active"
     },
     {
+        "hr_mail": "hr3@gmail.com",
         "title": "Data Scientist",
         "location": "Mohakhali, Dhaka",
         "jobType": "Onsite",
@@ -189,6 +196,7 @@
         "status": "active"
     },
     {
+        "hr_mail": "hr3@gmail.com",
         "title": "UI/UX Designer",
         "location": "Dhanmondi, Dhaka",
         "jobType": "Onsite",
@@ -216,6 +224,7 @@
         "status": "active"
     },
     {
+        "hr_mail": "hr3@gmail.com",
         "title": "DevOps Engineer",
         "location": "Baridhara, Dhaka",
         "jobType": "Onsite",
@@ -243,6 +252,7 @@
         "status": "active"
     },
     {
+        "hr_mail": "hr1@gmail.com",
         "title": "Mobile App Developer",
         "location": "Bashundhara, Dhaka",
         "jobType": "Onsite",

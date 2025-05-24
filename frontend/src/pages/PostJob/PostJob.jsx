@@ -1,8 +1,10 @@
 import React from "react";
 import { data, Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import useAuth from "../../hooks/useAuth";
 
 const PostJob = () => {
+  const { user } = useAuth();
   const handlePostJob = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -49,6 +51,20 @@ const PostJob = () => {
         >
           <form onSubmit={handlePostJob} className="space-y-6">
             <h1 className="text-xl  font-bold text-white mb-8">Post Job</h1>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-200 mb-2">
+                Email
+              </label>
+              <input
+                type="email"
+                name="hr_mail"
+                defaultValue={user.email}
+                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 transition-colors text-white placeholder-gray-400"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
 
             <div>
               <label className="block text-sm font-medium text-gray-200 mb-2">
