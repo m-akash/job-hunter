@@ -1,10 +1,12 @@
 import React from "react";
-import { data, Link } from "react-router-dom";
+import { data, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import useAuth from "../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const PostJob = () => {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const handlePostJob = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -25,7 +27,14 @@ const PostJob = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Added job successfully!",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        navigate("/myPostedJobs");
       });
   };
   return (

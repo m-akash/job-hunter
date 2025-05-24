@@ -27,9 +27,29 @@ async function run() {
     );
 
     const jobsData = client.db("HireHubDB").collection("jobs");
+    const userData = client.db("HireHubDB").collection("userInfo");
     const jobApplicationData = client
       .db("HireHubDB")
       .collection("jobApplication");
+
+    app.get("/user/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const result = await userData.findOne(query);
+      res.send(result);
+    });
+
+    app.post("/user", async (req, res) => {
+      const newUser = req.body;
+      const info = {
+        fName: newUser.fName,
+        lName: newUser.lName,
+        email: newUser.email,
+        regAs: newUser.regAs,
+      };
+      const result = await userData.insertOne(info);
+      res.send(result);
+    });
 
     app.get("/jobs", async (req, res) => {
       const email = req.query.email;
@@ -57,24 +77,10 @@ async function run() {
       res.send(result);
     });
 
-    const userData = client.db("HireHubDB").collection("userInfo");
-
-    app.get("/user/:id", async (req, res) => {
-      const id = req.params.id;
-      const query = { _id: new ObjectId(id) };
-      const result = await userData.findOne(query);
-      res.send(result);
-    });
-
-    app.post("/user", async (req, res) => {
-      const newUser = req.body;
-      const info = {
-        fName: newUser.fName,
-        lName: newUser.lName,
-        email: newUser.email,
-        regAs: newUser.regAs,
-      };
-      const result = await userData.insertOne(info);
+    app.get("/job-application/jobs/:job_id", async (req, res) => {
+      const jobId = req.params.job_id;
+      const query = { job_id: jobId };
+      const result = await jobApplicationData.find(query).toArray();
       res.send(result);
     });
 
@@ -101,6 +107,39 @@ async function run() {
     app.post("/job-application", async (req, res) => {
       const applicationData = req.body;
       const result = await jobApplicationData.insertOne(applicationData);
+
+      const query = { _id: new ObjectId(applicationData.job_id) };
+      const job = await jobsData.findOne(query);
+      let cnt = 0;
+      if (job.applicationCount) {
+        cnt = job.applicationCount + 1;
+      } else {
+        cnt = 1;
+      }
+
+      const filter = { _id: new ObjectId(applicationData.job_id) };
+      const updateDoc = {
+        $set: {
+          applicationCount: cnt,
+        },
+      };
+
+      const updateResult = await jobsData.updateOne(filter, updateDoc);
+
+      res.send(result);
+    });
+
+    app.patch("/job-application/:id", async (req, res) => {
+      const id = req.params.id;
+      const body = req.body;
+
+      const filter = { _id: new ObjectId(id) };
+      const updateDoc = {
+        $set: {
+          status: body.status,
+        },
+      };
+      const result = await jobApplicationData.updateOne(filter, updateDoc);
       res.send(result);
     });
   } finally {
