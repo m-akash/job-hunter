@@ -5,6 +5,7 @@ import Categories from "../Categories/Categories";
 import FeatureJobs from "../FeatureJobs/FeatureJobs";
 import GetStarted from "../GetStarted/GetStarted";
 import Recruiting from "../Recruiting/Recruiting";
+import Jobs from "../Jobs/Jobs";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Banner></Banner>
       <Categories></Categories>
       <FeatureJobs></FeatureJobs>
+
       <GetStarted></GetStarted>
       <Recruiting></Recruiting>
     </div>

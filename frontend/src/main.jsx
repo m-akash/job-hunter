@@ -20,6 +20,7 @@ import AppliedJobs from "./pages/AppliedJobs/AppliedJobs";
 import MyPostedJobs from "./pages/MyPostedJobs/MyPostedJobs";
 import ViewApplications from "./pages/ViewApplications/ViewApplications";
 import Profile from "./pages/Profile/Profile";
+import FeatureJobs from "./pages/FeatureJobs/FeatureJobs";
 
 const router = createBrowserRouter([
   {
@@ -66,6 +67,12 @@ const router = createBrowserRouter([
       {
         path: "/jobs",
         element: <Jobs></Jobs>,
+        // loader: () => fetch("http://localhost:3000/job-count"),
+      },
+      {
+        path: "/featureJobs",
+        element: <FeatureJobs></FeatureJobs>,
+        // loader: () => fetch("http://localhost:3000/job-count"),
       },
       {
         path: "/postjob",

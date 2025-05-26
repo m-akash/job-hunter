@@ -78,6 +78,7 @@ async function run() {
     });
     //End JWT
 
+    //Start User
     app.get("/user/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
@@ -103,6 +104,9 @@ async function run() {
       res.send(result);
     });
 
+    //End User
+
+    //Start Jobs
     app.get("/jobs", async (req, res) => {
       const email = req.query.email;
       let query = {};
@@ -114,6 +118,11 @@ async function run() {
       const cursor = jobsData.find(query);
       const result = await cursor.toArray();
       res.send(result);
+    });
+
+    app.get("/job-count", async (req, res) => {
+      const count = await jobsData.estimatedDocumentCount();
+      res.send({ count });
     });
 
     app.post("/jobs", async (req, res) => {
@@ -197,6 +206,8 @@ async function run() {
       const result = await jobApplicationData.updateOne(filter, updateDoc);
       res.send(result);
     });
+
+    //End Jobs
   } finally {
     // await client.close();
   }

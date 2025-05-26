@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { CiBookmark } from "react-icons/ci";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -8,6 +8,12 @@ import FeatureJobsCard from "./FeatureJobsCard";
 
 const FeatureJobs = () => {
   const [jobs, setJobs] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const cardsPerPage = 6;
+  const numberOfPages = Math.ceil(jobs.length / cardsPerPage);
+
+  const pages = [...Array(numberOfPages).keys()];
+
   useEffect(() => {
     fetch("http://localhost:3000/jobs")
       .then((res) => res.json())
@@ -39,10 +45,24 @@ const FeatureJobs = () => {
           <FeatureJobsCard key={job._id} job={job}></FeatureJobsCard>
         ))}
       </div>
-      <div className="flex justify-center items-center mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+      {/* <div className="flex justify-center items-center mt-6 sm:mt-8 md:mt-10 lg:mt-12">
         <button className="btn btn-primary text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-1.5 sm:py-2 md:py-3 rounded-lg hover:shadow-lg transition-all duration-300">
           Load More Listing
         </button>
+      </div> */}
+
+      <div className="join flex flex-row items-center justify-center space-x-2 mt-10">
+        {pages.map((page) => (
+          <input
+            onClick={() => setCurrentPage(page)}
+            key={page}
+            className="join-item btn btn-square"
+            type="radio"
+            name="options"
+            aria-label={page}
+            checked="checked"
+          />
+        ))}
       </div>
     </motion.div>
   );
