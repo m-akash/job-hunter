@@ -55,6 +55,7 @@ async function run() {
       .db("HireHubDB")
       .collection("jobApplication");
 
+    //Start JWT
     app.post("/jwt", async (req, res) => {
       const user = req.body;
       const token = jwt.sign(user, process.env.SECRET_KEY, { expiresIn: "1h" });
@@ -67,6 +68,16 @@ async function run() {
         .send({ success: true });
     });
 
+    app.post("/logout", async (req, res) => {
+      res
+        .clearCookie("token", {
+          httpOnly: true,
+          secure: false,
+        })
+        .send({ success: true });
+    });
+    //End JWT
+
     app.get("/user/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
@@ -74,11 +85,17 @@ async function run() {
       res.send(result);
     });
 
+    app.get("/user", async (req, res) => {
+      const email = req.query.email;
+      const query = { email: email };
+      const result = await userData.find(query).toArray();
+      res.send(result);
+    });
+
     app.post("/user", async (req, res) => {
       const newUser = req.body;
       const info = {
-        fName: newUser.fName,
-        lName: newUser.lName,
+        name: newUser.name,
         email: newUser.email,
         regAs: newUser.regAs,
       };

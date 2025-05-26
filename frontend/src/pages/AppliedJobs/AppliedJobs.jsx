@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { data, Link, useLoaderData, useParams } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import axios from "axios";
+import useAxiosSecure from "../../hooks/useAxiosSecure";
 
 const AppliedJobs = () => {
   const [appliedJobs, setAppliedJobs] = useState([]);
   const { user } = useAuth();
+  const axiosSecure = useAxiosSecure();
 
   useEffect(() => {
-    axios
-      .get(`http://localhost:3000/job-applications?email=${user.email}`, {
-        withCredentials: true,
-      })
-      .then((res) => {
-        console.log(setAppliedJobs(res.data));
-      });
-  }, [user.email]);
+    axiosSecure.get(`/job-applications?email=${user.email}`).then((res) => {
+      setAppliedJobs(res.data);
+    });
+  }, [user.email, axiosSecure]);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -30,7 +27,7 @@ const AppliedJobs = () => {
             <thead className="bg-gray-50">
               <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Job ID
+                  #
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Job Title
@@ -47,13 +44,13 @@ const AppliedJobs = () => {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
-              {appliedJobs.map((job) => (
+              {appliedJobs.map((job, index) => (
                 <tr
                   key={job._id}
                   className="hover:bg-gray-50 transition-colors duration-200"
                 >
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    {job._id}
+                    {index + 1}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                     {job.title}

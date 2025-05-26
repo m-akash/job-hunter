@@ -20,14 +20,8 @@ const Login = () => {
 
     SignInUser(email, password)
       .then((result) => {
-        console.log(result.user.email);
-        const user = { email: email };
-        axios
-          .post("http://localhost:3000/jwt", user, { withCredentials: true  })
-          .then((res) => {
-            console.log(res.data);
-          });
-        // navigate(from);
+        console.log(result.user);
+        navigate(from);
       })
       .catch((errror) => {
         console.log("ERROR", errror);

@@ -1,14 +1,47 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { BiLogOut } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import singUpIcon from "../../assets/icons/signUp.png";
 
 import logo from "../../assets/logo/logo.png";
-import AuthContext from "../../context/AuthContext/AuthContext";
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
-  const { user, SignOutUser } = useContext(AuthContext);
+  const [userData, setUserData] = useState(null);
+  const { user, SignOutUser, loading } = useAuth();
+
+  useEffect(() => {
+    if (user?.email) {
+      fetch(`http://localhost:3000/user?email=${user.email}`, {
+        method: "GET",
+        headers: {
+          "content-type": "application/json",
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data && data.length > 0) {
+            setUserData(data[0]);
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching user data:", error);
+        });
+    }
+  }, [user?.email]);
+
+  if (loading) {
+    console.log("");
+  }
+
+  if (!user) {
+    console.log();
+  }
+
+  if (!userData) {
+    console.log();
+  }
 
   const handleSignOut = () => {
     SignOutUser()
@@ -149,8 +182,8 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <div className="flex items-center gap-2 md:gap-4">
-          {user ? (
+        <div className="flex items-center gap-2 md:gap-4 ">
+          {user && userData ? (
             <>
               <Link
                 to="/postjob"
@@ -168,8 +201,7 @@ const Navbar = () => {
                 >
                   <CgProfile className="h-10 w-15 text-primary" />
                   <span className="text-sm md:text-base font-medium bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                    {/* There is a bug, will solve later  */}
-                    {user.displayName || user.email.split("@gmail.com")}
+                    {user.displayName || userData?.name}
                   </span>
                 </div>
                 <ul
@@ -178,7 +210,7 @@ const Navbar = () => {
                 >
                   <li>
                     <Link
-                      to="/profile"
+                      to="/user"
                       className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300"
                     >
                       <CgProfile className="h-5 w-5" />
@@ -218,12 +250,12 @@ const Navbar = () => {
           ) : (
             <>
               <Link
-                to="/register"
+                to="/login"
                 className="btn btn-soft btn-sm md:btn-md px-3 md:px-6 hover:scale-105 transition-all duration-300"
               >
                 <img className="w-4" src={singUpIcon} alt="" />
                 <button className="hidden md:inline ml-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Sign Up
+                  Login / Register
                 </button>
               </Link>
             </>

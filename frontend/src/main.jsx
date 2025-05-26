@@ -19,6 +19,7 @@ import JobApply from "./pages/JobApply/JobApply";
 import AppliedJobs from "./pages/AppliedJobs/AppliedJobs";
 import MyPostedJobs from "./pages/MyPostedJobs/MyPostedJobs";
 import ViewApplications from "./pages/ViewApplications/ViewApplications";
+import Profile from "./pages/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>,
+      },
+      {
+        path: "/user",
+        element: (
+          <PrivateRouter>
+            <Profile></Profile>
+          </PrivateRouter>
+        ),
       },
       {
         path: "/jobs",

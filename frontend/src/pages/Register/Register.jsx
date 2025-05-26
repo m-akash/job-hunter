@@ -10,14 +10,13 @@ const Register = () => {
   const handleRegister = (event) => {
     event.preventDefault();
     const form = event.target;
-    const fName = form.firstName.value;
-    const lName = form.lastName.value;
+    const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
     const regAs = form.registerAs.value;
 
     const userAuth = { email };
-    const userData = { fName, lName, email, regAs };
+    const userData = { name, email, regAs };
 
     console.log(userAuth);
     console.log(userData);
@@ -25,7 +24,7 @@ const Register = () => {
     createUser(email, password)
       .then((res) => {
         console.log(res.user);
-        const newUser = { fName, lName, email, regAs };
+        const newUser = { name, email, regAs };
         fetch("http://localhost:3000/user", {
           method: "POST",
           headers: {
@@ -79,31 +78,18 @@ const Register = () => {
 
         <div className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-gray-700">
           <form onSubmit={handleRegister} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-200 mb-2">
-                  First Name
-                </label>
-                <input
-                  type="text"
-                  name="firstName"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-200 mb-2">
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  name="lastName"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-200 mb-2">
+                Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                minLength="3"
+                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                placeholder="Enter your name"
+                required
+              />
             </div>
 
             <div>
