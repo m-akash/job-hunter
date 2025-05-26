@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const MyPostedJobs = () => {
   const [jobs, setJobs] = useState([]);

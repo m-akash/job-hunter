@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { data, Link, useLocation, useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext/AuthContext";
 import { motion } from "framer-motion";
 import SocialLogin from "../shared/SocialLogin";
+import axios from "axios";
 
 const Login = () => {
   const { SignInUser } = useContext(AuthContext);
@@ -17,14 +18,16 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-    const user = { email, password };
-
-    console.log(user);
-
     SignInUser(email, password)
       .then((result) => {
-        console.log(result.user);
-        navigate(from);
+        console.log(result.user.email);
+        const user = { email: email };
+        axios
+          .post("http://localhost:3000/jwt", user, { withCredentials: true  })
+          .then((res) => {
+            console.log(res.data);
+          });
+        // navigate(from);
       })
       .catch((errror) => {
         console.log("ERROR", errror);

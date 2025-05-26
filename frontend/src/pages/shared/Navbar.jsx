@@ -169,7 +169,7 @@ const Navbar = () => {
                   <CgProfile className="h-10 w-15 text-primary" />
                   <span className="text-sm md:text-base font-medium bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                     {/* There is a bug, will solve later  */}
-                    {user.displayName || user.fName}
+                    {user.displayName || user.email.split("@gmail.com")}
                   </span>
                 </div>
                 <ul
