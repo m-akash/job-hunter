@@ -13,12 +13,12 @@ const Recruiting = () => {
         duration: 0.5,
         delay: 0.1,
       }}
-      className="hero bg-transparent min-h-[70vh] py-10 px-4 sm:px-6 lg:px-8"
+      className="hero bg-transparent min-h-[50vh] py-5 px-4 sm:px-6 lg:px-8 mt-20"
     >
-      <div className="hero-content flex-col gap-8 lg:gap-15 lg:flex-row-reverse max-w-7xl mx-auto">
+      <div className="hero-content flex-col gap-4 lg:gap-15 lg:flex-row-reverse max-w-7xl mx-auto">
         <div className="w-full lg:w-1/2">
           <img
-            className="w-full h-[200px] sm:h-[400px] lg:h-[300px]"
+            className="w-full h-[120px] sm:h-[200px] lg:h-[300px] object-contain"
             src={recruitingImg}
           />
         </div>

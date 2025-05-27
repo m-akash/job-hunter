@@ -187,7 +187,7 @@ const Navbar = () => {
             <>
               <Link
                 to="/postjob"
-                className="btn btn-soft btn-accent btn-sm md:btn-md px-3 md:px-6 hover:scale-105 transition-all duration-300"
+                className="btn btn-soft btn-primary btn-sm md:btn-md px-3 md:px-6 hover:scale-105 transition-all duration-300"
               >
                 <button className="hidden md:inline">Post Job</button>
                 <button className="md:hidden">Post</button>
@@ -199,10 +199,9 @@ const Navbar = () => {
                   role="button"
                   className="flex items-center gap-2 px-4 py-1 rounded-full hover:bg-indigo-200 transition-all duration-300"
                 >
-                  <CgProfile className="h-10 w-15 text-primary" />
-                  <span className="text-sm md:text-base font-medium bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                    {user?.displayName || userData?.name}
-                  </span>
+                  <button className="btn btn-lg btn-soft btn-circle">
+                    <img className="w-4" src={singUpIcon} alt="" />
+                  </button>
                 </div>
                 <ul
                   tabIndex={0}
