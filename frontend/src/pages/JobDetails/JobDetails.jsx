@@ -32,9 +32,9 @@ const JobDetails = () => {
         duration: 0.5,
         delay: 0.1,
       }}
-      className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+      className="min-h-screen my-5 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50"
     >
-      <div className="flex flex-col sm:flex-row gap-3 my-5 sm:gap-4 md:gap-6 bg-cyan-400 text-black py-3 sm:py-4 md:py-5 lg:py-6 px-3 sm:px-4 md:px-6 lg:px-8 border rounded-lg hover:shadow-lg transition-shadow duration-300">
+      <div className="flex flex-col sm:flex-row gap-3 my-5 sm:gap-4 md:gap-6 bg-white text-gray-800 py-3 sm:py-4 md:py-5 lg:py-6 px-3 sm:px-4 md:px-6 lg:px-8 border rounded-lg hover:shadow-lg transition-shadow duration-300">
         <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 justify-between items-start w-full">
           <div className="flex flex-row justify-between items-start w-full">
             <Link

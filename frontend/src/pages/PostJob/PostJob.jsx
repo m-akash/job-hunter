@@ -38,13 +38,13 @@ const PostJob = () => {
       });
   };
   return (
-    <div className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      <div className="bg-gradient-to-r from-purple-600 to-violet-600 py-8 md:py-5 h-30">
+    <div className="min-h-screen my-5 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50">
+      <div className="bg-gradient-to-r from-purple-500 to-violet-500 py-8 md:py-5 h-30">
         <div className="container mx-auto px-4 md:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
             Post a New Job!
           </h1>
-          <span>Ready to jump back in?</span>
+          <span className="text-gray-100">Ready to jump back in?</span>
         </div>
       </div>
 
@@ -56,112 +56,112 @@ const PostJob = () => {
             duration: 0.5,
             delay: 0.1,
           }}
-          className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-gray-700"
+          className="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-200"
         >
           <form onSubmit={handlePostJob} className="space-y-6">
-            <h1 className="text-xl  font-bold text-white mb-8">Post Job</h1>
+            <h1 className="text-xl  font-bold text-gray-800 mb-8">Post Job</h1>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-800 mb-2">
                 Email
               </label>
               <input
                 type="email"
                 name="hr_mail"
                 defaultValue={user.email}
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 transition-colors text-gray-800 placeholder-gray-500"
                 placeholder="Enter your email"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-800 mb-2">
                 Title
               </label>
               <input
                 type="text"
                 name="title"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 transition-colors text-gray-800 placeholder-gray-500"
                 placeholder="Enter job title"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-800 mb-2">
                 Job Description
               </label>
               <textarea
                 type="text"
                 name="description"
                 required
-                className="textarea h-40 w-full bg-gray-700/50 border border-gray-600 rounded-lg  transition-colors text-white placeholder-gray-400"
+                className="textarea h-40 w-full bg-gray-200 border border-gray-300 rounded-lg  transition-colors text-gray-800 placeholder-gray-500"
                 placeholder="Job description"
               ></textarea>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-800 mb-2">
                 Job Requirements
               </label>
               <textarea
                 type="text"
                 name="requirements"
                 required
-                className="textarea h-40 w-full bg-gray-700/50 border border-gray-600 rounded-lg  transition-colors text-white placeholder-gray-400"
+                className="textarea h-40 w-full bg-gray-200 border border-gray-300 rounded-lg  transition-colors text-gray-800 placeholder-gray-500"
                 placeholder="Please! Write each requirement in a new line!"
               ></textarea>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-800 mb-2">
                 Job Responsibilities
               </label>
               <textarea
                 type="text"
                 name="responsibilities"
                 required
-                className="textarea h-40 w-full bg-gray-700/50 border border-gray-600 rounded-lg  transition-colors text-white placeholder-gray-400"
+                className="textarea h-40 w-full bg-gray-200 border border-gray-300 rounded-lg  transition-colors text-gray-800 placeholder-gray-500"
                 placeholder="Please! Write each responsibily in a new line!"
               ></textarea>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-medium text-gray-200 mb-2">
+                <label className="block text-sm font-medium text-gray-800 mb-2">
                   Company Name
                 </label>
                 <input
                   type="text"
                   name="company"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                  className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800 placeholder-gray-500"
                   placeholder="Company Name"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-200 mb-2">
+                <label className="block text-sm font-medium text-gray-800 mb-2">
                   Location
                 </label>
                 <input
                   type="text"
                   name="location"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                  className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800 placeholder-gray-500"
                   placeholder="Dhaka, Bangladesh"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-200 mb-2">
+                <label className="block text-sm font-medium text-gray-800 mb-2">
                   Job Type
                 </label>
                 <select
                   id="jobType"
                   name="jobType"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white"
+                  className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800"
                   required
                 >
                   <option value="">Select</option>
@@ -172,13 +172,13 @@ const PostJob = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-200 mb-2">
+                <label className="block text-sm font-medium text-gray-800 mb-2">
                   Job Postion
                 </label>
                 <select
                   id="jobPosition"
                   name="jobPosition"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white"
+                  className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800"
                   required
                 >
                   <option value="">Select</option>
@@ -190,13 +190,13 @@ const PostJob = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-200 mb-2">
+                <label className="block text-sm font-medium text-gray-800 mb-2">
                   Job Category
                 </label>
                 <select
                   id="category"
                   name="category"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white"
+                  className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800"
                   required
                 >
                   <option value="">Select</option>
@@ -211,20 +211,20 @@ const PostJob = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-200 mb-2">
+                <label className="block text-sm font-medium text-gray-800 mb-2">
                   Experience
                 </label>
                 <input
                   type="text"
                   name="experience"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 transition-colors text-white placeholder-gray-400"
+                  className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 transition-colors text-gray-800 placeholder-gray-500"
                   placeholder="1-3 years"
                   required
                 />
               </div>
             </div>
 
-            <label className="block text-sm font-medium text-gray-200 mb-2">
+            <label className="block text-sm font-medium text-gray-800 mb-2">
               Salary Range(e.g: 50k - 80k)
             </label>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
@@ -232,7 +232,7 @@ const PostJob = () => {
                 <input
                   type="text"
                   name="min"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                  className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800 placeholder-gray-500"
                   placeholder="Min"
                   required
                 />
@@ -241,7 +241,7 @@ const PostJob = () => {
                 <input
                   type="text"
                   name="max"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                  className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800 placeholder-gray-500"
                   placeholder="Max"
                   required
                 />
@@ -250,7 +250,7 @@ const PostJob = () => {
                 <select
                   id="currency"
                   name="currency"
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white"
+                  className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800"
                   required
                 >
                   <option value="">Select</option>
@@ -262,13 +262,13 @@ const PostJob = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-800 mb-2">
                 Qualification
               </label>
               <select
                 id="qualification"
                 name="qualification"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white"
+                className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800"
                 required
               >
                 <option value="">Select</option>
@@ -284,26 +284,26 @@ const PostJob = () => {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-800 mb-2">
                 Application Deadline Date
               </label>
               <input
                 type="date"
                 name="applicationDeadline"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800 placeholder-gray-500"
                 placeholder="20.05.2025"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-800 mb-2">
                 Complete Address
               </label>
               <input
                 type="text"
                 name="location"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-gray-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-gray-800 placeholder-gray-500"
                 placeholder="Mirpur DOHS, Dhaka, Bangladesh"
                 required
               />
@@ -311,7 +311,7 @@ const PostJob = () => {
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-600 to-violet-600 text-white py-3 px-6 rounded-lg font-medium hover:from-purple-700 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors"
+              className="w-full bg-gradient-to-r from-purple-500 to-violet-500 text-white py-3 px-6 rounded-lg font-medium hover:from-purple-600 hover:to-violet-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors"
             >
               Submit
             </button>

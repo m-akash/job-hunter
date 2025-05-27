@@ -4,10 +4,8 @@ import companyIcon from "../../assets/icons/office-building.png";
 import locationIcon from "../../assets/icons/location.png";
 import timeIcon from "../../assets/icons/clock.png";
 import moneyIcon from "../../assets/icons/save-money.png";
-import { motion } from "framer-motion";
-
-const JobsCard = ({ job }) => {
-  const {
+const JobsCategoriesCard = ({job}) => {
+     const {
     _id,
     title,
     company,
@@ -20,18 +18,9 @@ const JobsCard = ({ job }) => {
     requirements,
     status,
   } = job;
-
-  return (
-    <motion.div
-      initial={{ opacity: 1, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.5,
-        delay: 0.1,
-      }}
-      className="w-full"
-    >
-      <div className="bg-gray-200 hover:bg-gray-100 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+    return (
+       <div className="w-full">
+      <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
         <div className="p-6">
           <div className="flex flex-col gap-4">
             {/* Header Section */}
@@ -111,8 +100,8 @@ const JobsCard = ({ job }) => {
           </div>
         </div>
       </div>
-    </motion.div>
-  );
+    </div>
+    );
 };
 
-export default JobsCard;
+export default JobsCategoriesCard;

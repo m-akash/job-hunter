@@ -10,7 +10,7 @@ const Banner = () => {
         backgroundImage: "url(https://i.ibb.co/MDb9qP5Q/4165379.jpg)",
       }}
     >
-      <div className="hero-overlay"></div>
+      <div className="hero-overlay bg-black/30 backdrop-blur-sm"></div>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -18,7 +18,7 @@ const Banner = () => {
           duration: 0.5,
           delay: 0.1,
         }}
-        className="flex flex-col hero-content text-neutral-content text-center p-4 md:p-8"
+        className="flex flex-col hero-content text-white text-center p-4 md:p-8"
       >
         <div className="max-w-md">
           <h1 className="mb-3 md:mb-5 text-3xl md:text-4xl lg:text-5xl font-bold">
@@ -29,11 +29,11 @@ const Banner = () => {
           </p>
         </div>
 
-        <div className="bg-gray-500 p-3 md:p-4 flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4 w-full max-w-4xl">
+        <div className="bg-white/90 p-3 md:p-4 flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4 w-full max-w-4xl">
           <input
             type="text"
             placeholder="What are you looking for?"
-            className="w-full md:w-64 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full md:w-64 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-800"
           />
 
           <select className="w-full md:w-auto p-2 rounded-md bg-white text-gray-700">
@@ -52,21 +52,21 @@ const Banner = () => {
             <option>Architect</option>
           </select>
 
-          <button className="w-full md:w-auto bg-cyan-400 text-white px-4 py-2 rounded-md hover:bg-cyan-500 transition-colors">
+          <button className="w-full md:w-auto bg-cyan-500 text-white px-4 py-2 rounded-md hover:bg-cyan-600 transition-colors">
             🔍 SEARCH
           </button>
         </div>
         <div className="my-4 md:my-8 text-sm md:text-base">
           <p>
             <strong>Popular Search:</strong>{" "}
-            <Link className="hover:text-cyan-400 transition-colors">
+            <Link className="hover:text-cyan-300 transition-colors">
               developer, design, it company
             </Link>
           </p>
         </div>
         <div>
           <Link to="/jobs">
-            <button className="btn btn-primary hover:bg-blue-900">
+            <button className="btn btn-primary hover:bg-blue-600">
               Explore Job
             </button>
           </Link>

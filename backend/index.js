@@ -107,12 +107,38 @@ async function run() {
     //End User
 
     //Start Jobs
+
+    app.get("/jobs", async (req, res) => {
+      const page = parseInt(req.query.page);
+      const size = parseInt(req.query.limit);
+      const result = await jobsData
+        .find()
+        .skip(page * size)
+        .limit(size)
+        .toArray();
+      res.send(result);
+    });
+
     app.get("/jobs", async (req, res) => {
       const email = req.query.email;
       let query = {};
 
       if (email) {
         query = { hr_mail: email };
+      }
+
+      const cursor = jobsData.find(query);
+      const result = await cursor.toArray();
+      res.send(result);
+    });
+
+    app.get("/jobs/category", async (req, res) => {
+      const category = req.query.category;
+
+      let query = {};
+
+      if (category) {
+        query = { category: category };
       }
 
       const cursor = jobsData.find(query);
@@ -136,6 +162,11 @@ async function run() {
       const query = { _id: new ObjectId(id) };
       const result = await jobsData.findOne(query);
       res.send(result);
+    });
+
+    app.get("/category-count", async (req, res) => {
+      const countCategory = await jobsData.estimatedDocumentCount();
+      res.send({ countCategory });
     });
 
     app.get("/job-application/jobs/:job_id", async (req, res) => {

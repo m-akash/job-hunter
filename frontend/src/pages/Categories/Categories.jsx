@@ -23,15 +23,12 @@ const Categories = () => {
       className="my-5 md:my-10 px-4 md:px-6"
     >
       <div>
-        <h1 className="text-center text-xl md:text-2xl mb-2">
+        <h1 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 sm:mb-3">
           Popular Job Categories
         </h1>
-        <p className="text-center text-xs md:text-sm">
-          2020 jobs live, 170 added today.
-        </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 my-6 md:my-10">
-        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+        <div className="flex gap-4 md:gap-6 bg-gray-200 text-black p-4 md:p-5 border rounded-md hover:bg-white transition-colors duration-300">
           <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
             <img
               src={accountingImg}
@@ -40,16 +37,16 @@ const Categories = () => {
             />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+            <Link
+              to="/jobs/category/Accounting"
+              className="font-bold text-lg md:text-xl hover:text-black transition-colors duration-300"
+            >
               Account / Finance
             </Link>
-            <span className="text-sm md:text-[15px] font-thin">
-              (2 open positions)
-            </span>
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+        <div className="flex gap-4 md:gap-6 bg-gray-200 text-black p-4 md:p-5 border rounded-md hover:bg-white transition-colors duration-300">
           <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
             <img
               src={marketingImg}
@@ -58,16 +55,16 @@ const Categories = () => {
             />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+            <Link
+              to="/jobs/category/Marketing"
+              className="font-bold text-lg md:text-xl hover:text-black transition-colors duration-300"
+            >
               Marketing
             </Link>
-            <span className="text-sm md:text-[15px] font-thin">
-              (2 open positions)
-            </span>
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+        <div className="flex gap-4 md:gap-6 bg-gray-200 text-black p-4 md:p-5 border rounded-md hover:bg-white transition-colors duration-300">
           <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
             <img
               src={designImg}
@@ -76,16 +73,16 @@ const Categories = () => {
             />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
-              Art / Design
+            <Link
+              to="/jobs/category/Design"
+              className="font-bold text-lg md:text-xl hover:text-black transition-colors duration-300"
+            >
+              Design
             </Link>
-            <span className="text-sm md:text-[15px] font-thin">
-              (2 open positions)
-            </span>
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+        <div className="flex gap-4 md:gap-6 bg-gray-200 text-black p-4 md:p-5 border rounded-md hover:bg-white transition-colors duration-300">
           <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
             <img
               src={developemntImg}
@@ -94,16 +91,16 @@ const Categories = () => {
             />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+            <Link
+              to="/jobs/category/Development"
+              className="font-bold text-lg md:text-xl hover:text-black transition-colors duration-300"
+            >
               Development
             </Link>
-            <span className="text-sm md:text-[15px] font-thin">
-              (2 open positions)
-            </span>
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+        <div className="flex gap-4 md:gap-6 bg-gray-200 text-black p-4 md:p-5 border rounded-md hover:bg-white transition-colors duration-300">
           <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
             <img
               src={humanImg}
@@ -112,16 +109,16 @@ const Categories = () => {
             />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+            <Link
+              to="/jobs/category/Human Resource"
+              className="font-bold text-lg md:text-xl hover:text-black transition-colors duration-300"
+            >
               Human Resource
             </Link>
-            <span className="text-sm md:text-[15px] font-thin">
-              (2 open positions)
-            </span>
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+        <div className="flex gap-4 md:gap-6 bg-gray-200 text-black p-4 md:p-5 border rounded-md hover:bg-white transition-colors duration-300">
           <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
             <img
               src={automativeImg}
@@ -130,16 +127,16 @@ const Categories = () => {
             />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+            <Link
+              to="/jobs/category/Automotive Job"
+              className="font-bold text-lg md:text-xl hover:text-black transition-colors duration-300"
+            >
               Automotive Job
             </Link>
-            <span className="text-sm md:text-[15px] font-thin">
-              (2 open positions)
-            </span>
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+        <div className="flex gap-4 md:gap-6 bg-gray-200 text-black p-4 md:p-5 border rounded-md hover:bg-white transition-colors duration-300">
           <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
             <img
               src={customerServiceImg}
@@ -148,16 +145,16 @@ const Categories = () => {
             />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+            <Link
+              to="/jobs/category/Customer-Service"
+              className="font-bold text-lg md:text-xl hover:text-black transition-colors duration-300"
+            >
               Customer Service
             </Link>
-            <span className="text-sm md:text-[15px] font-thin">
-              (2 open positions)
-            </span>
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+        <div className="flex gap-4 md:gap-6 bg-gray-200 text-black p-4 md:p-5 border rounded-md hover:bg-white transition-colors duration-300">
           <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
             <img
               src={healthCareImg}
@@ -166,16 +163,16 @@ const Categories = () => {
             />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+            <Link
+              to="/jobs/category/Health"
+              className="font-bold text-lg md:text-xl hover:text-black transition-colors duration-300"
+            >
               Health & Care
             </Link>
-            <span className="text-sm md:text-[15px] font-thin">
-              (2 open positions)
-            </span>
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-6 bg-cyan-400 text-black p-4 md:p-5 border rounded-md hover:bg-cyan-500 transition-colors duration-300">
+        <div className="flex gap-4 md:gap-6 bg-gray-200 text-black p-4 md:p-5 border rounded-md hover:bg-white transition-colors duration-300">
           <figure className="h-12 w-12 md:h-16 md:w-16 flex items-center justify-center hover:bg-white rounded-md p-2">
             <img
               src={projectManImg}
@@ -184,12 +181,12 @@ const Categories = () => {
             />
           </figure>
           <div className="flex flex-col justify-center items-start">
-            <Link className="font-bold text-lg md:text-xl hover:text-white transition-colors duration-300">
+            <Link
+              to="/jobs/category/Project Management"
+              className="font-bold text-lg md:text-xl hover:text-black transition-colors duration-300"
+            >
               Project Management
             </Link>
-            <span className="text-sm md:text-[15px] font-thin">
-              (2 open positions)
-            </span>
           </div>
         </div>
       </div>

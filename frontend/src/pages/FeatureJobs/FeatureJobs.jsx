@@ -8,14 +8,9 @@ import FeatureJobsCard from "./FeatureJobsCard";
 
 const FeatureJobs = () => {
   const [jobs, setJobs] = useState([]);
-  const [currentPage, setCurrentPage] = useState(0);
-  const cardsPerPage = 6;
-  const numberOfPages = Math.ceil(jobs.length / cardsPerPage);
-
-  const pages = [...Array(numberOfPages).keys()];
 
   useEffect(() => {
-    fetch("http://localhost:3000/jobs")
+    fetch("http://localhost:3000/jobs?limit=6")
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);
@@ -43,25 +38,6 @@ const FeatureJobs = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
         {jobs.map((job) => (
           <FeatureJobsCard key={job._id} job={job}></FeatureJobsCard>
-        ))}
-      </div>
-      {/* <div className="flex justify-center items-center mt-6 sm:mt-8 md:mt-10 lg:mt-12">
-        <button className="btn btn-primary text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-1.5 sm:py-2 md:py-3 rounded-lg hover:shadow-lg transition-all duration-300">
-          Load More Listing
-        </button>
-      </div> */}
-
-      <div className="join flex flex-row items-center justify-center space-x-2 mt-10">
-        {pages.map((page) => (
-          <input
-            onClick={() => setCurrentPage(page)}
-            key={page}
-            className="join-item btn btn-square"
-            type="radio"
-            name="options"
-            aria-label={page}
-            checked="checked"
-          />
         ))}
       </div>
     </motion.div>

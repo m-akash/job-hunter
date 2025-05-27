@@ -25,12 +25,12 @@ const FeatureJobsCard = ({ job }) => {
   return (
     <div className="w-full">
       <Link to={`/jobs/${_id}`}>
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 bg-cyan-400 text-black py-3 sm:py-4 md:py-5 lg:py-6 px-3 sm:px-4 md:px-6 lg:px-8 border rounded-lg hover:shadow-lg transition-shadow duration-300">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 bg-gray-200 hover:bg-white text-black py-3 sm:py-4 md:py-5 lg:py-6 px-3 sm:px-4 md:px-6 lg:px-8 border rounded-lg hover:shadow-lg transition-shadow duration-300">
           <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 justify-between items-start w-full">
             <div className="flex flex-row justify-between items-start w-full">
               <Link
                 to="/jobs"
-                className="hover:text-white transition-colors duration-300 max-w-[80%] sm:max-w-[90%]"
+                className=" transition-colors duration-300 max-w-[80%] sm:max-w-[90%]"
               >
                 <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold truncate">
                   {title}
@@ -106,15 +106,6 @@ const FeatureJobsCard = ({ job }) => {
               <span className="text-xs sm:text-sm bg-yellow-200 opacity-150 text-blue-800 rounded-lg sm:rounded-xl py-0.5 sm:py-1 md:py-1.5 px-2 sm:px-3 md:px-4">
                 {category}
               </span>
-
-              {/* <Link
-                to={`/jobs/${_id}`}
-                className="btn btn-soft btn-success rounded-lg sm:rounded-xl px-3 sm:px-4 md:px-6 lg:px-8 ml-auto mt-2 sm:mt-0"
-              >
-                <button className="text-xs sm:text-sm md:text-base whitespace-nowrap">
-                  See Details
-                </button>
-              </Link> */}
             </div>
           </div>
         </div>

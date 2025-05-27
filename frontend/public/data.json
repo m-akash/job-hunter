@@ -1,281 +1,2885 @@
 [
     {
-        "hr_mail": "hr1@gmail.com",
-        "title": "Software Engineer",
-        "location": "Halishohor, Chittagong",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
-        "category": "Engineering",
-        "applicationDeadline": "2024-12-31",
+        "hr_mail": "careers@financepro.com",
+        "title": "Senior Financial Analyst",
+        "location": "New York, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Accounting",
+        "applicationDeadline": "2025-06-15",
         "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
+            "min": "90k",
+            "max": "120k",
+            "currency": "USD"
         },
-        "description": "We are seeking a skilled Software Engineer to join our dynamic team. The candidate will work on diverse projects and contribute to innovative solutions.",
-        "company": "Favorite IT",
+        "description": "We are seeking an experienced Senior Financial Analyst to join our corporate finance team. You will be responsible for financial modeling, forecasting, and providing strategic insights to support business decisions.",
+        "company": "FinancePro Solutions",
         "requirements": [
-            "JavaScript",
-            "React",
-            "Node.js",
-            "MongoDB"
+            "CPA or MBA in Finance",
+            "5+ years of experience in financial analysis",
+            "Advanced Excel skills",
+            "Experience with ERP systems"
         ],
         "responsibilities": [
-            "Develop and maintain software",
-            "Collaborate with the team",
-            "Participate in code reviews"
+            "Develop and maintain financial models",
+            "Prepare monthly and quarterly financial reports",
+            "Conduct variance analysis and provide insights"
         ],
         "status": "active"
     },
     {
-        "hr_mail": "hr1@gmail.com",
-        "title": "Marketing Specialist",
-        "location": "Banani, Dhaka",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
+        "hr_mail": "jobs@globalaccounting.com",
+        "title": "Tax Accountant",
+        "location": "Chicago, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Accounting",
+        "applicationDeadline": "2025-07-10",
+        "salaryRange": {
+            "min": "65k",
+            "max": "85k",
+            "currency": "USD"
+        },
+        "description": "Global Accounting is looking for a Tax Accountant to prepare tax returns for individuals and businesses. The ideal candidate will have strong knowledge of tax regulations and experience with tax preparation software.",
+        "company": "Global Accounting Services",
+        "requirements": [
+            "Bachelor's degree in Accounting",
+            "CPA preferred",
+            "3+ years of tax accounting experience",
+            "Knowledge of US tax laws"
+        ],
+        "responsibilities": [
+            "Prepare and file tax returns for clients",
+            "Research tax issues and provide recommendations",
+            "Stay updated on tax laws and regulations"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "recruiting@fintech.io",
+        "title": "Accounts Payable Specialist",
+        "location": "Austin, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Accounting",
+        "applicationDeadline": "2025-05-20",
+        "salaryRange": {
+            "min": "45k",
+            "max": "55k",
+            "currency": "USD"
+        },
+        "description": "Join our growing accounts payable team to process invoices, manage vendor relationships, and ensure timely payments. You'll work closely with our finance department to maintain accurate financial records.",
+        "company": "FinTech Solutions",
+        "requirements": [
+            "Associate's degree in Accounting or related field",
+            "1+ years of accounts payable experience",
+            "Proficiency in Microsoft Excel",
+            "Attention to detail"
+        ],
+        "responsibilities": [
+            "Process vendor invoices and expense reports",
+            "Reconcile vendor statements",
+            "Respond to vendor inquiries"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@globaltrade.co.uk",
+        "title": "Financial Controller",
+        "location": "London, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Accounting",
+        "applicationDeadline": "2025-06-30",
+        "salaryRange": {
+            "min": "70k",
+            "max": "95k",
+            "currency": "GBP"
+        },
+        "description": "Global Trade is seeking an experienced Financial Controller to oversee all financial operations. You will be responsible for managing the accounting team, preparing financial statements, and ensuring compliance with accounting standards.",
+        "company": "Global Trade Ltd",
+        "requirements": [
+            "ACCA or CIMA qualification",
+            "7+ years of accounting experience",
+            "Experience with UK GAAP and IFRS",
+            "Team management experience"
+        ],
+        "responsibilities": [
+            "Oversee the monthly and annual close process",
+            "Prepare financial statements and reports",
+            "Manage a team of accountants"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@asiacorp.sg",
+        "title": "Audit Manager",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Accounting",
+        "applicationDeadline": "2025-08-15",
+        "salaryRange": {
+            "min": "90k",
+            "max": "120k",
+            "currency": "SGD"
+        },
+        "description": "We are looking for an Audit Manager to lead our audit engagements. You will plan and execute audit projects, supervise staff, and deliver high-quality audit reports to clients.",
+        "company": "Asia Corporate Services",
+        "requirements": [
+            "CA or CPA qualification",
+            "6+ years of audit experience",
+            "Experience in a Big 4 accounting firm",
+            "Strong leadership skills"
+        ],
+        "responsibilities": [
+            "Lead audit engagements from planning to completion",
+            "Review audit workpapers and financial statements",
+            "Mentor and supervise audit staff"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@techfinance.de",
+        "title": "Cost Accountant",
+        "location": "Berlin, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Accounting",
+        "applicationDeadline": "2025-07-25",
+        "salaryRange": {
+            "min": "50k",
+            "max": "65k",
+            "currency": "EUR"
+        },
+        "description": "TechFinance is seeking a Cost Accountant to analyze production costs and prepare cost reports. You will work with manufacturing and operations teams to identify cost-saving opportunities.",
+        "company": "TechFinance GmbH",
+        "requirements": [
+            "Bachelor's degree in Accounting or Finance",
+            "3+ years of cost accounting experience",
+            "Knowledge of German accounting standards",
+            "Experience with ERP systems"
+        ],
+        "responsibilities": [
+            "Analyze production costs and variances",
+            "Prepare monthly cost reports",
+            "Develop and maintain standard costing systems"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@consultfirm.ca",
+        "title": "Forensic Accountant",
+        "location": "Toronto, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Accounting",
+        "applicationDeadline": "2025-09-10",
+        "salaryRange": {
+            "min": "85k",
+            "max": "110k",
+            "currency": "CAD"
+        },
+        "description": "ConsultFirm is looking for a Forensic Accountant to investigate financial fraud and prepare expert reports. You will work on complex cases and provide litigation support.",
+        "company": "ConsultFirm Inc.",
+        "requirements": [
+            "CPA with CFE certification",
+            "5+ years of forensic accounting experience",
+            "Experience with data analysis tools",
+            "Strong attention to detail"
+        ],
+        "responsibilities": [
+            "Investigate financial fraud and irregularities",
+            "Prepare expert reports for litigation",
+            "Testify as an expert witness when required"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "recruiting@digitalmarketing.io",
+        "title": "Senior Marketing Manager",
+        "location": "San Francisco, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
         "category": "Marketing",
-        "applicationDeadline": "2024-12-15",
+        "applicationDeadline": "2025-06-20",
         "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
+            "min": "110k",
+            "max": "140k",
+            "currency": "USD"
         },
-        "description": "Join our marketing team to strategize and implement innovative campaigns for our products and services.",
-        "company": "GoatMark Inc",
+        "description": "Digital Marketing is seeking a Senior Marketing Manager to develop and execute comprehensive marketing strategies. You will lead a team of marketing professionals and collaborate with cross-functional teams to drive business growth.",
+        "company": "Digital Marketing Solutions",
         "requirements": [
-            "Google Analytics",
-            "SEO",
-            "Content Management Systems",
-            "Excel"
+            "Bachelor's degree in Marketing or related field",
+            "7+ years of marketing experience",
+            "Experience with digital marketing channels",
+            "Team management experience"
         ],
         "responsibilities": [
-            "Develop marketing strategies",
-            "Manage ad campaigns",
-            "Analyze campaign performance"
+            "Develop and implement marketing strategies",
+            "Manage marketing budget and ROI",
+            "Lead a team of marketing specialists"
         ],
         "status": "active"
     },
     {
-        "hr_mail": "hr1@gmail.com",
-        "title": "Finance Manager",
-        "location": "Gulshan, Dhaka",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
-        "category": "Finance",
-        "applicationDeadline": "2024-12-20",
-        "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
-        },
-        "description": "We are hiring a Finance Manager to oversee financial operations, budgeting, and reporting.",
-        "company": "Local Inch Ltd",
-        "requirements": [
-            "QuickBooks",
-            "SAP",
-            "Excel",
-            "SQL"
-        ],
-        "responsibilities": [
-            "Manage budgets",
-            "Prepare financial reports",
-            "Ensure regulatory compliance"
-        ],
-        "status": "active"
-    },
-    {
-        "hr_mail": "hr2@gmail.com",
-        "title": "Content Writer",
-        "location": "Uttara, Dhaka",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
+        "hr_mail": "jobs@brandagency.co.uk",
+        "title": "Social Media Specialist",
+        "location": "Manchester, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
         "category": "Marketing",
-        "applicationDeadline": "2024-12-25",
+        "applicationDeadline": "2025-05-25",
         "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
+            "min": "35k",
+            "max": "45k",
+            "currency": "GBP"
         },
-        "description": "We are looking for a talented Content Writer to create compelling content for our digital platforms.",
-        "company": "Munir soft.",
+        "description": "Brand Agency is looking for a Social Media Specialist to create and manage content across social media platforms. You will develop engaging campaigns and analyze performance metrics.",
+        "company": "Brand Agency Ltd",
         "requirements": [
-            "WordPress",
-            "SEO",
-            "Google Docs",
-            "Grammarly"
+            "Bachelor's degree in Marketing or Communications",
+            "3+ years of social media management experience",
+            "Experience with social media analytics tools",
+            "Creative content creation skills"
         ],
         "responsibilities": [
-            "Write blog posts",
-            "Create social media content",
-            "Develop email campaigns"
+            "Create and schedule social media content",
+            "Develop and execute social media campaigns",
+            "Monitor and report on social media metrics"
         ],
         "status": "active"
     },
     {
-        "hr_mail": "hr2@gmail.com",
-        "title": "Teaching Assistant",
-        "location": "Chawkbazar, Chittagong",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
-        "category": "Teaching",
-        "applicationDeadline": "2024-12-22",
+        "hr_mail": "careers@globalbrand.fr",
+        "title": "Content Marketing Manager",
+        "location": "Paris, France",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Marketing",
+        "applicationDeadline": "2025-07-15",
         "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
+            "min": "45k",
+            "max": "60k",
+            "currency": "EUR"
         },
-        "description": "Assist in preparing course materials and support teachers in classroom activities.",
-        "company": "Never Flixed.",
+        "description": "Global Brand is seeking a Content Marketing Manager to develop and execute content strategies. You will create compelling content that drives engagement and supports business objectives.",
+        "company": "Global Brand SA",
         "requirements": [
-            "Google Slides",
-            "Zoom",
-            "MS Office",
-            "Google Docs"
+            "Bachelor's degree in Marketing, Journalism, or related field",
+            "5+ years of content marketing experience",
+            "Excellent writing and editing skills",
+            "Experience with SEO and content management systems"
         ],
         "responsibilities": [
-            "Assist in lesson planning",
-            "Support classroom management",
-            "Conduct tutoring sessions"
+            "Develop and execute content marketing strategies",
+            "Create and edit various types of content",
+            "Analyze content performance and optimize strategies"
         ],
         "status": "active"
     },
     {
-        "hr_mail": "hr2@gmail.com",
-        "title": "Project Manager",
-        "location": "Mirpur, Dhaka",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
-        "category": "Management",
-        "applicationDeadline": "2024-12-30",
+        "hr_mail": "hr@techadvertising.com",
+        "title": "Digital Marketing Specialist",
+        "location": "Seattle, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Marketing",
+        "applicationDeadline": "2025-06-05",
         "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
+            "min": "65k",
+            "max": "85k",
+            "currency": "USD"
         },
-        "description": "We are seeking a dynamic Project Manager to lead our development team and ensure successful project delivery.",
-        "company": "Nicola Tesla.",
+        "description": "Tech Advertising is looking for a Digital Marketing Specialist to manage PPC campaigns, SEO strategies, and digital advertising initiatives. You will work with a team of marketing professionals to drive online growth.",
+        "company": "Tech Advertising Inc.",
         "requirements": [
-            "JIRA",
-            "Trello",
-            "Slack",
-            "Agile Methodologies"
+            "Bachelor's degree in Marketing or related field",
+            "3+ years of digital marketing experience",
+            "Experience with Google Ads and Analytics",
+            "Knowledge of SEO best practices"
         ],
         "responsibilities": [
-            "Oversee project execution",
-            "Manage team workflows",
-            "Ensure timely project delivery"
+            "Manage and optimize PPC campaigns",
+            "Implement SEO strategies",
+            "Monitor and report on digital marketing metrics"
         ],
         "status": "active"
     },
     {
-        "hr_mail": "hr3@gmail.com",
-        "title": "Data Scientist",
-        "location": "Mohakhali, Dhaka",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
-        "category": "Data Science",
-        "applicationDeadline": "2024-12-28",
+        "hr_mail": "careers@asiamarketing.sg",
+        "title": "Brand Manager",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Marketing",
+        "applicationDeadline": "2025-08-10",
         "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
+            "min": "80k",
+            "max": "100k",
+            "currency": "SGD"
         },
-        "description": "Analyze large datasets to extract meaningful insights and develop predictive models.",
-        "company": "DataWorx Ltd",
+        "description": "Asia Marketing is seeking a Brand Manager to develop and implement brand strategies. You will be responsible for maintaining brand consistency and driving brand awareness across markets.",
+        "company": "Asia Marketing Solutions",
         "requirements": [
-            "Python",
-            "TensorFlow",
-            "SQL",
-            "Tableau"
+            "Bachelor's degree in Marketing or Business",
+            "5+ years of brand management experience",
+            "Experience in Asian markets",
+            "Strong analytical skills"
         ],
         "responsibilities": [
-            "Develop predictive models",
-            "Clean and analyze data",
-            "Present data-driven insights"
+            "Develop and implement brand strategies",
+            "Manage brand guidelines and ensure consistency",
+            "Monitor brand performance and competitive landscape"
         ],
         "status": "active"
     },
     {
-        "hr_mail": "hr3@gmail.com",
-        "title": "UI/UX Designer",
-        "location": "Dhanmondi, Dhaka",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
+        "hr_mail": "jobs@ecommercemarketing.ca",
+        "title": "Email Marketing Specialist",
+        "location": "Vancouver, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Marketing",
+        "applicationDeadline": "2025-07-20",
+        "salaryRange": {
+            "min": "60k",
+            "max": "75k",
+            "currency": "CAD"
+        },
+        "description": "E-commerce Marketing is looking for an Email Marketing Specialist to design, create, and optimize email campaigns. You will segment audiences, analyze performance, and implement best practices for email marketing.",
+        "company": "E-commerce Marketing Inc.",
+        "requirements": [
+            "Bachelor's degree in Marketing or related field",
+            "3+ years of email marketing experience",
+            "Experience with email marketing platforms",
+            "Knowledge of A/B testing and optimization"
+        ],
+        "responsibilities": [
+            "Design and implement email marketing campaigns",
+            "Segment audiences and personalize content",
+            "Analyze email performance and optimize strategies"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "recruiting@digitalagency.au",
+        "title": "Marketing Analyst",
+        "location": "Sydney, Australia",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Marketing",
+        "applicationDeadline": "2025-06-25",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "AUD"
+        },
+        "description": "Digital Agency is seeking a Marketing Analyst to collect and analyze marketing data. You will provide insights to optimize campaigns and improve marketing ROI.",
+        "company": "Digital Agency Pty Ltd",
+        "requirements": [
+            "Bachelor's degree in Marketing, Analytics, or related field",
+            "3+ years of marketing analytics experience",
+            "Proficiency with analytics tools and data visualization",
+            "Strong statistical and analytical skills"
+        ],
+        "responsibilities": [
+            "Collect and analyze marketing data",
+            "Create reports and dashboards",
+            "Provide insights to optimize marketing strategies"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@creativestudio.it",
+        "title": "Senior Graphic Designer",
+        "location": "Milan, Italy",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
         "category": "Design",
-        "applicationDeadline": "2024-12-18",
+        "applicationDeadline": "2025-06-15",
         "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
+            "min": "35k",
+            "max": "50k",
+            "currency": "EUR"
         },
-        "description": "Create engaging user interfaces and improve user experience for our applications.",
-        "company": "Designify",
+        "description": "Creative Studio is looking for a Senior Graphic Designer to create visual concepts for brand identities, marketing materials, and digital assets. You will work with clients and internal teams to deliver high-quality design solutions.",
+        "company": "Creative Studio SRL",
         "requirements": [
-            "Figma",
-            "Adobe XD",
-            "HTML",
-            "CSS"
+            "Bachelor's degree in Graphic Design or related field",
+            "5+ years of graphic design experience",
+            "Proficiency in Adobe Creative Suite",
+            "Strong portfolio demonstrating design skills"
         ],
         "responsibilities": [
-            "Design prototypes",
-            "Conduct user research",
-            "Collaborate with developers"
+            "Create visual concepts for various media",
+            "Collaborate with clients and internal teams",
+            "Maintain brand consistency across all materials"
         ],
         "status": "active"
     },
     {
-        "hr_mail": "hr3@gmail.com",
-        "title": "DevOps Engineer",
-        "location": "Baridhara, Dhaka",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
-        "category": "Engineering",
-        "applicationDeadline": "2024-12-22",
+        "hr_mail": "jobs@uxdesignfirm.com",
+        "title": "UX/UI Designer",
+        "location": "Boston, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2025-07-10",
         "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
+            "min": "80k",
+            "max": "100k",
+            "currency": "USD"
         },
-        "description": "Build and maintain CI/CD pipelines and ensure reliable infrastructure.",
-        "company": "InfraOps",
+        "description": "UX Design Firm is seeking a UX/UI Designer to create user-centered designs for web and mobile applications. You will conduct user research, create wireframes, and design intuitive interfaces.",
+        "company": "UX Design Firm Inc.",
         "requirements": [
-            "Docker",
-            "Kubernetes",
-            "AWS",
-            "Terraform"
+            "Bachelor's degree in Design, HCI, or related field",
+            "3+ years of UX/UI design experience",
+            "Proficiency in design tools like Figma and Sketch",
+            "Experience with user research and usability testing"
         ],
         "responsibilities": [
-            "Implement CI/CD",
-            "Monitor infrastructure",
-            "Automate deployment processes"
+            "Design user-centered interfaces for digital products",
+            "Create wireframes, prototypes, and user flows",
+            "Conduct user research and usability testing"
         ],
         "status": "active"
     },
     {
-        "hr_mail": "hr1@gmail.com",
-        "title": "Mobile App Developer",
-        "location": "Bashundhara, Dhaka",
-        "jobType": "Onsite",
-        "jobPosition": "Full-Time",
+        "hr_mail": "careers@productdesign.co.uk",
+        "title": "Product Designer",
+        "location": "London, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2025-06-30",
+        "salaryRange": {
+            "min": "45k",
+            "max": "60k",
+            "currency": "GBP"
+        },
+        "description": "Product Design is looking for a Product Designer to create innovative product designs. You will work on the entire design process from concept to production, collaborating with engineering and marketing teams.",
+        "company": "Product Design Ltd",
+        "requirements": [
+            "Bachelor's degree in Industrial Design or related field",
+            "3+ years of product design experience",
+            "Proficiency in CAD software",
+            "Knowledge of manufacturing processes"
+        ],
+        "responsibilities": [
+            "Create innovative product designs",
+            "Develop prototypes and test concepts",
+            "Collaborate with cross-functional teams"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@webagency.de",
+        "title": "Web Designer",
+        "location": "Berlin, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2025-07-15",
+        "salaryRange": {
+            "min": "40k",
+            "max": "55k",
+            "currency": "EUR"
+        },
+        "description": "Web Agency is seeking a Web Designer to create visually appealing and user-friendly websites. You will design layouts, graphics, and interactive elements for various client projects.",
+        "company": "Web Agency GmbH",
+        "requirements": [
+            "Bachelor's degree in Web Design or related field",
+            "3+ years of web design experience",
+            "Proficiency in HTML, CSS, and Adobe Creative Suite",
+            "Knowledge of responsive design principles"
+        ],
+        "responsibilities": [
+            "Design website layouts and graphics",
+            "Create responsive designs for various devices",
+            "Collaborate with developers to implement designs"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@motiondesign.fr",
+        "title": "Motion Graphics Designer",
+        "location": "Paris, France",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2025-08-05",
+        "salaryRange": {
+            "min": "35k",
+            "max": "50k",
+            "currency": "EUR"
+        },
+        "description": "Motion Design is looking for a Motion Graphics Designer to create animated content for digital and broadcast media. You will design and produce engaging motion graphics for various client projects.",
+        "company": "Motion Design SA",
+        "requirements": [
+            "Bachelor's degree in Animation, Design, or related field",
+            "3+ years of motion graphics experience",
+            "Proficiency in After Effects and other animation tools",
+            "Strong portfolio demonstrating motion design skills"
+        ],
+        "responsibilities": [
+            "Create animated content for various media",
+            "Design motion graphics for client projects",
+            "Collaborate with creative teams"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@interiordesign.sg",
+        "title": "Interior Designer",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Design",
+        "applicationDeadline": "2025-07-25",
+        "salaryRange": {
+            "min": "60k",
+            "max": "80k",
+            "currency": "SGD"
+        },
+        "description": "Interior Design is seeking a Senior Interior Designer to create functional and aesthetically pleasing interior spaces. You will develop design concepts, select materials, and oversee project implementation.",
+        "company": "Interior Design Solutions",
+        "requirements": [
+            "Bachelor's degree in Interior Design",
+            "5+ years of interior design experience",
+            "Proficiency in CAD and 3D modeling software",
+            "Knowledge of building codes and regulations"
+        ],
+        "responsibilities": [
+            "Create interior design concepts for residential and commercial spaces",
+            "Select materials, colors, and furnishings",
+            "Oversee project implementation"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@gamedesign.jp",
+        "title": "Game Designer",
+        "location": "Tokyo, Japan",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2025-08-20",
+        "salaryRange": {
+            "min": "5M",
+            "max": "7M",
+            "currency": "JPY"
+        },
+        "description": "Game Design is looking for a Game Designer to create engaging gameplay experiences. You will design game mechanics, levels, and systems for various gaming platforms.",
+        "company": "Game Design Co., Ltd.",
+        "requirements": [
+            "Bachelor's degree in Game Design or related field",
+            "3+ years of game design experience",
+            "Experience with game engines like Unity or Unreal",
+            "Strong understanding of game mechanics and player psychology"
+        ],
+        "responsibilities": [
+            "Design game mechanics and systems",
+            "Create level designs and gameplay sequences",
+            "Collaborate with artists and developers"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@softwaredev.com",
+        "title": "Senior Software Engineer",
+        "location": "San Francisco, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
         "category": "Development",
-        "applicationDeadline": "2024-12-25",
+        "applicationDeadline": "2025-06-20",
         "salaryRange": {
-            "min": "30k",
-            "max": "70k",
-            "currency": "BDT"
+            "min": "130k",
+            "max": "160k",
+            "currency": "USD"
         },
-        "description": "Develop and maintain mobile applications for Android and iOS platforms.",
-        "company": "AppCrafter",
+        "description": "Software Dev is seeking a Senior Software Engineer to design and develop high-quality software solutions. You will lead development projects, mentor junior developers, and implement best practices.",
+        "company": "Software Dev Inc.",
         "requirements": [
-            "Flutter",
-            "Kotlin",
-            "Swift",
-            "Firebase"
+            "Bachelor's degree in Computer Science or related field",
+            "7+ years of software development experience",
+            "Proficiency in Java, Python, or C#",
+            "Experience with microservices architecture"
         ],
         "responsibilities": [
-            "Develop mobile apps",
-            "Ensure app performance",
-            "Collaborate with backend teams"
+            "Design and develop software solutions",
+            "Lead development projects and mentor junior developers",
+            "Implement best practices and coding standards"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@webtech.co.uk",
+        "title": "Full Stack Developer",
+        "location": "London, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Development",
+        "applicationDeadline": "2025-07-10",
+        "salaryRange": {
+            "min": "55k",
+            "max": "75k",
+            "currency": "GBP"
+        },
+        "description": "Web Tech is looking for a Full Stack Developer to build web applications from front to back. You will work with both front-end and back-end technologies to create scalable and maintainable software.",
+        "company": "Web Tech Ltd",
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "3+ years of full stack development experience",
+            "Proficiency in JavaScript, React, Node.js",
+            "Experience with databases and API development"
+        ],
+        "responsibilities": [
+            "Develop front-end and back-end components",
+            "Design and implement databases and APIs",
+            "Ensure code quality and performance"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@mobileapps.de",
+        "title": "Mobile App Developer",
+        "location": "Berlin, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Development",
+        "applicationDeadline": "2025-06-25",
+        "salaryRange": {
+            "min": "50k",
+            "max": "70k",
+            "currency": "EUR"
+        },
+        "description": "Mobile Apps is seeking a Mobile App Developer to create native applications for iOS and Android. You will design, build, and maintain high-quality mobile applications.",
+        "company": "Mobile Apps GmbH",
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "3+ years of mobile app development experience",
+            "Proficiency in Swift, Kotlin, or React Native",
+            "Experience with app store deployment"
+        ],
+        "responsibilities": [
+            "Develop native mobile applications",
+            "Implement UI/UX designs in mobile interfaces",
+            "Optimize application performance"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@datatech.ca",
+        "title": "Data Engineer",
+        "location": "Toronto, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Development",
+        "applicationDeadline": "2025-08-15",
+        "salaryRange": {
+            "min": "90k",
+            "max": "120k",
+            "currency": "CAD"
+        },
+        "description": "Data Tech is looking for a Data Engineer to design and implement data pipelines and infrastructure. You will work with large datasets and develop solutions for data storage, processing, and analysis.",
+        "company": "Data Tech Inc.",
+        "requirements": [
+            "Bachelor's degree in Computer Science, Engineering, or related field",
+            "5+ years of data engineering experience",
+            "Proficiency in Python, SQL, and data processing frameworks",
+            "Experience with cloud platforms like AWS or Azure"
+        ],
+        "responsibilities": [
+            "Design and implement data pipelines",
+            "Develop data storage and processing solutions",
+            "Ensure data quality and reliability"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@airesearch.sg",
+        "title": "Machine Learning Engineer",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Development",
+        "applicationDeadline": "2025-07-20",
+        "salaryRange": {
+            "min": "100k",
+            "max": "130k",
+            "currency": "SGD"
+        },
+        "description": "AI Research is seeking a Machine Learning Engineer to develop and deploy machine learning models. You will work with data scientists to implement ML solutions for various applications.",
+        "company": "AI Research Pte Ltd",
+        "requirements": [
+            "Master's or PhD in Computer Science, Machine Learning, or related field",
+            "5+ years of machine learning experience",
+            "Proficiency in Python and ML frameworks like TensorFlow or PyTorch",
+            "Experience with model deployment and MLOps"
+        ],
+        "responsibilities": [
+            "Develop and optimize machine learning models",
+            "Implement ML pipelines for model training and deployment",
+            "Collaborate with data scientists and product teams"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@cloudinfra.fr",
+        "title": "DevOps Engineer",
+        "location": "Paris, France",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Development",
+        "applicationDeadline": "2025-06-30",
+        "salaryRange": {
+            "min": "45k",
+            "max": "65k",
+            "currency": "EUR"
+        },
+        "description": "Cloud Infra is looking for a DevOps Engineer to automate infrastructure and deployment processes. You will implement CI/CD pipelines and manage cloud resources.",
+        "company": "Cloud Infrastructure SA",
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "3+ years of DevOps experience",
+            "Experience with Docker, Kubernetes, and CI/CD tools",
+            "Knowledge of cloud platforms like AWS, Azure, or GCP"
+        ],
+        "responsibilities": [
+            "Implement and maintain CI/CD pipelines",
+            "Manage cloud infrastructure and resources",
+            "Automate deployment and monitoring processes"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@securitytech.com",
+        "title": "Security Engineer",
+        "location": "Austin, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Development",
+        "applicationDeadline": "2025-08-10",
+        "salaryRange": {
+            "min": "120k",
+            "max": "150k",
+            "currency": "USD"
+        },
+        "description": "Security Tech is seeking a Security Engineer to implement and maintain security measures for software systems. You will identify vulnerabilities, conduct security assessments, and develop secure coding practices.",
+        "company": "Security Tech Solutions",
+        "requirements": [
+            "Bachelor's degree in Computer Science, Cybersecurity, or related field",
+            "5+ years of security engineering experience",
+            "Security certifications like CISSP or CEH",
+            "Experience with security tools and frameworks"
+        ],
+        "responsibilities": [
+            "Implement security measures for software systems",
+            "Conduct security assessments and penetration testing",
+            "Develop secure coding guidelines"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@hrcompany.co.uk",
+        "title": "HR Manager",
+        "location": "Manchester, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-06-15",
+        "salaryRange": {
+            "min": "45k",
+            "max": "60k",
+            "currency": "GBP"
+        },
+        "description": "HR Company is looking for an HR Manager to oversee all human resources functions. You will develop HR strategies, manage employee relations, and ensure compliance with employment laws.",
+        "company": "HR Company Ltd",
+        "requirements": [
+            "Bachelor's degree in Human Resources or related field",
+            "5+ years of HR experience",
+            "CIPD qualification",
+            "Knowledge of UK employment laws"
+        ],
+        "responsibilities": [
+            "Develop and implement HR strategies and policies",
+            "Manage employee relations and performance",
+            "Ensure compliance with employment laws"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@talentacquisition.com",
+        "title": "Talent Acquisition Specialist",
+        "location": "Chicago, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-07-10",
+        "salaryRange": {
+            "min": "60k",
+            "max": "80k",
+            "currency": "USD"
+        },
+        "description": "Talent Acquisition is seeking a Talent Acquisition Specialist to recruit and hire qualified candidates. You will develop recruitment strategies, screen candidates, and coordinate the hiring process.",
+        "company": "Talent Acquisition Inc.",
+        "requirements": [
+            "Bachelor's degree in Human Resources or related field",
+            "3+ years of recruitment experience",
+            "Experience with applicant tracking systems",
+            "Strong interviewing and assessment skills"
+        ],
+        "responsibilities": [
+            "Develop and implement recruitment strategies",
+            "Screen, interview, and assess candidates",
+            "Coordinate the hiring process"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@employeedevelopment.de",
+        "title": "Learning and Development Specialist",
+        "location": "Munich, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-06-30",
+        "salaryRange": {
+            "min": "45k",
+            "max": "60k",
+            "currency": "EUR"
+        },
+        "description": "Employee Development is looking for a Learning and Development Specialist to design and implement training programs. You will assess training needs, develop learning materials, and evaluate training effectiveness.",
+        "company": "Employee Development GmbH",
+        "requirements": [
+            "Bachelor's degree in Human Resources, Education, or related field",
+            "3+ years of L&D experience",
+            "Experience with e-learning platforms",
+            "Strong instructional design skills"
+        ],
+        "responsibilities": [
+            "Design and implement training programs",
+            "Develop learning materials and resources",
+            "Evaluate training effectiveness"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@compensationbenefits.sg",
+        "title": "Compensation and Benefits Specialist",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-07-20",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "SGD"
+        },
+        "description": "Compensation & Benefits is seeking a Compensation and Benefits Specialist to develop and manage compensation programs. You will conduct market research, administer benefits, and ensure compliance with regulations.",
+        "company": "Compensation & Benefits Pte Ltd",
+        "requirements": [
+            "Bachelor's degree in Human Resources or related field",
+            "3+ years of compensation and benefits experience",
+            "Knowledge of Singapore employment laws",
+            "Experience with HRIS and payroll systems"
+        ],
+        "responsibilities": [
+            "Develop and manage compensation programs",
+            "Administer employee benefits",
+            "Ensure compliance with regulations"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@employeerelations.ca",
+        "title": "Employee Relations Specialist",
+        "location": "Vancouver, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-08-15",
+        "salaryRange": {
+            "min": "65k",
+            "max": "85k",
+            "currency": "CAD"
+        },
+        "description": "Employee Relations is looking for an Employee Relations Specialist to manage workplace relationships and resolve conflicts. You will develop policies, handle employee concerns, and promote a positive work environment.",
+        "company": "Employee Relations Inc.",
+        "requirements": [
+            "Bachelor's degree in Human Resources or related field",
+            "3+ years of employee relations experience",
+            "Knowledge of Canadian labor laws",
+            "Strong conflict resolution skills"
+        ],
+        "responsibilities": [
+            "Manage workplace relationships and resolve conflicts",
+            "Develop and implement HR policies",
+            "Handle employee concerns and grievances"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@hranalytics.fr",
+        "title": "HR Analytics Specialist",
+        "location": "Lyon, France",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-07-25",
+        "salaryRange": {
+            "min": "40k",
+            "max": "55k",
+            "currency": "EUR"
+        },
+        "description": "HR Analytics is seeking an HR Analytics Specialist to collect and analyze HR data. You will develop metrics, create reports, and provide insights to support HR decisions.",
+        "company": "HR Analytics SA",
+        "requirements": [
+            "Bachelor's degree in Human Resources, Analytics, or related field",
+            "3+ years of HR analytics experience",
+            "Proficiency with data analysis tools",
+            "Strong statistical and analytical skills"
+        ],
+        "responsibilities": [
+            "Collect and analyze HR data",
+            "Develop HR metrics and dashboards",
+            "Provide insights to support HR decisions"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@automechanic.com",
+        "title": "Automotive Technician",
+        "location": "Detroit, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-06-20",
+        "salaryRange": {
+            "min": "45k",
+            "max": "65k",
+            "currency": "USD"
+        },
+        "description": "Auto Mechanic is looking for an Automotive Technician to diagnose and repair vehicles. You will perform maintenance, troubleshoot issues, and ensure vehicles meet safety standards.",
+        "company": "Auto Mechanic Services",
+        "requirements": [
+            "ASE certification",
+            "3+ years of automotive repair experience",
+            "Experience with diagnostic equipment",
+            "Valid driver's license"
+        ],
+        "responsibilities": [
+            "Diagnose and repair vehicle issues",
+            "Perform routine maintenance",
+            "Ensure vehicles meet safety standards"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@autoparts.co.uk",
+        "title": "Automotive Parts Specialist",
+        "location": "Birmingham, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-07-15",
+        "salaryRange": {
+            "min": "22k",
+            "max": "28k",
+            "currency": "GBP"
+        },
+        "description": "Auto Parts is seeking an Automotive Parts Specialist to manage inventory and assist customers. You will order parts, maintain stock levels, and provide product information.",
+        "company": "Auto Parts Ltd",
+        "requirements": [
+            "High school diploma or equivalent",
+            "1+ years of automotive parts experience",
+            "Knowledge of automotive systems",
+            "Strong customer service skills"
+        ],
+        "responsibilities": [
+            "Manage automotive parts inventory",
+            "Assist customers with part selection",
+            "Order and receive parts"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@carmanufacturer.de",
+        "title": "Automotive Assembly Technician",
+        "location": "Stuttgart, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-06-30",
+        "salaryRange": {
+            "min": "30k",
+            "max": "40k",
+            "currency": "EUR"
+        },
+        "description": "Car Manufacturer is looking for an Automotive Assembly Technician to assemble vehicle components. You will follow production schedules, ensure quality standards, and maintain a safe work environment.",
+        "company": "Car Manufacturer GmbH",
+        "requirements": [
+            "Vocational training in automotive or mechanical field",
+            "1+ years of manufacturing or assembly experience",
+            "Ability to read technical drawings",
+            "Attention to detail"
+        ],
+        "responsibilities": [
+            "Assemble vehicle components according to specifications",
+            "Follow production schedules and quality standards",
+            "Maintain a clean and safe work environment"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@cardesign.jp",
+        "title": "Automotive Designer",
+        "location": "Tokyo, Japan",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-08-10",
+        "salaryRange": {
+            "min": "7M",
+            "max": "10M",
+            "currency": "JPY"
+        },
+        "description": "Car Design is seeking an Automotive Designer to create vehicle designs. You will develop concepts, create sketches and renderings, and collaborate with engineering teams.",
+        "company": "Car Design Co., Ltd.",
+        "requirements": [
+            "Bachelor's degree in Industrial Design or related field",
+            "5+ years of automotive design experience",
+            "Proficiency in CAD and design software",
+            "Strong creative and technical skills"
+        ],
+        "responsibilities": [
+            "Create vehicle design concepts",
+            "Develop sketches and renderings",
+            "Collaborate with engineering teams"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@autodealership.ca",
+        "title": "Automotive Sales Consultant",
+        "location": "Toronto, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-07-20",
+        "salaryRange": {
+            "min": "50k",
+            "max": "80k",
+            "currency": "CAD"
+        },
+        "description": "Auto Dealership is looking for an Automotive Sales Consultant to sell vehicles and provide customer service. You will demonstrate vehicles, negotiate sales, and assist with financing options.",
+        "company": "Auto Dealership Inc.",
+        "requirements": [
+            "High school diploma or equivalent",
+            "2+ years of sales experience",
+            "Valid driver's license",
+            "Strong communication and negotiation skills"
+        ],
+        "responsibilities": [
+            "Sell vehicles and provide customer service",
+            "Demonstrate vehicles and explain features",
+            "Negotiate sales and assist with financing options"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@autodealership.fr",
+        "title": "Service Advisor",
+        "location": "Paris, France",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-06-25",
+        "salaryRange": {
+            "min": "30k",
+            "max": "40k",
+            "currency": "EUR"
+        },
+        "description": "Auto Dealership is seeking a Service Advisor to assist customers with vehicle service needs. You will schedule appointments, explain service recommendations, and ensure customer satisfaction.",
+        "company": "Auto Dealership SA",
+        "requirements": [
+            "High school diploma or equivalent",
+            "2+ years of customer service experience",
+            "Knowledge of automotive systems",
+            "Strong communication skills"
+        ],
+        "responsibilities": [
+            "Assist customers with vehicle service needs",
+            "Schedule service appointments",
+            "Explain service recommendations and costs"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@customerservice.com",
+        "title": "Customer Service Representative",
+        "location": "Dallas, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-06-15",
+        "salaryRange": {
+            "min": "35k",
+            "max": "45k",
+            "currency": "USD"
+        },
+        "description": "Customer Service is looking for a Customer Service Representative to assist customers with inquiries and issues. You will respond to customer needs, process orders, and resolve complaints.",
+        "company": "Customer Service Solutions",
+        "requirements": [
+            "High school diploma or equivalent",
+            "1+ years of customer service experience",
+            "Strong communication skills",
+            "Problem-solving abilities"
+        ],
+        "responsibilities": [
+            "Assist customers with inquiries and issues",
+            "Process orders and returns",
+            "Resolve customer complaints"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@supportcenter.co.uk",
+        "title": "Technical Support Specialist",
+        "location": "Leeds, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-07-10",
+        "salaryRange": {
+            "min": "28k",
+            "max": "35k",
+            "currency": "GBP"
+        },
+        "description": "Support Center is seeking a Technical Support Specialist to provide technical assistance to customers. You will troubleshoot issues, provide solutions, and document support cases.",
+        "company": "Support Center Ltd",
+        "requirements": [
+            "Associate's degree in IT or related field",
+            "2+ years of technical support experience",
+            "Knowledge of computer systems and software",
+            "Strong problem-solving skills"
+        ],
+        "responsibilities": [
+            "Provide technical assistance to customers",
+            "Troubleshoot and resolve technical issues",
+            "Document support cases and solutions"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@callcenter.de",
+        "title": "Call Center Agent",
+        "location": "Hamburg, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-06-30",
+        "salaryRange": {
+            "min": "25k",
+            "max": "32k",
+            "currency": "EUR"
+        },
+        "description": "Call Center is looking for a Call Center Agent to handle inbound and outbound calls. You will respond to customer inquiries, provide information, and resolve issues.",
+        "company": "Call Center GmbH",
+        "requirements": [
+            "High school diploma or equivalent",
+            "1+ years of customer service experience",
+            "Fluency in German and English",
+            "Strong communication skills"
+        ],
+        "responsibilities": [
+            "Handle inbound and outbound calls",
+            "Respond to customer inquiries",
+            "Document customer interactions"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@customersuccess.sg",
+        "title": "Customer Success Manager",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-07-20",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "SGD"
+        },
+        "description": "Customer Success is seeking a Customer Success Manager to ensure customer satisfaction and retention. You will build relationships with clients, provide solutions, and drive product adoption.",
+        "company": "Customer Success Pte Ltd",
+        "requirements": [
+            "Bachelor's degree in Business or related field",
+            "4+ years of customer success or account management experience",
+            "Strong relationship-building skills",
+            "Experience with CRM systems"
+        ],
+        "responsibilities": [
+            "Build and maintain client relationships",
+            "Ensure customer satisfaction and retention",
+            "Drive product adoption and usage"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@retailstore.ca",
+        "title": "Retail Sales Associate",
+        "location": "Montreal, Canada",
+        "jobType": "Part-time",
+        "jobPosition": "Entry-level",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-06-25",
+        "salaryRange": {
+            "min": "15",
+            "max": "18",
+            "currency": "CAD/hr"
+        },
+        "description": "Retail Store is looking for a Retail Sales Associate to assist customers and process sales. You will provide product information, maintain store appearance, and process transactions.",
+        "company": "Retail Store Inc.",
+        "requirements": [
+            "High school diploma or equivalent",
+            "Previous retail or customer service experience preferred",
+            "Strong communication skills",
+            "Basic math skills"
+        ],
+        "responsibilities": [
+            "Assist customers and provide product information",
+            "Process sales transactions",
+            "Maintain store appearance and merchandise displays"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@guestservices.au",
+        "title": "Guest Services Representative",
+        "location": "Sydney, Australia",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-08-10",
+        "salaryRange": {
+            "min": "45k",
+            "max": "55k",
+            "currency": "AUD"
+        },
+        "description": "Guest Services is seeking a Guest Services Representative to welcome and assist guests. You will check in/out guests, respond to inquiries, and ensure guest satisfaction.",
+        "company": "Guest Services Pty Ltd",
+        "requirements": [
+            "High school diploma or equivalent",
+            "1+ years of customer service experience",
+            "Strong communication skills",
+            "Problem-solving abilities"
+        ],
+        "responsibilities": [
+            "Welcome and assist guests",
+            "Process check-ins and check-outs",
+            "Respond to guest inquiries and requests"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@hospital.com",
+        "title": "Registered Nurse",
+        "location": "Boston, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Health",
+        "applicationDeadline": "2025-06-20",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "USD"
+        },
+        "description": "Hospital is looking for a Registered Nurse to provide patient care. You will assess patient needs, administer treatments, and collaborate with healthcare teams.",
+        "company": "General Hospital",
+        "requirements": [
+            "Bachelor's degree in Nursing",
+            "RN license",
+            "2+ years of nursing experience",
+            "BLS certification"
+        ],
+        "responsibilities": [
+            "Provide direct patient care",
+            "Administer medications and treatments",
+            "Document patient information"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@medicalclinic.co.uk",
+        "title": "Medical Doctor",
+        "location": "London, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Health",
+        "applicationDeadline": "2025-08-15",
+        "salaryRange": {
+            "min": "80k",
+            "max": "120k",
+            "currency": "GBP"
+        },
+        "description": "Medical Clinic is seeking a Medical Doctor to diagnose and treat patients. You will conduct examinations, order tests, and develop treatment plans.",
+        "company": "Medical Clinic Ltd",
+        "requirements": [
+            "Medical degree",
+            "GMC registration",
+            "5+ years of clinical experience",
+            "Excellent communication skills"
+        ],
+        "responsibilities": [
+            "Diagnose and treat patients",
+            "Order and interpret diagnostic tests",
+            "Develop and implement treatment plans"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@dentalclinic.de",
+        "title": "Dental Hygienist",
+        "location": "Frankfurt, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Health",
+        "applicationDeadline": "2025-07-10",
+        "salaryRange": {
+            "min": "35k",
+            "max": "45k",
+            "currency": "EUR"
+        },
+        "description": "Dental Clinic is looking for a Dental Hygienist to provide dental hygiene care. You will clean teeth, examine patients, and educate on oral hygiene.",
+        "company": "Dental Clinic GmbH",
+        "requirements": [
+            "Dental Hygiene degree or certification",
+            "2+ years of dental hygiene experience",
+            "Knowledge of dental procedures",
+            "Patient education skills"
+        ],
+        "responsibilities": [
+            "Clean teeth and remove plaque",
+            "Examine patients for oral diseases",
+            "Educate patients on oral hygiene"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@pharmacy.sg",
+        "title": "Pharmacist",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Health",
+        "applicationDeadline": "2025-06-30",
+        "salaryRange": {
+            "min": "60k",
+            "max": "80k",
+            "currency": "SGD"
+        },
+        "description": "Pharmacy is seeking a Pharmacist to dispense medications and provide pharmaceutical care. You will review prescriptions, counsel patients, and ensure medication safety.",
+        "company": "Pharmacy Pte Ltd",
+        "requirements": [
+            "Pharmacy degree",
+            "Pharmacy license",
+            "2+ years of pharmacy experience",
+            "Knowledge of pharmaceutical products"
+        ],
+        "responsibilities": [
+            "Dispense medications according to prescriptions",
+            "Counsel patients on medication use",
+            "Ensure medication safety and accuracy"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@medicallab.ca",
+        "title": "Medical Laboratory Technician",
+        "location": "Toronto, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Health",
+        "applicationDeadline": "2025-07-20",
+        "salaryRange": {
+            "min": "55k",
+            "max": "70k",
+            "currency": "CAD"
+        },
+        "description": "Medical Lab is looking for a Medical Laboratory Technician to perform laboratory tests. You will collect and analyze samples, operate lab equipment, and document results.",
+        "company": "Medical Laboratory Inc.",
+        "requirements": [
+            "Associate's or Bachelor's degree in Medical Laboratory Science",
+            "MLT certification",
+            "2+ years of laboratory experience",
+            "Attention to detail"
+        ],
+        "responsibilities": [
+            "Collect and analyze biological samples",
+            "Operate laboratory equipment",
+            "Document and report test results"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@physicaltherapy.fr",
+        "title": "Physical Therapist",
+        "location": "Paris, France",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Health",
+        "applicationDeadline": "2025-08-10",
+        "salaryRange": {
+            "min": "40k",
+            "max": "55k",
+            "currency": "EUR"
+        },
+        "description": "Physical Therapy is seeking a Physical Therapist to provide therapy services. You will assess patient needs, develop treatment plans, and perform therapeutic exercises.",
+        "company": "Physical Therapy Center",
+        "requirements": [
+            "Degree in Physical Therapy",
+            "Physical Therapy license",
+            "2+ years of PT experience",
+            "Knowledge of therapeutic techniques"
+        ],
+        "responsibilities": [
+            "Assess patient mobility and function",
+            "Develop and implement treatment plans",
+            "Perform therapeutic exercises and techniques"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@projectmanagement.com",
+        "title": "Project Manager",
+        "location": "Seattle, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Project Management",
+        "applicationDeadline": "2025-06-15",
+        "salaryRange": {
+            "min": "85k",
+            "max": "110k",
+            "currency": "USD"
+        },
+        "description": "Project Management is looking for a Project Manager to plan and execute projects. You will define project scope, create schedules, and manage resources to ensure successful delivery.",
+        "company": "Project Management Solutions",
+        "requirements": [
+            "Bachelor's degree in Business or related field",
+            "PMP certification",
+            "5+ years of project management experience",
+            "Strong leadership and communication skills"
+        ],
+        "responsibilities": [
+            "Plan and execute projects from initiation to completion",
+            "Manage project scope, schedule, and budget",
+            "Lead project teams and communicate with stakeholders"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@agileconsulting.co.uk",
+        "title": "Scrum Master",
+        "location": "Edinburgh, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Project Management",
+        "applicationDeadline": "2025-07-10",
+        "salaryRange": {
+            "min": "50k",
+            "max": "65k",
+            "currency": "GBP"
+        },
+        "description": "Agile Consulting is seeking a Scrum Master to facilitate agile processes. You will coach teams, remove impediments, and ensure adherence to agile principles.",
+        "company": "Agile Consulting Ltd",
+        "requirements": [
+            "Bachelor's degree in Business, IT, or related field",
+            "Scrum Master certification",
+            "3+ years of agile experience",
+            "Strong facilitation and coaching skills"
+        ],
+        "responsibilities": [
+            "Facilitate scrum ceremonies and agile processes",
+            "Coach teams on agile principles and practices",
+            "Remove impediments and resolve conflicts"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@constructionpm.de",
+        "title": "Construction Project Manager",
+        "location": "Berlin, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Project Management",
+        "applicationDeadline": "2025-08-20",
+        "salaryRange": {
+            "min": "60k",
+            "max": "80k",
+            "currency": "EUR"
+        },
+        "description": "Construction PM is looking for a Construction Project Manager to oversee construction projects. You will plan and manage construction activities, coordinate with contractors, and ensure project quality.",
+        "company": "Construction PM GmbH",
+        "requirements": [
+            "Bachelor's degree in Civil Engineering, Construction Management, or related field",
+            "5+ years of construction project management experience",
+            "Knowledge of construction methods and regulations",
+            "Strong problem-solving skills"
+        ],
+        "responsibilities": [
+            "Plan and manage construction projects",
+            "Coordinate with contractors and suppliers",
+            "Ensure project quality, safety, and compliance"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@itprojects.sg",
+        "title": "IT Project Manager",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Project Management",
+        "applicationDeadline": "2025-06-30",
+        "salaryRange": {
+            "min": "80k",
+            "max": "110k",
+            "currency": "SGD"
+        },
+        "description": "IT Projects is seeking an IT Project Manager to lead technology projects. You will plan and execute IT initiatives, manage project teams, and ensure successful delivery of technology solutions.",
+        "company": "IT Projects Pte Ltd",
+        "requirements": [
+            "Bachelor's degree in Computer Science, IT, or related field",
+            "PMP or PRINCE2 certification",
+            "5+ years of IT project management experience",
+            "Strong technical and leadership skills"
+        ],
+        "responsibilities": [
+            "Lead IT projects from planning to implementation",
+            "Manage project scope, schedule, and budget",
+            "Coordinate with technical teams and stakeholders"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@productdevelopment.ca",
+        "title": "Product Manager",
+        "location": "Vancouver, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Project Management",
+        "applicationDeadline": "2025-07-15",
+        "salaryRange": {
+            "min": "85k",
+            "max": "110k",
+            "currency": "CAD"
+        },
+        "description": "Product Development is looking for a Product Manager to oversee product development. You will define product vision, create roadmaps, and coordinate with development teams.",
+        "company": "Product Development Inc.",
+        "requirements": [
+            "Bachelor's degree in Business, Engineering, or related field",
+            "5+ years of product management experience",
+            "Strong analytical and leadership skills",
+            "Experience with agile methodologies"
+        ],
+        "responsibilities": [
+            "Define product vision and strategy",
+            "Create and maintain product roadmaps",
+            "Coordinate with development teams and stakeholders"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@programmanagement.fr",
+        "title": "Program Manager",
+        "location": "Paris, France",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Project Management",
+        "applicationDeadline": "2025-08-10",
+        "salaryRange": {
+            "min": "60k",
+            "max": "80k",
+            "currency": "EUR"
+        },
+        "description": "Program Management is seeking a Program Manager to oversee multiple related projects. You will coordinate project activities, manage dependencies, and ensure program objectives are met.",
+        "company": "Program Management SA",
+        "requirements": [
+            "Bachelor's degree in Business, Engineering, or related field",
+            "PgMP or MSP certification preferred",
+            "7+ years of program management experience",
+            "Strong leadership and strategic planning skills"
+        ],
+        "responsibilities": [
+            "Oversee multiple related projects",
+            "Manage program scope, schedule, and budget",
+            "Coordinate with project teams and stakeholders"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@financepro.com",
+        "title": "Bookkeeper",
+        "location": "Chicago, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Accounting",
+        "applicationDeadline": "2025-09-20",
+        "salaryRange": {
+            "min": "50k",
+            "max": "65k",
+            "currency": "USD"
+        },
+        "description": "FinancePro Solutions is seeking a detail-oriented Bookkeeper to maintain financial records, process transactions, and prepare financial reports. The ideal candidate will have strong accounting knowledge and experience with accounting software.",
+        "company": "FinancePro Solutions",
+        "requirements": [
+            "Associate's degree in Accounting or related field",
+            "3+ years of bookkeeping experience",
+            "Proficiency in QuickBooks or similar software",
+            "Strong attention to detail"
+        ],
+        "responsibilities": [
+            "Maintain financial records and ledgers",
+            "Process accounts payable and receivable",
+            "Prepare monthly financial statements"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@digitalmarketing.io",
+        "title": "SEO Specialist",
+        "location": "Austin, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Marketing",
+        "applicationDeadline": "2025-10-15",
+        "salaryRange": {
+            "min": "60k",
+            "max": "80k",
+            "currency": "USD"
+        },
+        "description": "Digital Marketing Solutions is looking for an SEO Specialist to improve website visibility and organic search rankings. You will develop and implement SEO strategies, conduct keyword research, and analyze performance metrics.",
+        "company": "Digital Marketing Solutions",
+        "requirements": [
+            "Bachelor's degree in Marketing or related field",
+            "3+ years of SEO experience",
+            "Experience with SEO tools and analytics platforms",
+            "Knowledge of current SEO best practices"
+        ],
+        "responsibilities": [
+            "Develop and implement SEO strategies",
+            "Conduct keyword research and optimize content",
+            "Analyze SEO performance and make recommendations"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@creativestudio.it",
+        "title": "3D Animator",
+        "location": "Rome, Italy",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2025-09-10",
+        "salaryRange": {
+            "min": "30k",
+            "max": "45k",
+            "currency": "EUR"
+        },
+        "description": "Creative Studio is seeking a talented 3D Animator to create engaging animations for various media. You will design and produce 3D animations, collaborate with creative teams, and ensure high-quality deliverables.",
+        "company": "Creative Studio SRL",
+        "requirements": [
+            "Bachelor's degree in Animation, Design, or related field",
+            "3+ years of 3D animation experience",
+            "Proficiency in Maya, Blender, or similar software",
+            "Strong portfolio demonstrating animation skills"
+        ],
+        "responsibilities": [
+            "Create 3D animations for various projects",
+            "Collaborate with creative and production teams",
+            "Ensure animations meet quality standards"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@webtech.co.uk",
+        "title": "Backend Developer",
+        "location": "Manchester, UK",
+        "jobType": "Remote",
+        "jobPosition": "Mid-level",
+        "category": "Development",
+        "applicationDeadline": "2025-10-05",
+        "salaryRange": {
+            "min": "50k",
+            "max": "70k",
+            "currency": "GBP"
+        },
+        "description": "Web Tech is looking for a Backend Developer to design and implement server-side applications. You will develop APIs, optimize database performance, and ensure application security and reliability.",
+        "company": "Web Tech Ltd",
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "3+ years of backend development experience",
+            "Proficiency in Node.js, Python, or Java",
+            "Experience with databases and API development"
+        ],
+        "responsibilities": [
+            "Design and implement server-side applications",
+            "Develop and maintain APIs",
+            "Optimize database performance and application security"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@talentacquisition.com",
+        "title": "HR Business Partner",
+        "location": "New York, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-09-15",
+        "salaryRange": {
+            "min": "90k",
+            "max": "120k",
+            "currency": "USD"
+        },
+        "description": "Talent Acquisition Inc. is seeking an HR Business Partner to align HR strategies with business objectives. You will partner with leadership, develop HR initiatives, and provide guidance on HR policies and practices.",
+        "company": "Talent Acquisition Inc.",
+        "requirements": [
+            "Bachelor's degree in Human Resources or related field",
+            "5+ years of HR experience",
+            "SHRM-CP or PHR certification",
+            "Strong business acumen and consultative skills"
+        ],
+        "responsibilities": [
+            "Partner with leadership to align HR strategies with business objectives",
+            "Develop and implement HR initiatives",
+            "Provide guidance on HR policies and practices"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@automechanic.com",
+        "title": "Automotive Engineer",
+        "location": "Munich, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-10-10",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "EUR"
+        },
+        "description": "Auto Mechanic Services is looking for an Automotive Engineer to design and develop automotive systems and components. You will create designs, conduct tests, and ensure compliance with safety and performance standards.",
+        "company": "Auto Mechanic Services",
+        "requirements": [
+            "Bachelor's degree in Mechanical or Automotive Engineering",
+            "5+ years of automotive engineering experience",
+            "Experience with CAD software and simulation tools",
+            "Knowledge of automotive regulations and standards"
+        ],
+        "responsibilities": [
+            "Design and develop automotive systems and components",
+            "Conduct tests and analyze performance data",
+            "Ensure compliance with safety and performance standards"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@customerservice.com",
+        "title": "Customer Experience Manager",
+        "location": "Seattle, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-09-25",
+        "salaryRange": {
+            "min": "75k",
+            "max": "95k",
+            "currency": "USD"
+        },
+        "description": "Customer Service Solutions is seeking a Customer Experience Manager to develop and implement strategies to improve customer satisfaction. You will analyze customer feedback, identify improvement opportunities, and lead customer experience initiatives.",
+        "company": "Customer Service Solutions",
+        "requirements": [
+            "Bachelor's degree in Business or related field",
+            "5+ years of customer service or experience management",
+            "Experience with CX tools and methodologies",
+            "Strong analytical and leadership skills"
+        ],
+        "responsibilities": [
+            "Develop and implement customer experience strategies",
+            "Analyze customer feedback and identify improvement opportunities",
+            "Lead customer experience initiatives"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@hospital.com",
+        "title": "Clinical Research Coordinator",
+        "location": "Toronto, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Health",
+        "applicationDeadline": "2025-10-20",
+        "salaryRange": {
+            "min": "60k",
+            "max": "75k",
+            "currency": "CAD"
+        },
+        "description": "General Hospital is looking for a Clinical Research Coordinator to manage clinical trials and research studies. You will coordinate study activities, ensure protocol compliance, and manage data collection and documentation.",
+        "company": "General Hospital",
+        "requirements": [
+            "Bachelor's degree in Nursing, Life Sciences, or related field",
+            "3+ years of clinical research experience",
+            "Knowledge of research protocols and regulatory requirements",
+            "Strong organizational and communication skills"
+        ],
+        "responsibilities": [
+            "Coordinate clinical trials and research studies",
+            "Ensure protocol compliance and regulatory requirements",
+            "Manage data collection and documentation"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@agileconsulting.co.uk",
+        "title": "Agile Coach",
+        "location": "London, UK",
+        "jobType": "Contract",
+        "jobPosition": "Senior",
+        "category": "Project Management",
+        "applicationDeadline": "2025-09-30",
+        "salaryRange": {
+            "min": "500",
+            "max": "700",
+            "currency": "GBP/day"
+        },
+        "description": "Agile Consulting Ltd is seeking an experienced Agile Coach to transform organizations through agile methodologies. You will coach teams, facilitate agile adoption, and drive continuous improvement.",
+        "company": "Agile Consulting Ltd",
+        "requirements": [
+            "Bachelor's degree in Business, IT, or related field",
+            "7+ years of agile experience",
+            "Certified Scrum Coach or similar certification",
+            "Strong coaching and facilitation skills"
+        ],
+        "responsibilities": [
+            "Coach teams and organizations on agile methodologies",
+            "Facilitate agile adoption and transformation",
+            "Drive continuous improvement and organizational change"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@globalaccounting.com",
+        "title": "Audit Associate",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Accounting",
+        "applicationDeadline": "2025-11-10",
+        "salaryRange": {
+            "min": "40k",
+            "max": "50k",
+            "currency": "SGD"
+        },
+        "description": "Global Accounting Services is looking for an Audit Associate to assist with audit engagements. You will gather and analyze financial information, document findings, and support the audit team.",
+        "company": "Global Accounting Services",
+        "requirements": [
+            "Bachelor's degree in Accounting or related field",
+            "0-2 years of audit experience",
+            "Knowledge of accounting principles",
+            "Strong analytical skills"
+        ],
+        "responsibilities": [
+            "Assist with audit engagements",
+            "Gather and analyze financial information",
+            "Document findings and support the audit team"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@brandagency.co.uk",
+        "title": "Marketing Coordinator",
+        "location": "Edinburgh, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Marketing",
+        "applicationDeadline": "2025-11-15",
+        "salaryRange": {
+            "min": "25k",
+            "max": "30k",
+            "currency": "GBP"
+        },
+        "description": "Brand Agency Ltd is seeking a Marketing Coordinator to support marketing activities. You will assist with campaign execution, content creation, and marketing analytics.",
+        "company": "Brand Agency Ltd",
+        "requirements": [
+            "Bachelor's degree in Marketing or related field",
+            "1+ years of marketing experience",
+            "Strong communication and organizational skills",
+            "Experience with social media platforms"
+        ],
+        "responsibilities": [
+            "Support marketing campaign execution",
+            "Assist with content creation and distribution",
+            "Track and report marketing analytics"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@uxdesignfirm.com",
+        "title": "Interaction Designer",
+        "location": "San Francisco, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2025-10-25",
+        "salaryRange": {
+            "min": "90k",
+            "max": "110k",
+            "currency": "USD"
+        },
+        "description": "UX Design Firm Inc. is looking for an Interaction Designer to create engaging user experiences. You will design user interactions, create prototypes, and collaborate with product and development teams.",
+        "company": "UX Design Firm Inc.",
+        "requirements": [
+            "Bachelor's degree in Design, HCI, or related field",
+            "3+ years of interaction design experience",
+            "Proficiency in prototyping tools",
+            "Strong portfolio demonstrating interaction design skills"
+        ],
+        "responsibilities": [
+            "Design user interactions and experiences",
+            "Create interactive prototypes",
+            "Collaborate with product and development teams"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@softwaredev.com",
+        "title": "QA Engineer",
+        "location": "Austin, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Development",
+        "applicationDeadline": "2025-11-05",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "USD"
+        },
+        "description": "Software Dev Inc. is seeking a QA Engineer to ensure software quality through testing and quality assurance processes. You will develop test plans, perform testing, and identify and report defects.",
+        "company": "Software Dev Inc.",
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "3+ years of QA experience",
+            "Experience with test automation tools",
+            "Knowledge of software development lifecycle"
+        ],
+        "responsibilities": [
+            "Develop and execute test plans and cases",
+            "Perform manual and automated testing",
+            "Identify, document, and track defects"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@employeedevelopment.de",
+        "title": "Talent Development Specialist",
+        "location": "Berlin, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-10-30",
+        "salaryRange": {
+            "min": "45k",
+            "max": "55k",
+            "currency": "EUR"
+        },
+        "description": "Employee Development GmbH is looking for a Talent Development Specialist to design and implement talent development programs. You will assess development needs, create learning pathways, and evaluate program effectiveness.",
+        "company": "Employee Development GmbH",
+        "requirements": [
+            "Bachelor's degree in Human Resources, Education, or related field",
+            "3+ years of talent development experience",
+            "Experience with learning management systems",
+            "Strong facilitation and coaching skills"
+        ],
+        "responsibilities": [
+            "Design and implement talent development programs",
+            "Assess development needs and create learning pathways",
+            "Evaluate program effectiveness"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@autodealership.ca",
+        "title": "Automotive Quality Inspector",
+        "location": "Vancouver, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-11-20",
+        "salaryRange": {
+            "min": "50k",
+            "max": "65k",
+            "currency": "CAD"
+        },
+        "description": "Auto Dealership Inc. is seeking an Automotive Quality Inspector to ensure vehicles meet quality standards. You will inspect vehicles, identify defects, and document inspection results.",
+        "company": "Auto Dealership Inc.",
+        "requirements": [
+            "High school diploma or equivalent",
+            "3+ years of automotive quality or inspection experience",
+            "Knowledge of automotive systems and quality standards",
+            "Attention to detail"
+        ],
+        "responsibilities": [
+            "Inspect vehicles for quality and compliance",
+            "Identify and document defects",
+            "Ensure vehicles meet quality standards"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@supportcenter.co.uk",
+        "title": "Customer Support Team Lead",
+        "location": "Manchester, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-10-15",
+        "salaryRange": {
+            "min": "35k",
+            "max": "45k",
+            "currency": "GBP"
+        },
+        "description": "Support Center Ltd is looking for a Customer Support Team Lead to manage a team of support representatives. You will lead the team, ensure quality service delivery, and resolve escalated issues.",
+        "company": "Support Center Ltd",
+        "requirements": [
+            "Bachelor's degree in Business or related field",
+            "4+ years of customer support experience",
+            "2+ years of team leadership experience",
+            "Strong problem-solving and leadership skills"
+        ],
+        "responsibilities": [
+            "Lead a team of customer support representatives",
+            "Ensure quality service delivery and performance",
+            "Resolve escalated customer issues"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@medicalclinic.co.uk",
+        "title": "Medical Laboratory Scientist",
+        "location": "Leeds, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Health",
+        "applicationDeadline": "2025-11-10",
+        "salaryRange": {
+            "min": "30k",
+            "max": "40k",
+            "currency": "GBP"
+        },
+        "description": "Medical Clinic Ltd is seeking a Medical Laboratory Scientist to perform laboratory tests and analyze results. You will operate laboratory equipment, ensure quality control, and report findings.",
+        "company": "Medical Clinic Ltd",
+        "requirements": [
+            "Bachelor's degree in Medical Laboratory Science or related field",
+            "HCPC registration",
+            "2+ years of laboratory experience",
+            "Knowledge of laboratory procedures and equipment"
+        ],
+        "responsibilities": [
+            "Perform laboratory tests and analyze results",
+            "Operate laboratory equipment and ensure quality control",
+            "Document and report findings"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@programmanagement.fr",
+        "title": "Project Coordinator",
+        "location": "Lyon, France",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Project Management",
+        "applicationDeadline": "2025-11-25",
+        "salaryRange": {
+            "min": "30k",
+            "max": "40k",
+            "currency": "EUR"
+        },
+        "description": "Program Management SA is looking for a Project Coordinator to support project management activities. You will assist with project planning, coordinate meetings, and track project progress.",
+        "company": "Program Management SA",
+        "requirements": [
+            "Bachelor's degree in Business, Project Management, or related field",
+            "1+ years of project coordination experience",
+            "Knowledge of project management methodologies",
+            "Strong organizational and communication skills"
+        ],
+        "responsibilities": [
+            "Support project planning and execution",
+            "Coordinate meetings and communication",
+            "Track project progress and maintain documentation"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@financepro.com",
+        "title": "Internal Auditor",
+        "location": "Dallas, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Accounting",
+        "applicationDeadline": "2025-12-10",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "USD"
+        },
+        "description": "FinancePro Solutions is seeking an Internal Auditor to evaluate internal controls and ensure compliance. You will conduct audits, identify risks, and recommend improvements to policies and procedures.",
+        "company": "FinancePro Solutions",
+        "requirements": [
+            "Bachelor's degree in Accounting, Finance, or related field",
+            "CIA or CPA certification",
+            "3+ years of internal audit experience",
+            "Knowledge of internal control frameworks"
+        ],
+        "responsibilities": [
+            "Conduct internal audits and evaluate controls",
+            "Identify risks and compliance issues",
+            "Recommend improvements to policies and procedures"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@digitalmarketing.io",
+        "title": "Marketing Data Analyst",
+        "location": "Denver, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Marketing",
+        "applicationDeadline": "2025-12-05",
+        "salaryRange": {
+            "min": "65k",
+            "max": "85k",
+            "currency": "USD"
+        },
+        "description": "Digital Marketing Solutions is looking for a Marketing Data Analyst to analyze marketing data and provide insights. You will collect and analyze data, create reports, and make recommendations for marketing optimization.",
+        "company": "Digital Marketing Solutions",
+        "requirements": [
+            "Bachelor's degree in Marketing, Analytics, or related field",
+            "3+ years of data analysis experience",
+            "Proficiency with analytics tools and data visualization",
+            "Strong statistical and analytical skills"
+        ],
+        "responsibilities": [
+            "Collect and analyze marketing data",
+            "Create reports and dashboards",
+            "Provide insights and recommendations for optimization"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@creativestudio.it",
+        "title": "Art Director",
+        "location": "Florence, Italy",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Design",
+        "applicationDeadline": "2025-12-15",
+        "salaryRange": {
+            "min": "45k",
+            "max": "60k",
+            "currency": "EUR"
+        },
+        "description": "Creative Studio SRL is seeking an Art Director to lead creative direction for client projects. You will develop creative concepts, direct design teams, and ensure high-quality visual outputs.",
+        "company": "Creative Studio SRL",
+        "requirements": [
+            "Bachelor's degree in Graphic Design, Fine Arts, or related field",
+            "5+ years of design experience",
+            "Strong portfolio demonstrating creative direction",
+            "Team leadership experience"
+        ],
+        "responsibilities": [
+            "Develop creative concepts and direction",
+            "Lead design teams and review creative work",
+            "Ensure high-quality visual outputs"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@webtech.co.uk",
+        "title": "Embedded Systems Engineer",
+        "location": "Cambridge, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Development",
+        "applicationDeadline": "2025-12-10",
+        "salaryRange": {
+            "min": "60k",
+            "max": "80k",
+            "currency": "GBP"
+        },
+        "description": "Web Tech Ltd is looking for an Embedded Systems Engineer to design and develop embedded software. You will create firmware, optimize performance, and ensure reliability for embedded systems.",
+        "company": "Web Tech Ltd",
+        "requirements": [
+            "Bachelor's degree in Computer Engineering, Electrical Engineering, or related field",
+            "5+ years of embedded systems experience",
+            "Proficiency in C/C++ and assembly language",
+            "Experience with microcontrollers and RTOS"
+        ],
+        "responsibilities": [
+            "Design and develop embedded software",
+            "Optimize performance and ensure reliability",
+            "Debug and troubleshoot embedded systems"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@employeedevelopment.de",
+        "title": "Diversity and Inclusion Specialist",
+        "location": "Hamburg, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-12-20",
+        "salaryRange": {
+            "min": "45k",
+            "max": "60k",
+            "currency": "EUR"
+        },
+        "description": "Employee Development GmbH is seeking a Diversity and Inclusion Specialist to develop and implement D&I initiatives. You will create programs, provide training, and drive cultural change to promote inclusivity.",
+        "company": "Employee Development GmbH",
+        "requirements": [
+            "Bachelor's degree in Human Resources, Social Sciences, or related field",
+            "3+ years of D&I experience",
+            "Knowledge of D&I best practices",
+            "Strong facilitation and communication skills"
+        ],
+        "responsibilities": [
+            "Develop and implement D&I initiatives",
+            "Provide training and educational programs",
+            "Drive cultural change to promote inclusivity"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@carmanufacturer.de",
+        "title": "Vehicle Test Engineer",
+        "location": "Munich, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-12-15",
+        "salaryRange": {
+            "min": "50k",
+            "max": "70k",
+            "currency": "EUR"
+        },
+        "description": "Car Manufacturer GmbH is looking for a Vehicle Test Engineer to conduct vehicle tests and analyze performance. You will design test procedures, perform tests, and evaluate vehicle systems and components.",
+        "company": "Car Manufacturer GmbH",
+        "requirements": [
+            "Bachelor's degree in Mechanical Engineering, Automotive Engineering, or related field",
+            "3+ years of vehicle testing experience",
+            "Experience with test equipment and data acquisition systems",
+            "Knowledge of automotive standards and regulations"
+        ],
+        "responsibilities": [
+            "Design and conduct vehicle tests",
+            "Analyze vehicle performance and behavior",
+            "Evaluate vehicle systems and components"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@callcenter.de",
+        "title": "Customer Service Trainer",
+        "location": "Berlin, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-12-05",
+        "salaryRange": {
+            "min": "35k",
+            "max": "45k",
+            "currency": "EUR"
+        },
+        "description": "Call Center GmbH is seeking a Customer Service Trainer to develop and deliver training programs. You will design training materials, conduct training sessions, and evaluate training effectiveness.",
+        "company": "Call Center GmbH",
+        "requirements": [
+            "Bachelor's degree in Education, Communication, or related field",
+            "3+ years of customer service experience",
+            "2+ years of training experience",
+            "Strong facilitation and presentation skills"
+        ],
+        "responsibilities": [
+            "Develop and deliver customer service training programs",
+            "Design training materials and activities",
+            "Evaluate training effectiveness"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@pharmacy.sg",
+        "title": "Clinical Pharmacist",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Health",
+        "applicationDeadline": "2025-12-20",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "SGD"
+        },
+        "description": "Pharmacy Pte Ltd is looking for a Clinical Pharmacist to provide pharmaceutical care to patients. You will review medication therapies, provide clinical recommendations, and collaborate with healthcare teams.",
+        "company": "Pharmacy Pte Ltd",
+        "requirements": [
+            "Doctor of Pharmacy or equivalent",
+            "Clinical pharmacy certification",
+            "5+ years of clinical pharmacy experience",
+            "Strong clinical knowledge and patient care skills"
+        ],
+        "responsibilities": [
+            "Review medication therapies and provide clinical recommendations",
+            "Collaborate with healthcare teams",
+            "Provide patient education and counseling"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@projectmanagement.com",
+        "title": "Project Risk Manager",
+        "location": "Chicago, USA",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Project Management",
+        "applicationDeadline": "2025-12-10",
+        "salaryRange": {
+            "min": "85k",
+            "max": "110k",
+            "currency": "USD"
+        },
+        "description": "Project Management Solutions is seeking a Project Risk Manager to identify and manage project risks. You will develop risk management strategies, monitor risks, and implement mitigation plans.",
+        "company": "Project Management Solutions",
+        "requirements": [
+            "Bachelor's degree in Business, Risk Management, or related field",
+            "PMP and risk management certification",
+            "5+ years of project and risk management experience",
+            "Strong analytical and problem-solving skills"
+        ],
+        "responsibilities": [
+            "Identify and assess project risks",
+            "Develop risk management strategies and plans",
+            "Monitor risks and implement mitigation actions"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@fintech.io",
+        "title": "Financial Systems Analyst",
+        "location": "Toronto, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Accounting",
+        "applicationDeadline": "2026-01-15",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "CAD"
+        },
+        "description": "FinTech Solutions is looking for a Financial Systems Analyst to support financial software systems. You will analyze system requirements, implement solutions, and ensure data integrity.",
+        "company": "FinTech Solutions",
+        "requirements": [
+            "Bachelor's degree in Finance, Information Systems, or related field",
+            "3+ years of financial systems experience",
+            "Experience with ERP systems",
+            "Strong analytical and problem-solving skills"
+        ],
+        "responsibilities": [
+            "Analyze financial system requirements",
+            "Implement and configure financial software solutions",
+            "Ensure data integrity and system performance"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@ecommercemarketing.ca",
+        "title": "E-commerce Marketing Manager",
+        "location": "Montreal, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Marketing",
+        "applicationDeadline": "2026-01-10",
+        "salaryRange": {
+            "min": "75k",
+            "max": "95k",
+            "currency": "CAD"
+        },
+        "description": "E-commerce Marketing Inc. is seeking an E-commerce Marketing Manager to develop and implement marketing strategies for online sales. You will manage digital campaigns, optimize conversion rates, and drive online revenue growth.",
+        "company": "E-commerce Marketing Inc.",
+        "requirements": [
+            "Bachelor's degree in Marketing or related field",
+            "5+ years of e-commerce marketing experience",
+            "Experience with e-commerce platforms and digital marketing channels",
+            "Strong analytical and strategic planning skills"
+        ],
+        "responsibilities": [
+            "Develop and implement e-commerce marketing strategies",
+            "Manage digital campaigns and optimize conversion rates",
+            "Drive online revenue growth"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@interiordesign.sg",
+        "title": "Retail Store Designer",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2026-01-20",
+        "salaryRange": {
+            "min": "50k",
+            "max": "70k",
+            "currency": "SGD"
+        },
+        "description": "Interior Design Solutions is looking for a Retail Store Designer to create engaging retail environments. You will design store layouts, develop visual merchandising concepts, and create memorable customer experiences.",
+        "company": "Interior Design Solutions",
+        "requirements": [
+            "Bachelor's degree in Interior Design or related field",
+            "3+ years of retail design experience",
+            "Proficiency in CAD and 3D modeling software",
+            "Strong portfolio demonstrating retail design skills"
+        ],
+        "responsibilities": [
+            "Design retail store layouts and environments",
+            "Develop visual merchandising concepts",
+            "Create memorable customer experiences"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@mobileapps.de",
+        "title": "AR/VR Developer",
+        "location": "Berlin, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Development",
+        "applicationDeadline": "2026-01-15",
+        "salaryRange": {
+            "min": "55k",
+            "max": "75k",
+            "currency": "EUR"
+        },
+        "description": "Mobile Apps GmbH is seeking an AR/VR Developer to create immersive augmented and virtual reality experiences. You will develop AR/VR applications, optimize performance, and implement interactive features.",
+        "company": "Mobile Apps GmbH",
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "3+ years of AR/VR development experience",
+            "Experience with Unity, Unreal Engine, or similar platforms",
+            "Knowledge of 3D modeling and animation"
+        ],
+        "responsibilities": [
+            "Develop AR/VR applications and experiences",
+            "Optimize performance for various devices",
+            "Implement interactive features and user interfaces"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@hrcompany.co.uk",
+        "title": "Employee Wellbeing Specialist",
+        "location": "London, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2026-01-25",
+        "salaryRange": {
+            "min": "35k",
+            "max": "45k",
+            "currency": "GBP"
+        },
+        "description": "HR Company Ltd is looking for an Employee Wellbeing Specialist to develop and implement wellbeing programs. You will create initiatives to support employee health and wellness, measure program effectiveness, and promote a positive work environment.",
+        "company": "HR Company Ltd",
+        "requirements": [
+            "Bachelor's degree in Psychology, Human Resources, or related field",
+            "3+ years of wellbeing or wellness program experience",
+            "Knowledge of wellbeing best practices",
+            "Strong program development and implementation skills"
+        ],
+        "responsibilities": [
+            "Develop and implement employee wellbeing programs",
+            "Create initiatives to support employee health and wellness",
+            "Measure program effectiveness and promote a positive work environment"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@autoparts.co.uk",
+        "title": "Automotive Supply Chain Manager",
+        "location": "Leeds, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Automotive Job",
+        "applicationDeadline": "2026-01-20",
+        "salaryRange": {
+            "min": "45k",
+            "max": "60k",
+            "currency": "GBP"
+        },
+        "description": "Auto Parts Ltd is seeking an Automotive Supply Chain Manager to oversee supply chain operations. You will manage inventory, coordinate with suppliers, and optimize logistics processes.",
+        "company": "Auto Parts Ltd",
+        "requirements": [
+            "Bachelor's degree in Supply Chain Management, Business, or related field",
+            "5+ years of supply chain experience in the automotive industry",
+            "Knowledge of inventory management and logistics",
+            "Strong analytical and leadership skills"
+        ],
+        "responsibilities": [
+            "Oversee automotive supply chain operations",
+            "Manage inventory and coordinate with suppliers",
+            "Optimize logistics processes"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@customersuccess.sg",
+        "title": "Client Relationship Manager",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Customer Service",
+        "applicationDeadline": "2026-01-15",
+        "salaryRange": {
+            "min": "80k",
+            "max": "100k",
+            "currency": "SGD"
+        },
+        "description": "Customer Success Pte Ltd is looking for a Client Relationship Manager to build and maintain client relationships. You will serve as the primary contact for key clients, address their needs, and ensure client satisfaction and retention.",
+        "company": "Customer Success Pte Ltd",
+        "requirements": [
+            "Bachelor's degree in Business, Communications, or related field",
+            "5+ years of client relationship or account management experience",
+            "Strong relationship-building and communication skills",
+            "Experience with CRM systems"
+        ],
+        "responsibilities": [
+            "Build and maintain client relationships",
+            "Serve as primary contact for key clients",
+            "Ensure client satisfaction and retention"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@dentalclinic.de",
+        "title": "Dental Office Manager",
+        "location": "Munich, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Health",
+        "applicationDeadline": "2026-01-30",
+        "salaryRange": {
+            "min": "40k",
+            "max": "55k",
+            "currency": "EUR"
+        },
+        "description": "Dental Clinic GmbH is seeking a Dental Office Manager to oversee daily operations. You will manage administrative staff, coordinate schedules, and ensure efficient clinic operations.",
+        "company": "Dental Clinic GmbH",
+        "requirements": [
+            "Bachelor's degree in Business, Healthcare Administration, or related field",
+            "3+ years of office management experience in healthcare",
+            "Knowledge of dental practice operations",
+            "Strong organizational and leadership skills"
+        ],
+        "responsibilities": [
+            "Oversee daily clinic operations",
+            "Manage administrative staff",
+            "Ensure efficient scheduling and patient flow"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@constructionpm.de",
+        "title": "Construction Project Planner",
+        "location": "Hamburg, Germany",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Project Management",
+        "applicationDeadline": "2026-01-25",
+        "salaryRange": {
+            "min": "45k",
+            "max": "60k",
+            "currency": "EUR"
+        },
+        "description": "Construction PM GmbH is looking for a Construction Project Planner to develop and maintain project schedules. You will create detailed project plans, track progress, and forecast project timelines.",
+        "company": "Construction PM GmbH",
+        "requirements": [
+            "Bachelor's degree in Construction Management, Engineering, or related field",
+            "3+ years of construction planning experience",
+            "Proficiency in project planning software",
+            "Knowledge of construction methods and sequences"
+        ],
+        "responsibilities": [
+            "Develop and maintain detailed project schedules",
+            "Track project progress and update timelines",
+            "Forecast project completion dates"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@globaltrade.co.uk",
+        "title": "International Tax Specialist",
+        "location": "London, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Accounting",
+        "applicationDeadline": "2026-02-15",
+        "salaryRange": {
+            "min": "60k",
+            "max": "80k",
+            "currency": "GBP"
+        },
+        "description": "Global Trade Ltd is seeking an International Tax Specialist to manage global tax compliance. You will handle international tax planning, ensure compliance with tax regulations, and optimize tax structures.",
+        "company": "Global Trade Ltd",
+        "requirements": [
+            "Bachelor's degree in Accounting, Taxation, or related field",
+            "CTA or similar qualification",
+            "5+ years of international tax experience",
+            "Knowledge of international tax laws and treaties"
+        ],
+        "responsibilities": [
+            "Manage international tax planning and compliance",
+            "Ensure adherence to tax regulations across jurisdictions",
+            "Optimize tax structures for global operations"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@asiamarketing.sg",
+        "title": "Market Research Analyst",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Marketing",
+        "applicationDeadline": "2026-02-10",
+        "salaryRange": {
+            "min": "50k",
+            "max": "70k",
+            "currency": "SGD"
+        },
+        "description": "Asia Marketing Solutions is looking for a Market Research Analyst to gather and analyze market data. You will conduct research, interpret findings, and provide insights to inform marketing strategies.",
+        "company": "Asia Marketing Solutions",
+        "requirements": [
+            "Bachelor's degree in Marketing, Statistics, or related field",
+            "3+ years of market research experience",
+            "Experience with research methodologies and tools",
+            "Strong analytical and data interpretation skills"
+        ],
+        "responsibilities": [
+            "Conduct market research and gather data",
+            "Analyze research findings and identify trends",
+            "Provide insights to inform marketing strategies"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@productdesign.co.uk",
+        "title": "Design Researcher",
+        "location": "Manchester, UK",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2026-02-20",
+        "salaryRange": {
+            "min": "35k",
+            "max": "50k",
+            "currency": "GBP"
+        },
+        "description": "Product Design Ltd is seeking a Design Researcher to conduct user research for product development. You will plan and execute research studies, analyze user behavior, and translate findings into design insights.",
+        "company": "Product Design Ltd",
+        "requirements": [
+            "Bachelor's degree in Design, HCI, Psychology, or related field",
+            "3+ years of design research experience",
+            "Experience with qualitative and quantitative research methods",
+            "Strong analytical and communication skills"
+        ],
+        "responsibilities": [
+            "Plan and conduct user research studies",
+            "Analyze user behavior and needs",
+            "Translate research findings into design insights"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@airesearch.sg",
+        "title": "Computer Vision Engineer",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Development",
+        "applicationDeadline": "2026-02-15",
+        "salaryRange": {
+            "min": "90k",
+            "max": "120k",
+            "currency": "SGD"
+        },
+        "description": "AI Research Pte Ltd is looking for a Computer Vision Engineer to develop and implement computer vision algorithms. You will design and optimize vision systems, process and analyze image data, and integrate vision capabilities into applications.",
+        "company": "AI Research Pte Ltd",
+        "requirements": [
+            "Master's or PhD in Computer Science, Computer Vision, or related field",
+            "5+ years of computer vision experience",
+            "Proficiency in Python and OpenCV",
+            "Experience with deep learning frameworks for vision tasks"
+        ],
+        "responsibilities": [
+            "Develop and implement computer vision algorithms",
+            "Process and analyze image and video data",
+            "Integrate vision capabilities into applications"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@employeerelations.ca",
+        "title": "Labor Relations Specialist",
+        "location": "Toronto, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2026-02-25",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "CAD"
+        },
+        "description": "Employee Relations Inc. is seeking a Labor Relations Specialist to manage labor relations and collective bargaining. You will interpret labor agreements, handle grievances, and participate in negotiations.",
+        "company": "Employee Relations Inc.",
+        "requirements": [
+            "Bachelor's degree in Labor Relations, Human Resources, or related field",
+            "3+ years of labor relations experience",
+            "Knowledge of labor laws and collective bargaining",
+            "Strong negotiation and conflict resolution skills"
+        ],
+        "responsibilities": [
+            "Interpret and administer labor agreements",
+            "Handle grievances and labor disputes",
+            "Participate in collective bargaining negotiations"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@cardesign.jp",
+        "title": "Automotive Electrical Engineer",
+        "location": "Osaka, Japan",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Automotive Job",
+        "applicationDeadline": "2026-02-20",
+        "salaryRange": {
+            "min": "6M",
+            "max": "8M",
+            "currency": "JPY"
+        },
+        "description": "Car Design Co., Ltd. is looking for an Automotive Electrical Engineer to design and develop electrical systems for vehicles. You will create electrical architectures, implement control systems, and ensure compliance with safety standards.",
+        "company": "Car Design Co., Ltd.",
+        "requirements": [
+            "Bachelor's degree in Electrical Engineering or related field",
+            "3+ years of automotive electrical engineering experience",
+            "Experience with automotive electrical systems",
+            "Knowledge of automotive safety standards"
+        ],
+        "responsibilities": [
+            "Design and develop vehicle electrical systems",
+            "Implement control systems and electrical architectures",
+            "Ensure compliance with safety standards"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@guestservices.au",
+        "title": "Customer Experience Designer",
+        "location": "Melbourne, Australia",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Customer Service",
+        "applicationDeadline": "2026-02-10",
+        "salaryRange": {
+            "min": "70k",
+            "max": "90k",
+            "currency": "AUD"
+        },
+        "description": "Guest Services Pty Ltd is seeking a Customer Experience Designer to create seamless customer journeys. You will map customer experiences, identify pain points, and design improved customer interactions.",
+        "company": "Guest Services Pty Ltd",
+        "requirements": [
+            "Bachelor's degree in Design, CX, or related field",
+            "3+ years of customer experience design",
+            "Experience with journey mapping and service design",
+            "Strong empathy and analytical skills"
+        ],
+        "responsibilities": [
+            "Map and analyze customer journeys",
+            "Identify pain points and opportunities for improvement",
+            "Design improved customer experiences"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@medicallab.ca",
+        "title": "Healthcare Data Analyst",
+        "location": "Montreal, Canada",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Health",
+        "applicationDeadline": "2026-02-28",
+        "salaryRange": {
+            "min": "65k",
+            "max": "85k",
+            "currency": "CAD"
+        },
+        "description": "Medical Laboratory Inc. is looking for a Healthcare Data Analyst to analyze healthcare data and provide insights. You will collect and analyze data, create reports, and support data-driven decision making.",
+        "company": "Medical Laboratory Inc.",
+        "requirements": [
+            "Bachelor's degree in Health Informatics, Statistics, or related field",
+            "3+ years of healthcare data analysis experience",
+            "Experience with healthcare databases and analytics tools",
+            "Strong statistical and analytical skills"
+        ],
+        "responsibilities": [
+            "Collect and analyze healthcare data",
+            "Create reports and visualizations",
+            "Support data-driven decision making"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@itprojects.sg",
+        "title": "Technical Project Manager",
+        "location": "Singapore",
+        "jobType": "Full-time",
+        "jobPosition": "Manager",
+        "category": "Project Management",
+        "applicationDeadline": "2026-02-15",
+        "salaryRange": {
+            "min": "85k",
+            "max": "110k",
+            "currency": "SGD"
+        },
+        "description": "IT Projects Pte Ltd is seeking a Technical Project Manager to lead technical projects. You will manage software development projects, coordinate with technical teams, and ensure successful delivery.",
+        "company": "IT Projects Pte Ltd",
+        "requirements": [
+            "Bachelor's degree in Computer Science, IT, or related field",
+            "PMP certification",
+            "5+ years of technical project management experience",
+            "Strong technical knowledge and leadership skills"
+        ],
+        "responsibilities": [
+            "Lead technical projects from planning to implementation",
+            "Coordinate with development teams and stakeholders",
+            "Ensure successful project delivery"
         ],
         "status": "active"
     }

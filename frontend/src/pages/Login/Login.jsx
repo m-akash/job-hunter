@@ -29,24 +29,24 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      <div className="bg-gradient-to-r from-purple-600 to-violet-600 py-8 md:py-5 h-30">
+    <div className="min-h-screen my-5 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50">
+      <div className="bg-gradient-to-r from-purple-400 to-violet-300 py-8 md:py-5 h-30">
         <div className="container mx-auto px-4 md:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
             My Account
           </h1>
-          <div className="flex items-center text-gray-200">
-            <Link to="/" className="hover:text-white transition-colors">
+          <div className="flex items-center text-gray-700">
+            <Link to="/" className="hover:text-gray-900 transition-colors">
               Home
             </Link>
             <span className="mx-2">›</span>
-            <span className="text-white">My Account</span>
+            <span className="text-gray-900">My Account</span>
           </div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 md:px-8 py-4 md:pt-40">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
+        <h1 className=" text-purple-500 to-violet-500 text-3xl md:text-4xl font-bold text-center  mb-4">
           Sign In
         </h1>
 
@@ -56,32 +56,31 @@ const Login = () => {
           transition={{
             duration: 0.5,
             delay: 0.1,
-            // ease: [0, 0.71, 0.2, 1.01],
           }}
-          className="max-w-md mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-4 md:p-6 border border-gray-700"
+          className="max-w-md mx-auto bg-white rounded-xl shadow-lg p-4 md:p-6 border border-gray-200"
         >
           <form onSubmit={handleSignIn} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-shadow-black mb-2">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
                 placeholder="Enter your email"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-shadow-black mb-2">
                 Password
               </label>
               <input
                 type="password"
                 name="password"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
                 placeholder="Enter your password"
                 minLength="8"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
@@ -98,7 +97,7 @@ const Login = () => {
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-600 to-violet-600 text-white py-2 px-6 rounded-lg font-medium hover:from-purple-700 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors"
+              className="w-full bg-gradient-to-r from-purple-500 to-violet-400 text-white py-2 px-6 rounded-lg font-medium hover:from-purple-700 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors"
             >
               Sign In
             </button>

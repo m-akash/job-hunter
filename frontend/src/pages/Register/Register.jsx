@@ -54,52 +54,52 @@ const Register = () => {
         duration: 0.5,
         delay: 0.1,
       }}
-      className="min-h-screen my-5 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+      className="min-h-screen my-5 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50"
     >
-      <div className="bg-gradient-to-r from-purple-600 to-violet-600 py-8 md:py-5 h-30">
+      <div className="bg-gradient-to-r from-purple-400 to-violet-300 py-8 md:py-5 h-30">
         <div className="container mx-auto px-4 md:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
             My Account
           </h1>
-          <div className="flex items-center text-gray-200">
-            <Link to="/" className="hover:text-white transition-colors">
+          <div className="flex items-center text-gray-700">
+            <Link to="/" className="hover:text-gray-900 transition-colors">
               Home
             </Link>
             <span className="mx-2">›</span>
-            <span className="text-white">My Account</span>
+            <span className="text-gray-900">My Account</span>
           </div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 md:px-8 py-8 md:py-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-purple-500 to-violet-500 mb-8">
           Create Your Account
         </h1>
 
-        <div className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-gray-700">
+        <div className="max-w-2xl mx-auto bg-white backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-gray-700">
           <form onSubmit={handleRegister} className="space-y-6">
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-black mb-2">
                 Name
               </label>
               <input
                 type="text"
                 name="name"
                 minLength="3"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
                 placeholder="Enter your name"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-black mb-2">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
                 placeholder="Enter your email"
                 required
               />
@@ -109,13 +109,13 @@ const Register = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-black mb-2">
                 Password
               </label>
               <input
                 type="password"
                 name="password"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
                 placeholder="Create a password"
                 minLength="8"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
@@ -134,13 +134,13 @@ const Register = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-black mb-2">
                 I want to register as
               </label>
               <select
                 id="registerAs"
                 name="registerAs"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white"
                 required
               >
                 <option value="">Select your role</option>
