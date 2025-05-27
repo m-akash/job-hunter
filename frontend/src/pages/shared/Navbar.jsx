@@ -183,7 +183,7 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <div className="flex items-center gap-2 md:gap-4 ">
-          {user && userData ? (
+          {user ? (
             <>
               <Link
                 to="/postjob"
@@ -201,7 +201,7 @@ const Navbar = () => {
                 >
                   <CgProfile className="h-10 w-15 text-primary" />
                   <span className="text-sm md:text-base font-medium bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                    {user.displayName || userData?.name}
+                    {user?.displayName || userData?.name}
                   </span>
                 </div>
                 <ul

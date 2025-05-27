@@ -86,7 +86,7 @@ const Register = () => {
                 type="text"
                 name="name"
                 minLength="3"
-                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-black placeholder-gray-400"
                 placeholder="Enter your name"
                 required
               />
@@ -99,7 +99,7 @@ const Register = () => {
               <input
                 type="email"
                 name="email"
-                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-black placeholder-gray-400"
                 placeholder="Enter your email"
                 required
               />
@@ -115,7 +115,7 @@ const Register = () => {
               <input
                 type="password"
                 name="password"
-                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-black placeholder-gray-400"
                 placeholder="Create a password"
                 minLength="8"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
@@ -140,7 +140,7 @@ const Register = () => {
               <select
                 id="registerAs"
                 name="registerAs"
-                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-black"
                 required
               >
                 <option value="">Select your role</option>
@@ -151,7 +151,7 @@ const Register = () => {
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-600 to-violet-600 text-white py-3 px-6 rounded-lg font-medium hover:from-purple-700 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors"
+              className="w-full bg-gradient-to-r from-purple-600 to-violet-600 text-black py-3 px-6 rounded-lg font-medium hover:from-purple-700 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors"
             >
               Create Account
             </button>

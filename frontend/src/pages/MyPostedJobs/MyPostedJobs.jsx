@@ -8,7 +8,7 @@ const MyPostedJobs = () => {
   const { user } = useAuth();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/jobs?email=${user.email}`)
+    fetch(`http://localhost:3000/jobs/email?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);

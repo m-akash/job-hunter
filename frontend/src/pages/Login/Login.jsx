@@ -57,9 +57,9 @@ const Login = () => {
             duration: 0.5,
             delay: 0.1,
           }}
-          className="max-w-md mx-auto bg-white rounded-xl shadow-lg p-4 md:p-6 border border-gray-200"
+          className="max-w-md mx-auto rounded-xl shadow-lg p-4 md:p-6 border border-gray-200"
         >
-          <form onSubmit={handleSignIn} className="space-y-4">
+          <form onSubmit={handleSignIn} className="space-y-4 ">
             <div>
               <label className="block text-sm font-medium text-shadow-black mb-2">
                 Email
@@ -67,7 +67,7 @@ const Login = () => {
               <input
                 type="email"
                 name="email"
-                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 text-black border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-color placeholder-gray-400"
                 placeholder="Enter your email"
                 required
               />
@@ -80,7 +80,7 @@ const Login = () => {
               <input
                 type="password"
                 name="password"
-                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2  text-black border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-color placeholder-gray-400"
                 placeholder="Enter your password"
                 minLength="8"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"

@@ -55,43 +55,43 @@ const JobApply = () => {
             duration: 0.5,
             delay: 0.1,
           }}
-          className="max-w-md mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-4 md:p-6 border border-gray-700"
+          className="max-w-md mx-auto bg-white backdrop-blur-sm rounded-xl shadow-lg p-4 md:p-6 border border-gray-700"
         >
           <form onSubmit={handleJobApply} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-black mb-2">
                 Linkedin URL
               </label>
               <input
                 type="url"
                 name="linkedin"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-black placeholder-gray-400"
                 placeholder="Enter your valid linkedin url"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-black mb-2">
                 Github URL
               </label>
               <input
                 type="url"
                 name="github"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-black placeholder-gray-400"
                 placeholder="Enter your valid guthub url"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-black mb-2">
                 Resume URL
               </label>
               <input
                 type="url"
                 name="resume"
-                className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-white placeholder-gray-400"
+                className="w-full px-4 py-2 bg-white border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-black placeholder-gray-400"
                 placeholder="Enter your valid resume url"
                 required
               />
@@ -99,7 +99,7 @@ const JobApply = () => {
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-600 to-violet-600 text-white py-2 px-6 rounded-lg font-medium hover:from-purple-700 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors"
+              className="w-full bg-gradient-to-r from-purple-600 to-violet-600 text-black py-2 px-6 rounded-lg font-medium hover:from-purple-700 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors"
             >
               Submit
             </button>

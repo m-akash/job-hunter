@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 const PostJob = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
+  
   const handlePostJob = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);

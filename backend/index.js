@@ -119,7 +119,7 @@ async function run() {
       res.send(result);
     });
 
-    app.get("/jobs", async (req, res) => {
+    app.get("/jobs/email", async (req, res) => {
       const email = req.query.email;
       let query = {};
 

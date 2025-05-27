@@ -2882,5 +2882,573 @@
             "Ensure successful project delivery"
         ],
         "status": "active"
+    },
+    {
+        "hr_mail": "hr@techcorp.com",
+        "title": "Junior Accountant",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Accounting",
+        "applicationDeadline": "2025-07-15",
+        "salaryRange": {
+            "min": "25k",
+            "max": "35k",
+            "currency": "BDT"
+        },
+        "description": "Entry-level accounting position for recent graduates",
+        "company": "TechCorp Bangladesh",
+        "requirements": [
+            "BBA in Accounting",
+            "Basic Excel skills",
+            "Fresh graduates welcome"
+        ],
+        "responsibilities": [
+            "Assist with bookkeeping",
+            "Prepare financial documents",
+            "Support senior accountants"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@digimark.com",
+        "title": "Social Media Manager",
+        "location": "Remote",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Marketing",
+        "applicationDeadline": "2025-08-01",
+        "salaryRange": {
+            "min": "40k",
+            "max": "65k",
+            "currency": "BDT"
+        },
+        "description": "Manage social media presence for multiple brands",
+        "company": "DigiMark Solutions",
+        "requirements": [
+            "3+ years experience",
+            "Content creation skills",
+            "Analytics knowledge"
+        ],
+        "responsibilities": [
+            "Create content calendar",
+            "Engage with followers",
+            "Run paid campaigns"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "design@visuals.com",
+        "title": "Graphic Designer",
+        "location": "Chittagong",
+        "jobType": "Part-time",
+        "jobPosition": "Junior",
+        "category": "Design",
+        "applicationDeadline": "2025-07-20",
+        "salaryRange": {
+            "min": "20k",
+            "max": "30k",
+            "currency": "BDT"
+        },
+        "description": "Create visual content for digital and print media",
+        "company": "Visuals Unlimited",
+        "requirements": [
+            "Adobe Photoshop",
+            "Illustrator",
+            "Basic design principles"
+        ],
+        "responsibilities": [
+            "Design marketing materials",
+            "Create social media graphics",
+            "Brand identity work"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "dev@codesoft.com",
+        "title": "Full Stack Developer",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Development",
+        "applicationDeadline": "2025-09-10",
+        "salaryRange": {
+            "min": "90k",
+            "max": "150k",
+            "currency": "BDT"
+        },
+        "description": "Develop end-to-end web applications",
+        "company": "CodeSoft Technologies",
+        "requirements": [
+            "JavaScript",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ],
+        "responsibilities": [
+            "Architect solutions",
+            "Mentor junior developers",
+            "Code review"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@peoplefirst.com",
+        "title": "Recruitment Specialist",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-08-15",
+        "salaryRange": {
+            "min": "45k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "Handle full-cycle recruitment process",
+        "company": "PeopleFirst HR",
+        "requirements": [
+            "3+ years recruiting",
+            "Interviewing skills",
+            "ATS knowledge"
+        ],
+        "responsibilities": [
+            "Source candidates",
+            "Screen resumes",
+            "Coordinate interviews"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "service@autoworks.com",
+        "title": "Auto Mechanic",
+        "location": "Sylhet",
+        "jobType": "Full-time",
+        "jobPosition": "Junior",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-07-25",
+        "salaryRange": {
+            "min": "18k",
+            "max": "28k",
+            "currency": "BDT"
+        },
+        "description": "Perform maintenance and repairs on vehicles",
+        "company": "AutoWorks Garage",
+        "requirements": [
+            "Technical diploma",
+            "Basic tool knowledge",
+            "Willing to learn"
+        ],
+        "responsibilities": [
+            "Oil changes",
+            "Brake repairs",
+            "Diagnose issues"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "support@helpdesk.com",
+        "title": "Customer Service Representative",
+        "location": "Remote",
+        "jobType": "Part-time",
+        "jobPosition": "Entry-level",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-07-10",
+        "salaryRange": {
+            "min": "12k",
+            "max": "20k",
+            "currency": "BDT"
+        },
+        "description": "Provide phone and email support to customers",
+        "company": "HelpDesk Solutions",
+        "requirements": [
+            "Good communication",
+            "Patience",
+            "Computer literate"
+        ],
+        "responsibilities": [
+            "Answer queries",
+            "Resolve complaints",
+            "Document issues"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@medlife.com",
+        "title": "Medical Officer",
+        "location": "Khulna",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Health",
+        "applicationDeadline": "2025-09-05",
+        "salaryRange": {
+            "min": "80k",
+            "max": "120k",
+            "currency": "BDT"
+        },
+        "description": "Provide medical care in clinic setting",
+        "company": "MedLife Clinics",
+        "requirements": [
+            "MBBS degree",
+            "BMDC registration",
+            "5+ years experience"
+        ],
+        "responsibilities": [
+            "Patient consultations",
+            "Prescribe treatment",
+            "Health education"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "pm@construct.com",
+        "title": "Assistant Project Manager",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Junior",
+        "category": "Project Management",
+        "applicationDeadline": "2025-08-20",
+        "salaryRange": {
+            "min": "35k",
+            "max": "50k",
+            "currency": "BDT"
+        },
+        "description": "Support construction project management",
+        "company": "ConstructPlus Ltd",
+        "requirements": [
+            "Civil engineering degree",
+            "1-2 years experience",
+            "MS Project"
+        ],
+        "responsibilities": [
+            "Track progress",
+            "Coordinate meetings",
+            "Prepare reports"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "accounting@finmaster.com",
+        "title": "Tax Specialist",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Accounting",
+        "applicationDeadline": "2025-09-15",
+        "salaryRange": {
+            "min": "60k",
+            "max": "90k",
+            "currency": "BDT"
+        },
+        "description": "Handle corporate tax preparation and filing",
+        "company": "FinMaster Accounting",
+        "requirements": [
+            "CA/ACCA",
+            "5+ years tax experience",
+            "Tax software proficiency"
+        ],
+        "responsibilities": [
+            "Prepare tax returns",
+            "Research tax laws",
+            "Advise clients"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "marketing@brandboost.com",
+        "title": "Content Marketing Specialist",
+        "location": "Remote",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Marketing",
+        "applicationDeadline": "2025-08-10",
+        "salaryRange": {
+            "min": "45k",
+            "max": "70k",
+            "currency": "BDT"
+        },
+        "description": "Create compelling content for marketing campaigns",
+        "company": "BrandBoost Marketing",
+        "requirements": [
+            "Excellent writing",
+            "SEO knowledge",
+            "2+ years experience"
+        ],
+        "responsibilities": [
+            "Write blog posts",
+            "Create email campaigns",
+            "Develop content strategy"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "design@creativelab.com",
+        "title": "UX Researcher",
+        "location": "Dhaka",
+        "jobType": "Contract",
+        "jobPosition": "Mid-level",
+        "category": "Design",
+        "applicationDeadline": "2025-07-30",
+        "salaryRange": {
+            "min": "50k",
+            "max": "80k",
+            "currency": "BDT"
+        },
+        "description": "Conduct user research to inform design decisions",
+        "company": "CreativeLab",
+        "requirements": [
+            "Research methods",
+            "Analytical skills",
+            "User testing"
+        ],
+        "responsibilities": [
+            "Conduct interviews",
+            "Analyze data",
+            "Present findings"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "dev@webcraft.com",
+        "title": "DevOps Engineer",
+        "location": "Remote",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Development",
+        "applicationDeadline": "2025-09-20",
+        "salaryRange": {
+            "min": "100k",
+            "max": "160k",
+            "currency": "BDT"
+        },
+        "description": "Implement and maintain CI/CD pipelines",
+        "company": "WebCraft Solutions",
+        "requirements": [
+            "AWS/Azure",
+            "Docker",
+            "Kubernetes",
+            "Jenkins"
+        ],
+        "responsibilities": [
+            "Automate deployments",
+            "Monitor systems",
+            "Improve infrastructure"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "hr@talentfind.com",
+        "title": "HR Business Partner",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Human Resource",
+        "applicationDeadline": "2025-09-01",
+        "salaryRange": {
+            "min": "80k",
+            "max": "120k",
+            "currency": "BDT"
+        },
+        "description": "Strategic HR partner for business units",
+        "company": "TalentFind HR",
+        "requirements": [
+            "8+ years HR experience",
+            "Business acumen",
+            "Employee relations"
+        ],
+        "responsibilities": [
+            "HR strategy",
+            "Workforce planning",
+            "Performance management"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "jobs@autocare.com",
+        "title": "Car Detailer",
+        "location": "Chittagong",
+        "jobType": "Part-time",
+        "jobPosition": "Entry-level",
+        "category": "Automotive Job",
+        "applicationDeadline": "2025-07-15",
+        "salaryRange": {
+            "min": "10k",
+            "max": "15k",
+            "currency": "BDT"
+        },
+        "description": "Clean and prepare vehicles for sale/display",
+        "company": "AutoCare Center",
+        "requirements": [
+            "Attention to detail",
+            "Physical stamina"
+        ],
+        "responsibilities": [
+            "Wash vehicles",
+            "Clean interiors",
+            "Apply wax/polish"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "support@callcenter.com",
+        "title": "Call Center Agent",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Entry-level",
+        "category": "Customer Service",
+        "applicationDeadline": "2025-07-05",
+        "salaryRange": {
+            "min": "15k",
+            "max": "22k",
+            "currency": "BDT"
+        },
+        "description": "Handle inbound customer calls",
+        "company": "CallCenter Pro",
+        "requirements": [
+            "Clear voice",
+            "Basic English",
+            "Customer service attitude"
+        ],
+        "responsibilities": [
+            "Answer calls",
+            "Resolve issues",
+            "Follow scripts"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "careers@healthplus.com",
+        "title": "Physiotherapist",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Health",
+        "applicationDeadline": "2025-08-25",
+        "salaryRange": {
+            "min": "40k",
+            "max": "65k",
+            "currency": "BDT"
+        },
+        "description": "Provide rehabilitation services to patients",
+        "company": "HealthPlus Clinic",
+        "requirements": [
+            "BPT degree",
+            "2+ years experience",
+            "Patient handling"
+        ],
+        "responsibilities": [
+            "Assess patients",
+            "Develop treatment plans",
+            "Therapy sessions"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "pm@itprojects.com",
+        "title": "IT Project Coordinator",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Junior",
+        "category": "Project Management",
+        "applicationDeadline": "2025-08-05",
+        "salaryRange": {
+            "min": "30k",
+            "max": "45k",
+            "currency": "BDT"
+        },
+        "description": "Support IT project management activities",
+        "company": "IT Projects Ltd",
+        "requirements": [
+            "IT background",
+            "Organizational skills",
+            "Basic PM knowledge"
+        ],
+        "responsibilities": [
+            "Schedule meetings",
+            "Track tasks",
+            "Prepare documentation"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "finance@accountpro.com",
+        "title": "Audit Assistant",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Junior",
+        "category": "Accounting",
+        "applicationDeadline": "2025-07-20",
+        "salaryRange": {
+            "min": "28k",
+            "max": "40k",
+            "currency": "BDT"
+        },
+        "description": "Assist with financial audits for clients",
+        "company": "AccountPro Auditing",
+        "requirements": [
+            "Accounting degree",
+            "1 year experience",
+            "Audit knowledge"
+        ],
+        "responsibilities": [
+            "Prepare working papers",
+            "Verify transactions",
+            "Assist seniors"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "marketing@advertise.com",
+        "title": "PPC Specialist",
+        "location": "Remote",
+        "jobType": "Full-time",
+        "jobPosition": "Mid-level",
+        "category": "Marketing",
+        "applicationDeadline": "2025-08-30",
+        "salaryRange": {
+            "min": "50k",
+            "max": "80k",
+            "currency": "BDT"
+        },
+        "description": "Manage pay-per-click advertising campaigns",
+        "company": "Advertise Digital",
+        "requirements": [
+            "Google Ads certified",
+            "2+ years experience",
+            "Analytical skills"
+        ],
+        "responsibilities": [
+            "Create campaigns",
+            "Optimize bids",
+            "Analyze performance"
+        ],
+        "status": "active"
+    },
+    {
+        "hr_mail": "design@branding.com",
+        "title": "Brand Identity Designer",
+        "location": "Dhaka",
+        "jobType": "Full-time",
+        "jobPosition": "Senior",
+        "category": "Design",
+        "applicationDeadline": "2025-09-10",
+        "salaryRange": {
+            "min": "70k",
+            "max": "110k",
+            "currency": "BDT"
+        },
+        "description": "Create comprehensive brand identity systems",
+        "company": "Branding Experts",
+        "requirements": [
+            "8+ years experience",
+            "Strong portfolio",
+            "Typography skills"
+        ],
+        "responsibilities": [
+            "Develop brand guidelines",
+            "Design logos",
+            "Create visual systems"
+        ],
+        "status": "active"
     }
 ]
