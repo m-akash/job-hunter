@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 const PostJob = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
-  
+
   const handlePostJob = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -19,7 +19,7 @@ const PostJob = () => {
     newJob.responsibilities = newJob.responsibilities.split("\n");
     console.log(newJob);
 
-    fetch("http://localhost:3000/jobs", {
+    fetch("https://backend-omega-beryl.vercel.app/jobs", {
       method: "POST",
       headers: {
         "content-type": "application/json",

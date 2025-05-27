@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:3000/user?email=${user.email}`, {
+      fetch(`https://backend-omega-beryl.vercel.app/user?email=${user.email}`, {
         method: "GET",
         headers: {
           "content-type": "application/json",

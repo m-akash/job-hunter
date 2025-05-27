@@ -25,7 +25,7 @@ const Register = () => {
       .then((res) => {
         console.log(res.user);
         const newUser = { name, email, regAs };
-        fetch("http://localhost:3000/user", {
+        fetch("https://backend-omega-beryl.vercel.app/user", {
           method: "POST",
           headers: {
             "content-type": "application/json",

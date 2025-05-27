@@ -38,7 +38,6 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -46,14 +45,20 @@ const AuthProvider = ({ children }) => {
       if (currentUser?.email) {
         const user = { email: currentUser.email };
         axios
-          .post("http://localhost:3000/jwt", user, { withCredentials: true })
+          .post("https://backend-omega-beryl.vercel.app/jwt", user, {
+            withCredentials: true,
+          })
           .then((res) => {
             console.log("Sign in token: ", res.data);
             setLoading(false);
           });
       } else {
         axios
-          .post("http://localhost:3000/logout", {}, { withCredentials: true })
+          .post(
+            "https://backend-omega-beryl.vercel.app/logout",
+            {},
+            { withCredentials: true }
+          )
           .then((res) => {
             console.log("Sign out token: ", res.data);
             setLoading(false);

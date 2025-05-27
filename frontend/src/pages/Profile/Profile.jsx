@@ -7,7 +7,7 @@ const Profile = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:3000/user?email=${user.email}`, {
+      fetch(`https://backend-omega-beryl.vercel.app/user?email=${user.email}`, {
         method: "GET",
         headers: {
           "content-type": "application/json",
@@ -60,7 +60,6 @@ const Profile = () => {
     <div className="min-h-screen bg-transparent py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <div className="bg-gray-500 shadow rounded-lg overflow-hidden">
-          
           <div className="bg-gradient-to-r from-blue-500 to-blue-600 px-6 py-8">
             <div className="flex items-center space-x-4">
               <div className="h-20 w-20 rounded-full bg-white flex items-center justify-center">
@@ -77,10 +76,8 @@ const Profile = () => {
             </div>
           </div>
 
-        
           <div className="px-6 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-       
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-medium text-gray-900 mb-2">
                   Account Type
@@ -88,7 +85,6 @@ const Profile = () => {
                 <p className="text-gray-600 capitalize">{userData.regAs}</p>
               </div>
 
-       
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-medium text-gray-900 mb-2">
                   Email Address
@@ -97,7 +93,6 @@ const Profile = () => {
               </div>
             </div>
 
-           
             <div className="mt-8">
               <h2 className="text-xl font-semibold text-gray-900 mb-4">
                 Profile Information

@@ -9,7 +9,11 @@ require("dotenv").config();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://localhost:5173",
+      "https://hire-hub-823a0.web.app",
+      "https://hire-hub-823a0.firebaseapp.com",
+    ],
     credentials: true,
   })
 );
@@ -43,11 +47,11 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    await client.connect();
-    await client.db("admin").command({ ping: 1 });
-    console.log(
-      "Pinged your deployment. You successfully connected to MongoDB!"
-    );
+    // await client.connect();
+    // await client.db("admin").command({ ping: 1 });
+    // console.log(
+    //   "Pinged your deployment. You successfully connected to MongoDB!"
+    // );
 
     const jobsData = client.db("HireHubDB").collection("jobs");
     const userData = client.db("HireHubDB").collection("userInfo");
@@ -58,12 +62,15 @@ async function run() {
     //Start JWT
     app.post("/jwt", async (req, res) => {
       const user = req.body;
-      const token = jwt.sign(user, process.env.SECRET_KEY, { expiresIn: "1h" });
+      const token = jwt.sign(user, process.env.SECRET_KEY, {
+        expiresIn: "23h",
+      });
 
       res
         .cookie("token", token, {
           httpOnly: true,
-          secure: false, //It would be true only for secure production url.
+          secure: process.env.NODE_ENV === "production",
+          sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
         })
         .send({ success: true });
     });
@@ -72,7 +79,8 @@ async function run() {
       res
         .clearCookie("token", {
           httpOnly: true,
-          secure: false,
+          secure: process.env.NODE_ENV === "production",
+          sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
         })
         .send({ success: true });
     });

@@ -10,7 +10,9 @@ const JobCategories = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/jobs/category?category=${category}`)
+      .get(
+        `https://backend-omega-beryl.vercel.app/jobs/category?category=${category}`
+      )
       .then((res) => {
         setJobs(res.data);
       });

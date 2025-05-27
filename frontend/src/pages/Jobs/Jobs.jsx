@@ -12,7 +12,7 @@ const Jobs = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:3000/jobs?page=${currentPage}&limit=${cardsPerPage}`
+      `https://backend-omega-beryl.vercel.app/jobs?page=${currentPage}&limit=${cardsPerPage}`
     )
       .then((res) => res.json())
       .then((data) => {
