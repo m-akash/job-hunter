@@ -197,7 +197,7 @@ const Navbar = () => {
                 <div
                   tabIndex={0}
                   role="button"
-                  className="flex items-center gap-2 px-4 py-1 rounded-full hover:bg-indigo-200 transition-all duration-300"
+                  className="flex items-center gap-2 px-4 py-1 rounded-full transition-all duration-300"
                 >
                   <button className="btn btn-lg btn-soft btn-circle">
                     <img className="w-4" src={singUpIcon} alt="" />
