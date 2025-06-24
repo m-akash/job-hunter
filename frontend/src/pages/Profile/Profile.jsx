@@ -7,7 +7,7 @@ const Profile = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://backend-omega-beryl.vercel.app/user?email=${user.email}`, {
+      fetch(`http://localhost:3000/api/users?email=${user.email}`, {
         method: "GET",
         headers: {
           "content-type": "application/json",

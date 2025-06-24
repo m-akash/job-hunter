@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express();
-const jwt = require("jsonwebtoken");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+require("dotenv").config();
 
 const port = process.env.PORT || 3000;
-require("dotenv").config();
+
+const client = require("./config/db");
 
 app.use(
   cors({
@@ -20,6 +21,8 @@ app.use(
 app.use(cookieParser());
 app.use(express.json());
 
+// JWT verification middleware
+const jwt = require("jsonwebtoken");
 const verifyToken = (req, res, next) => {
   const token = req?.cookies?.token;
   if (!token) {
@@ -34,231 +37,43 @@ const verifyToken = (req, res, next) => {
   });
 };
 
-const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@testmongodb.urxadh3.mongodb.net/?retryWrites=true&w=majority&appName=TestMongoDB`;
+// Import routes
+const jobRoutes = require("./routes/job.routes");
+const userRoutes = require("./routes/user.routes");
+const jobApplicationRoutes = require("./routes/jobApplication.routes");
+const authRoutes = require("./routes/auth.routes");
+const candidateRoutes = require("./routes/candidate.routes");
 
-const client = new MongoClient(uri, {
-  serverApi: {
-    version: ServerApiVersion.v1,
-    strict: true,
-    deprecationErrors: true,
-  },
+// Use routes
+app.use("/api/jobs", jobRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/job-applications", jobApplicationRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/candidates", candidateRoutes);
+
+// Example protected route (for job applications by email)
+const JobApplicationController = require("./controllers/jobApplication.controller");
+app.get(
+  "/api/protected/job-applications",
+  verifyToken,
+  JobApplicationController.getApplicationsByEmail
+);
+
+app.get("/", (req, res) => {
+  res.send("Hello");
 });
 
-async function run() {
+async function startServer() {
   try {
-    // await client.connect();
-    // await client.db("admin").command({ ping: 1 });
-    // console.log(
-    //   "Pinged your deployment. You successfully connected to MongoDB!"
-    // );
-
-    const jobsData = client.db("HireHubDB").collection("jobs");
-    const userData = client.db("HireHubDB").collection("userInfo");
-    const jobApplicationData = client
-      .db("HireHubDB")
-      .collection("jobApplication");
-
-    //Start JWT
-    app.post("/jwt", async (req, res) => {
-      const user = req.body;
-      const token = jwt.sign(user, process.env.SECRET_KEY, {
-        expiresIn: "23h",
-      });
-
-      res
-        .cookie("token", token, {
-          httpOnly: true,
-          secure: process.env.NODE_ENV === "production",
-          sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
-        })
-        .send({ success: true });
+    await client.connect();
+    app.listen(port, () => {
+      console.log(`Server running on: ${port}`);
     });
-
-    app.post("/logout", async (req, res) => {
-      res
-        .clearCookie("token", {
-          httpOnly: true,
-          secure: process.env.NODE_ENV === "production",
-          sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
-        })
-        .send({ success: true });
-    });
-    //End JWT
-
-    //Start User
-    app.get("/user/:id", async (req, res) => {
-      const id = req.params.id;
-      const query = { _id: new ObjectId(id) };
-      const result = await userData.findOne(query);
-      res.send(result);
-    });
-
-    app.get("/user", async (req, res) => {
-      const email = req.query.email;
-      const query = { email: email };
-      const result = await userData.find(query).toArray();
-      res.send(result);
-    });
-
-    app.post("/user", async (req, res) => {
-      const newUser = req.body;
-      const info = {
-        name: newUser.name,
-        email: newUser.email,
-        regAs: newUser.regAs,
-      };
-      const result = await userData.insertOne(info);
-      res.send(result);
-    });
-
-    //End User
-
-    //Start Jobs
-
-    app.get("/jobs", async (req, res) => {
-      const page = parseInt(req.query.page);
-      const size = parseInt(req.query.limit);
-      const result = await jobsData
-        .find()
-        .skip(page * size)
-        .limit(size)
-        .toArray();
-      res.send(result);
-    });
-
-    app.get("/jobs/email", async (req, res) => {
-      const email = req.query.email;
-      let query = {};
-
-      if (email) {
-        query = { hr_mail: email };
-      }
-
-      const cursor = jobsData.find(query);
-      const result = await cursor.toArray();
-      res.send(result);
-    });
-
-    app.get("/jobs/category", async (req, res) => {
-      const category = req.query.category;
-
-      let query = {};
-
-      if (category) {
-        query = { category: category };
-      }
-
-      const cursor = jobsData.find(query);
-      const result = await cursor.toArray();
-      res.send(result);
-    });
-
-    app.get("/job-count", async (req, res) => {
-      const count = await jobsData.estimatedDocumentCount();
-      res.send({ count });
-    });
-
-    app.post("/jobs", async (req, res) => {
-      const job = req.body;
-      const result = await jobsData.insertOne(job);
-      res.send(result);
-    });
-
-    app.get("/jobs/:id", async (req, res) => {
-      const id = req.params.id;
-      const query = { _id: new ObjectId(id) };
-      const result = await jobsData.findOne(query);
-      res.send(result);
-    });
-
-    app.get("/category-count", async (req, res) => {
-      const countCategory = await jobsData.estimatedDocumentCount();
-      res.send({ countCategory });
-    });
-
-    app.get("/job-application/jobs/:job_id", async (req, res) => {
-      const jobId = req.params.job_id;
-      const query = { job_id: jobId };
-      const result = await jobApplicationData.find(query).toArray();
-      res.send(result);
-    });
-
-    app.get("/job-applications", verifyToken, async (req, res) => {
-      const email = req.query.email;
-      const query = {
-        applicant_email: email,
-      };
-
-      if (req.user.email !== req.query.email) {
-        return res.status(403).send({ message: "forbidden access" });
-      }
-
-      const result = await jobApplicationData.find(query).toArray();
-      for (const application of result) {
-        const query1 = { _id: new ObjectId(application.job_id) };
-        const job = await jobsData.findOne(query1);
-        if (job) {
-          application.title = job.title;
-          application.company = job.company;
-          application.location = job.location;
-        }
-      }
-      res.send(result);
-    });
-
-    app.post("/job-application", async (req, res) => {
-      const applicationData = req.body;
-      const result = await jobApplicationData.insertOne(applicationData);
-
-      const query = { _id: new ObjectId(applicationData.job_id) };
-      const job = await jobsData.findOne(query);
-      let cnt = 0;
-      if (job.applicationCount) {
-        cnt = job.applicationCount + 1;
-      } else {
-        cnt = 1;
-      }
-
-      const filter = { _id: new ObjectId(applicationData.job_id) };
-      const updateDoc = {
-        $set: {
-          applicationCount: cnt,
-        },
-      };
-
-      const updateResult = await jobsData.updateOne(filter, updateDoc);
-
-      res.send(result);
-    });
-
-    app.patch("/job-application/:id", async (req, res) => {
-      const id = req.params.id;
-      const body = req.body;
-
-      const filter = { _id: new ObjectId(id) };
-      const updateDoc = {
-        $set: {
-          status: body.status,
-        },
-      };
-      const result = await jobApplicationData.updateOne(filter, updateDoc);
-      res.send(result);
-    });
-
-    //End Jobs
-  } finally {
-    // await client.close();
+  } catch (err) {
+    console.error("Failed to connect to MongoDB", err);
   }
 }
-run().catch(console.dir);
 
-app.get("/", async (req, res) => {
-  res.send("Hello ");
-});
-
-app.listen(port, () => {
-  console.log(`Server running on: ${port}`);
-});
+startServer();
 
 //

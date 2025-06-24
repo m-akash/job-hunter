@@ -7,9 +7,7 @@ const Banner = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://backend-omega-beryl.vercel.app/jobs")
-      .then((res) => setJobs(res.data));
+    axios.get("http://localhost:3000/jobs").then((res) => setJobs(res.data));
   }, []);
 
   return (

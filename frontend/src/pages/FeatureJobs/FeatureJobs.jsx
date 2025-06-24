@@ -10,7 +10,7 @@ const FeatureJobs = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch("https://backend-omega-beryl.vercel.app/jobs?limit=6")
+    fetch("http://localhost:3000/api/jobs?limit=6")
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);

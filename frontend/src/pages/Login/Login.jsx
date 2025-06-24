@@ -7,7 +7,6 @@ import axios from "axios";
 
 const Login = () => {
   const { SignInUser } = useContext(AuthContext);
-
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state || "/";

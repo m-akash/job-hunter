@@ -8,9 +8,7 @@ const MyPostedJobs = () => {
   const { user } = useAuth();
 
   useEffect(() => {
-    fetch(
-      `https://backend-omega-beryl.vercel.app/jobs/email?email=${user.email}`
-    )
+    fetch(`http://localhost:3000/api/jobs/email?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);

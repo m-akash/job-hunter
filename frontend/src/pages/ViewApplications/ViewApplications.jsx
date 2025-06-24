@@ -8,7 +8,7 @@ const ViewApplications = () => {
     const updateStatus = {
       status: event.target.value,
     };
-    fetch(`https://backend-omega-beryl.vercel.app/job-application/${id}`, {
+    fetch(`http://localhost:3000/api/job-applications/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

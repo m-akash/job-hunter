@@ -24,7 +24,7 @@ const JobApply = () => {
       resume,
     };
 
-    fetch("https://backend-omega-beryl.vercel.app/job-application", {
+    fetch("http://localhost:3000/api/job-applications", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -69,7 +69,7 @@ const router = createBrowserRouter([
       {
         path: "/jobs",
         element: <Jobs></Jobs>,
-        loader: () => fetch("https://backend-omega-beryl.vercel.app/job-count"),
+        loader: () => fetch("http://localhost:3000/api/jobs/count"),
       },
       {
         path: "/jobs/category/:category",
@@ -92,7 +92,7 @@ const router = createBrowserRouter([
         path: "/jobs/:id",
         element: <JobDetails></JobDetails>,
         loader: ({ params }) =>
-          fetch(`https://backend-omega-beryl.vercel.app/jobs/${params.id}`),
+          fetch(`http://localhost:3000/api/jobs/${params.id}`),
       },
       {
         path: "/applyjob/:id",
@@ -127,7 +127,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://backend-omega-beryl.vercel.app/job-application/jobs/${params.job_id}`
+            `http://localhost:3000/api/job-applications/jobs/${params.job_id}`
           ),
       },
     ],

@@ -45,7 +45,7 @@ const AuthProvider = ({ children }) => {
       if (currentUser?.email) {
         const user = { email: currentUser.email };
         axios
-          .post("https://backend-omega-beryl.vercel.app/jwt", user, {
+          .post("http://localhost:3000/api/auth/jwt", user, {
             withCredentials: true,
           })
           .then((res) => {
@@ -55,7 +55,7 @@ const AuthProvider = ({ children }) => {
       } else {
         axios
           .post(
-            "https://backend-omega-beryl.vercel.app/logout",
+            "http://localhost:3000/api/auth/logout",
             {},
             { withCredentials: true }
           )

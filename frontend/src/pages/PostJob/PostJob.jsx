@@ -19,7 +19,7 @@ const PostJob = () => {
     newJob.responsibilities = newJob.responsibilities.split("\n");
     console.log(newJob);
 
-    fetch("https://backend-omega-beryl.vercel.app/jobs", {
+    fetch("http://localhost:3000/api/jobs", {
       method: "POST",
       headers: {
         "content-type": "application/json",
