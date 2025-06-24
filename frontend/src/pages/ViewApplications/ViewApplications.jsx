@@ -8,7 +8,7 @@ const ViewApplications = () => {
     const updateStatus = {
       status: event.target.value,
     };
-    fetch(`http://localhost:3000/api/job-applications/${id}`, {
+    fetch(`https://job-hunter-vercel.vercel.app/api/job-applications/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

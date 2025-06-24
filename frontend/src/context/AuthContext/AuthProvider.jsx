@@ -45,7 +45,7 @@ const AuthProvider = ({ children }) => {
       if (currentUser?.email) {
         const user = { email: currentUser.email };
         axios
-          .post("http://localhost:3000/api/auth/jwt", user, {
+          .post("https://job-hunter-vercel.vercel.app/api/auth/jwt", user, {
             withCredentials: true,
           })
           .then((res) => {
@@ -55,7 +55,7 @@ const AuthProvider = ({ children }) => {
       } else {
         axios
           .post(
-            "http://localhost:3000/api/auth/logout",
+            "https://job-hunter-vercel.vercel.app/api/auth/logout",
             {},
             { withCredentials: true }
           )

@@ -25,7 +25,7 @@ const Register = () => {
       .then((res) => {
         console.log(res.user);
         const newUser = { name, email, regAs };
-        fetch("http://localhost:3000/api/users", {
+        fetch("https://job-hunter-vercel.vercel.app/api/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",

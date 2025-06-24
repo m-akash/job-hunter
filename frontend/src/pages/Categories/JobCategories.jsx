@@ -10,7 +10,9 @@ const JobCategories = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/jobs/category?category=${category}`)
+      .get(
+        `https://job-hunter-vercel.vercel.app/api/jobs/category?category=${category}`
+      )
       .then((res) => {
         setJobs(res.data);
       });

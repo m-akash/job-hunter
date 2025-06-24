@@ -14,12 +14,15 @@ const Navbar = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:3000/api/users?email=${user.email}`, {
-        method: "GET",
-        headers: {
-          "content-type": "application/json",
-        },
-      })
+      fetch(
+        `https://job-hunter-vercel.vercel.app/api/users?email=${user.email}`,
+        {
+          method: "GET",
+          headers: {
+            "content-type": "application/json",
+          },
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           if (data && data.length > 0) {

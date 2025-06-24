@@ -69,7 +69,8 @@ const router = createBrowserRouter([
       {
         path: "/jobs",
         element: <Jobs></Jobs>,
-        loader: () => fetch("http://localhost:3000/api/jobs/count"),
+        loader: () =>
+          fetch("https://job-hunter-vercel.vercel.app/api/jobs/count"),
       },
       {
         path: "/jobs/category/:category",
@@ -92,7 +93,7 @@ const router = createBrowserRouter([
         path: "/jobs/:id",
         element: <JobDetails></JobDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/api/jobs/${params.id}`),
+          fetch(`https://job-hunter-vercel.vercel.app/api/jobs/${params.id}`),
       },
       {
         path: "/applyjob/:id",
@@ -127,7 +128,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:3000/api/job-applications/jobs/${params.job_id}`
+            `https://job-hunter-vercel.vercel.app/api/job-applications/jobs/${params.job_id}`
           ),
       },
     ],

@@ -24,7 +24,7 @@ const JobApply = () => {
       resume,
     };
 
-    fetch("http://localhost:3000/api/job-applications", {
+    fetch("https://job-hunter-vercel.vercel.app/api/job-applications", {
       method: "POST",
       headers: {
         "content-type": "application/json",

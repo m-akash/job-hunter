@@ -1,10 +1,10 @@
-<!-- # Job Hunter
+# Job Hunter
 
 A modern full-stack job portal that connects job seekers with employers. Users can browse and apply for jobs, while employers can post and manage job listings. Built with Node.js, Express, MongoDB, React, and Firebase for a seamless experience.
 
 ---
 
-## 🚀 Features
+## Features
 
 - User authentication (register/login)
 - Role-based access (job seeker, employer)
@@ -17,7 +17,7 @@ A modern full-stack job portal that connects job seekers with employers. Users c
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React, Vite, CSS
 - **Backend:** Node.js, Express.js
@@ -27,7 +27,7 @@ A modern full-stack job portal that connects job seekers with employers. Users c
 
 ---
 
-## 📦 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -40,6 +40,7 @@ A modern full-stack job portal that connects job seekers with employers. Users c
 
 ```bash
 cd backend
+npm init
 npm install
 # Create a .env file with your MongoDB URI and other secrets
 npm start
@@ -66,4 +67,4 @@ npm run dev
 
 Created by [Your Name]. For questions, email: your.email@example.com
 
- -->
+

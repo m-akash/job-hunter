@@ -12,7 +12,7 @@ const Jobs = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:3000/api/jobs?page=${currentPage}&limit=${cardsPerPage}`
+      `https://job-hunter-vercel.vercel.app/api/jobs?page=${currentPage}&limit=${cardsPerPage}`
     )
       .then((res) => res.json())
       .then((data) => {
