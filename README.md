@@ -89,7 +89,7 @@ job-hunter/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/job-hunter.git
+   git clone https://github.com/m-akash/job-hunter.git
    cd job-hunter/backend
    ```
 2. Install dependencies:
@@ -162,8 +162,8 @@ job-hunter/
 
 ## Contact
 
-For issues, please open an [issue](https://github.com/your-repo/job-hunter/issues).
+For issues, please open an [mehedihasan1769@gmail.com](mehedihasan1769@gmail.com).
 
 ## Author
 
-Created by [Your Name] — [your.email@example.com](mailto:your.email@example.com)
+Created by [Mehedi Hasan Akash](https://github.com/m-akash)
