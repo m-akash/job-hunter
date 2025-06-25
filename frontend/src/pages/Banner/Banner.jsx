@@ -8,7 +8,7 @@ const Banner = () => {
 
   useEffect(() => {
     axios
-      .get("https://job-hunter-vercel.vercel.app/jobs")
+      .get("https://job-hunter-vercel.vercel.app/api/jobs")
       .then((res) => setJobs(res.data));
   }, []);
 
