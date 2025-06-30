@@ -44,6 +44,7 @@
 - **Database:** MongoDB
 - **Authentication:** Firebase Auth
 - **Deployment:** Vercel (backend), Firebase Hosting (frontend)
+- **Containerization:** Docker
 
 ---
 
@@ -100,7 +101,7 @@ job-hunter/
    ```env
    MONGODB_URI=your_mongodb_connection_string
    PORT=5000
-   JWT_SECRET=your_jwt_secret
+   SECRET_KEY=your_jwt_secret
    FIREBASE_API_KEY=your_firebase_api_key
    # Add other environment variables as needed
    ```
@@ -134,6 +135,44 @@ job-hunter/
    ```bash
    npm run dev
    ```
+
+---
+
+## Running with Docker
+
+You can also run the application using Docker.
+
+### Backend
+
+1.  Navigate to the backend directory:
+    ```bash
+    cd backend
+    ```
+2.  Build the Docker image:
+    ```bash
+    docker build -t job-hunter-backend .
+    ```
+3.  Run the Docker container:
+    ```bash
+    docker run -p 3000:3000 -e MONGODB_URI=your_mongodb_connection_string -e SECRET_KEY=your_jwt_secret -e FIREBASE_API_KEY=your_firebase_api_key job-hunter-backend
+    ```
+    _Note: The backend will be available at `http://localhost:3000`._
+
+### Frontend
+
+1.  Navigate to the frontend directory:
+    ```bash
+    cd frontend
+    ```
+2.  Build the Docker image:
+    ```bash
+    docker build -t job-hunter-frontend .
+    ```
+3.  Run the Docker container:
+    ```bash
+    docker run -p 5173:5173 job-hunter-frontend
+    ```
+    _Note: The frontend will be available at `http://localhost:5173`._
 
 ---
 
