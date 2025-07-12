@@ -1,208 +1,248 @@
-# Job Hunter
+# Job Hunter - Full Stack TypeScript Project
 
----
+A modern job hunting platform built with TypeScript, featuring both frontend (React) and backend (Node.js/Express) applications. Connect job seekers with employers through a seamless, type-safe experience.
 
-## About
+## 🚀 Features
 
-**Job Hunter** is a modern, full-stack job portal that connects job seekers with employers. It provides a seamless experience for users to browse, apply, and manage job applications, while employers can post, edit, and track job listings and applicants. Built with scalability and usability in mind, Job Hunter leverages the latest technologies for a robust and responsive platform.
+- **Full TypeScript Support**: End-to-end type safety across frontend and backend
+- **Job Posting & Application**: Employers post jobs, candidates apply with real-time tracking
+- **User Authentication**: Firebase authentication with JWT token management
+- **Role-based Access**: Separate interfaces for candidates and employers
+- **Responsive Design**: Modern UI with Tailwind CSS and DaisyUI
+- **Real-time Updates**: Live job listings and application status tracking
 
----
-
-## Features
-
-### For Job Seekers
-
-- Register and log in securely
-- Browse and search for jobs by category, location, or keyword
-- View detailed job descriptions
-- Apply for jobs and track application status
-- Manage and update user profile
-- View list of applied jobs
-
-### For Employers
-
-- Register and log in securely
-- Post new job listings
-- Edit or delete existing job postings
-- View applicants for each job
-- Manage company profile
-- Dashboard for managing all postings and applications
-
-### General
-
-- Role-based access control (job seeker, employer)
-- Responsive, modern UI/UX
-- Secure authentication with Firebase
-- RESTful API backend
-
----
-
-## Tech Stack
-
-- **Frontend:** React, Vite, CSS
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Authentication:** Firebase Auth
-- **Deployment:** Vercel (backend), Firebase Hosting (frontend)
-- **Containerization:** Docker
-
----
-
-## Folder Structure
-
-```
-job-hunter/
-  backend/
-    config/           # Database and environment config
-    controllers/      # Express route controllers
-    models/           # Mongoose models
-    routes/           # Express routes
-    index.js          # Entry point
-    package.json      # Backend dependencies
-  frontend/
-    public/           # Static assets
-    src/
-      assets/         # Images, icons, lottie files
-      context/        # React context providers
-      firebase/       # Firebase config
-      hooks/          # Custom React hooks
-      layouts/        # Layout components
-      pages/          # Page components
-      routes/         # Route components
-      App.jsx         # Main app component
-      main.jsx        # Entry point
-    package.json      # Frontend dependencies
-  README.md           # Project documentation
-```
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v16+ recommended)
-- npm or yarn
-- MongoDB instance (local or cloud)
-- Firebase project for authentication
-
-### Backend Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/m-akash/job-hunter.git
-   cd job-hunter/backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create a `.env` file in `backend/` with the following:
-   ```env
-   MONGODB_URI=your_mongodb_connection_string
-   PORT=5000
-   SECRET_KEY=your_jwt_secret
-   FIREBASE_API_KEY=your_firebase_api_key
-   # Add other environment variables as needed
-   ```
-4. Start the backend server:
-   ```bash
-   npm start
-   ```
-
-### Frontend Setup
-
-1. In a new terminal, navigate to the frontend:
-   ```bash
-   cd ../frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Configure Firebase in `src/firebase/firebase.init.js`:
-   ```js
-   // Example
-   const firebaseConfig = {
-     apiKey: "your_api_key",
-     authDomain: "your_auth_domain",
-     projectId: "your_project_id",
-     // ...
-   };
-   export default firebaseConfig;
-   ```
-4. Start the frontend dev server:
-   ```bash
-   npm run dev
-   ```
-
----
-
-## Running with Docker
-
-You can also run the application using Docker.
-
-### Backend
-
-1.  Navigate to the backend directory:
-    ```bash
-    cd backend
-    ```
-2.  Build the Docker image:
-    ```bash
-    docker build -t job-hunter-backend .
-    ```
-3.  Run the Docker container:
-    ```bash
-    docker run -p 3000:3000 -e MONGODB_URI=your_mongodb_connection_string -e SECRET_KEY=your_jwt_secret -e FIREBASE_API_KEY=your_firebase_api_key job-hunter-backend
-    ```
-    _Note: The backend will be available at `http://localhost:3000`._
+## 🛠️ Tech Stack
 
 ### Frontend
 
-1.  Navigate to the frontend directory:
-    ```bash
-    cd frontend
-    ```
-2.  Build the Docker image:
-    ```bash
-    docker build -t job-hunter-frontend .
-    ```
-3.  Run the Docker container:
-    ```bash
-    docker run -p 5173:5173 job-hunter-frontend
-    ```
-    _Note: The frontend will be available at `http://localhost:5173`._
+- **React 19** with TypeScript
+- **Vite** for fast development and building
+- **Tailwind CSS** + **DaisyUI** for modern styling
+- **React Router** for client-side navigation
+- **Firebase** for authentication
+- **Axios** for API communication
 
----
+### Backend
 
-## API Documentation
+- **Node.js** with TypeScript
+- **Express.js** framework
+- **MongoDB** with native driver
+- **JWT** for secure authentication
+- **CORS** enabled for cross-origin requests
+
+## 📁 Project Structure
+
+```
+job-hunter/
+├── backend/
+│   ├── src/
+│   │   ├── config/          # Database configuration
+│   │   ├── controllers/     # API controllers
+│   │   ├── models/          # Data models
+│   │   ├── routes/          # API routes
+│   │   ├── types/           # TypeScript type definitions
+│   │   ├── middleware/      # Custom middleware
+│   │   └── index.ts         # Main server file
+│   ├── dist/                # Compiled JavaScript output
+│   ├── package.json
+│   └── tsconfig.json
+├── frontend/
+│   ├── src/
+│   │   ├── pages/           # Page components (35 TypeScript files)
+│   │   ├── context/         # React context providers
+│   │   ├── hooks/           # Custom React hooks
+│   │   ├── types/           # TypeScript type definitions
+│   │   ├── layouts/         # Layout components
+│   │   ├── assets/          # Static assets
+│   │   ├── firebase/        # Firebase configuration
+│   │   ├── routes/          # Route components
+│   │   ├── main.tsx         # Main entry point
+│   │   └── App.tsx          # Main app component
+│   ├── public/              # Public assets
+│   ├── dist/                # Build output
+│   ├── package.json
+│   └── tsconfig.json
+└── README.md
+```
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- MongoDB database
+- Firebase project
+
+### Backend Setup
+
+1. **Navigate to backend directory:**
+
+```bash
+cd backend
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+3. **Create environment file:**
+
+```env
+PORT=3000
+MONGODB_URI=your_mongodb_connection_string
+SECRET_KEY=your_jwt_secret_key
+DB_USER=your_db_username
+DB_PASS=your_db_password
+```
+
+4. **Start development server:**
+
+```bash
+npm run dev
+```
+
+5. **Build for production:**
+
+```bash
+npm run build
+npm start
+```
+
+### Frontend Setup
+
+1. **Navigate to frontend directory:**
+
+```bash
+cd frontend
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+3. **Create environment file:**
+
+```env
+VITE_apiKey=your_firebase_api_key
+VITE_authDomain=your_firebase_auth_domain
+VITE_projectId=your_firebase_project_id
+VITE_storageBucket=your_firebase_storage_bucket
+VITE_messagingSenderId=your_firebase_messaging_sender_id
+VITE_appId=your_firebase_app_id
+```
+
+4. **Start development server:**
+
+```bash
+npm run dev
+```
+
+5. **Build for production:**
+
+```bash
+npm run build
+```
+
+## 🔧 Development Scripts
+
+### Backend
+
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Compile TypeScript to JavaScript
+- `npm start` - Start production server
+
+### Frontend
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run type-check` - Run TypeScript type checking
+- `npm run lint` - Run ESLint with TypeScript support
+
+## 📊 API Endpoints
 
 ### Authentication
 
-- `POST /api/auth/register` — Register a new user
-- `POST /api/auth/login` — Login and receive JWT
+- `POST /api/auth/jwt` - Login and get JWT token
+- `POST /api/auth/logout` - Logout and clear token
 
 ### Jobs
 
-- `GET /api/jobs` — List all jobs
-- `GET /api/jobs/:id` — Get job details
-- `POST /api/jobs` — Create a new job (employer only)
-- `PUT /api/jobs/:id` — Update a job (employer only)
-- `DELETE /api/jobs/:id` — Delete a job (employer only)
+- `GET /api/jobs` - Get paginated jobs
+- `GET /api/jobs/:id` - Get specific job details
+- `POST /api/jobs` - Create new job posting
+- `GET /api/jobs/count` - Get total job count
 
-### Applications
+### Users
 
-- `POST /api/applications` — Apply for a job
-- `GET /api/applications` — List user applications
-- `GET /api/applications/:jobId` — List applicants for a job (employer only)
+- `GET /api/users/:id` - Get user by ID
+- `GET /api/users` - Get user by email
+- `POST /api/users` - Create new user account
+
+### Job Applications
+
+- `GET /api/job-applications` - Get applications by email
+- `POST /api/job-applications` - Submit job application
+- `PATCH /api/job-applications/:id` - Update application status
+
+## 🎯 Key Features
+
+### For Job Seekers
+
+- Browse and search jobs by category, location, or keyword
+- View detailed job descriptions with requirements
+- Apply for jobs with cover letter and resume
+- Track application status in real-time
+- Manage profile and application history
+
+### For Employers
+
+- Post new job listings with detailed requirements
+- View and manage applications for each job
+- Update job status and application tracking
+- Manage company profile and job postings
+- Dashboard for comprehensive job management
+
+## 🚀 Deployment
+
+### Backend (Vercel)
+
+- Automatic deployment from Git
+- Environment variables configured in Vercel dashboard
+- MongoDB Atlas for database hosting
+
+### Frontend (Firebase Hosting)
+
+- Build and deploy with Firebase CLI
+- Environment variables in Firebase project settings
+- CDN distribution for fast loading
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes with proper TypeScript types
+4. Test thoroughly
+5. Commit your changes (`git commit -m 'Add amazing feature'`)
+6. Push to the branch (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+For support and questions:
+
+- Create an issue with detailed information
+- Include error messages and steps to reproduce
+- Provide environment details and versions
 
 ---
 
-## Contact
-
-For issues, please open an [mehedihasan1769@gmail.com](mehedihasan1769@gmail.com).
-
-## Author
-
-Created by [Mehedi Hasan Akash](https://github.com/m-akash)
+**Built with ❤️ using TypeScript for type safety and better developer experience.**
