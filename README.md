@@ -221,3 +221,11 @@ npm run build
 - Environment variables in Firebase project settings
 - CDN distribution for fast loading
 
+## Feedback
+
+- If you have any feedback, please reach out to [mehedihasan1769@gmail.com](mailto:mehedihasan1769@gmail.com)
+
+## Authors
+
+- [Mehedi Hasan Akash](https://github.com/m-akash)
+
