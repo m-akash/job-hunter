@@ -2,7 +2,7 @@
 
 A modern job hunting platform built with TypeScript, featuring both frontend (React) and backend (Node.js/Express) applications. Connect job seekers with employers through a seamless, type-safe experience.
 
-## 🚀 Features
+## Features
 
 - **Full TypeScript Support**: End-to-end type safety across frontend and backend
 - **Job Posting & Application**: Employers post jobs, candidates apply with real-time tracking
@@ -11,7 +11,7 @@ A modern job hunting platform built with TypeScript, featuring both frontend (Re
 - **Responsive Design**: Modern UI with Tailwind CSS and DaisyUI
 - **Real-time Updates**: Live job listings and application status tracking
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -30,7 +30,7 @@ A modern job hunting platform built with TypeScript, featuring both frontend (Re
 - **JWT** for secure authentication
 - **CORS** enabled for cross-origin requests
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 job-hunter/
@@ -65,7 +65,7 @@ job-hunter/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -148,7 +148,7 @@ npm run dev
 npm run build
 ```
 
-## 🔧 Development Scripts
+## Development Scripts
 
 ### Backend
 
@@ -163,7 +163,7 @@ npm run build
 - `npm run type-check` - Run TypeScript type checking
 - `npm run lint` - Run ESLint with TypeScript support
 
-## 📊 API Endpoints
+## API Endpoints
 
 ### Authentication
 
@@ -189,7 +189,7 @@ npm run build
 - `POST /api/job-applications` - Submit job application
 - `PATCH /api/job-applications/:id` - Update application status
 
-## 🎯 Key Features
+## Key Features
 
 ### For Job Seekers
 
@@ -207,7 +207,7 @@ npm run build
 - Manage company profile and job postings
 - Dashboard for comprehensive job management
 
-## 🚀 Deployment
+## Deployment
 
 ### Backend (Vercel)
 
@@ -221,28 +221,3 @@ npm run build
 - Environment variables in Firebase project settings
 - CDN distribution for fast loading
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes with proper TypeScript types
-4. Test thoroughly
-5. Commit your changes (`git commit -m 'Add amazing feature'`)
-6. Push to the branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-For support and questions:
-
-- Create an issue with detailed information
-- Include error messages and steps to reproduce
-- Provide environment details and versions
-
----
-
-**Built with ❤️ using TypeScript for type safety and better developer experience.**
